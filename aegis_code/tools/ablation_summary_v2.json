@@ -1,0 +1,180 @@
+{
+  "scope_total": 290,
+  "processed": 0,
+  "failed": 290,
+  "failed_examples": [
+    [
+      "/Users/chenting/aa-sentry/datasets/aa4337_large_prod/sources/AA_ERC-4337/contracts/src/core/BaseAccount.sol",
+      "Invalid compilation: \nUnknown file: datasets/aa4337_large_prod/sources/AA_ERC-4337/contracts/src/core/BaseAccount.sol"
+    ],
+    [
+      "/Users/chenting/aa-sentry/datasets/aa4337_large_prod/sources/AA_ERC-4337/contracts/src/test/TestWarmColdAccount.sol",
+      "Invalid compilation: \nUnknown file: datasets/aa4337_large_prod/sources/AA_ERC-4337/contracts/src/core/Helpers.sol"
+    ],
+    [
+      "/Users/chenting/aa-sentry/datasets/aa4337_large_prod/sources/AA_ERC-4337/contracts/src/test/TestRevertAccount.sol",
+      "Invalid compilation: \nUnknown file: datasets/aa4337_large_prod/sources/AA_ERC-4337/contracts/lib/erc4337-checker/lib/openzeppelin-contracts/contracts/interfaces"
+    ],
+    [
+      "/Users/chenting/aa-sentry/datasets/aa4337_large_prod/sources/AA_ERC-4337/contracts/src/test/MaliciousAccount.sol",
+      "Invalid compilation: \nUnknown file: datasets/aa4337_large_prod/sources/AA_ERC-4337/contracts/src/EntryPoint.sol"
+    ],
+    [
+      "/Users/chenting/aa-sentry/datasets/aa4337_large_prod/sources/AxenaWallet/axena-contracts/lib/account-abstraction/contracts/core/BaseAccount.sol",
+      "Invalid compilation: \nUnknown file: datasets/aa4337_large_prod/sources/AxenaWallet/axena-contracts/lib/account-abstraction/contracts/core/BaseAccount.sol"
+    ],
+    [
+      "/Users/chenting/aa-sentry/datasets/aa4337_large_prod/sources/AxenaWallet/axena-contracts/lib/account-abstraction/contracts/test/TestWarmColdAccount.sol",
+      "Invalid compilation: \nUnknown file: datasets/aa4337_large_prod/sources/AxenaWallet/axena-contracts/lib/account-abstraction/contracts/core/Helpers.sol"
+    ],
+    [
+      "/Users/chenting/aa-sentry/datasets/aa4337_large_prod/sources/AxenaWallet/axena-contracts/lib/account-abstraction/contracts/test/TestRevertAccount.sol",
+      "Invalid compilation: \nUnknown file: datasets/aa4337_large_prod/sources/AxenaWallet/axena-contracts/lib/account-abstraction/contracts/core/BaseAccount.sol"
+    ],
+    [
+      "/Users/chenting/aa-sentry/datasets/aa4337_large_prod/sources/AxenaWallet/axena-contracts/lib/account-abstraction/contracts/test/MaliciousAccount.sol",
+      "Invalid compilation: \nUnknown file: datasets/aa4337_large_prod/sources/AxenaWallet/axena-contracts/lib/account-abstraction/contracts/core/Helpers.sol"
+    ],
+    [
+      "/Users/chenting/aa-sentry/datasets/aa4337_large_prod/sources/AxenaWallet/axena-contracts/lib/openzeppelin-contracts/contracts/interfaces/draft-IERC7579.sol",
+      "Invalid compilation: \nUnknown file: datasets/aa4337_large_prod/sources/AxenaWallet/axena-contracts/lib/openzeppelin-contracts/contracts/interfaces/draft-IERC433"
+    ],
+    [
+      "/Users/chenting/aa-sentry/datasets/aa4337_large_prod/sources/AxenaWallet/axena-contracts/src/core/AgentWallet.sol",
+      "Invalid compilation: \nInvalid solc compilation Error: Source \"@account-abstraction/interfaces/IAccount.sol\" not found: File not found. Searched the following lo"
+    ],
+    [
+      "/Users/chenting/aa-sentry/datasets/aa4337_large_prod/sources/AxenaWallet/axena-contracts/src/modules/validators/SessionKeyValidator.sol",
+      "Invalid compilation: \nInvalid solc compilation Error: Source \"@account-abstraction/interfaces/PackedUserOperation.sol\" not found: File not found. Searched the f"
+    ],
+    [
+      "/Users/chenting/aa-sentry/datasets/aa4337_large_prod/sources/AxenaWallet/axena-contracts/src/modules/validators/ECDSAValidator.sol",
+      "Invalid compilation: \nInvalid solc compilation Error: Source \"@account-abstraction/interfaces/PackedUserOperation.sol\" not found: File not found. Searched the f"
+    ],
+    [
+      "/Users/chenting/aa-sentry/datasets/aa4337_large_prod/sources/EIP-4337-AA/src/EIP_4337_AA.sol",
+      "Invalid compilation: \nInvalid solc compilation Error: Source \"lib/account-abstraction/contracts/legacy/v06/IAccount06.sol\" not found: File not found. Searched t"
+    ],
+    [
+      "/Users/chenting/aa-sentry/datasets/aa4337_large_prod/sources/EIP-4337-Alt-Mempool/contracts/core/BaseAccount.sol",
+      "Invalid compilation: \nUnknown file: datasets/aa4337_large_prod/sources/EIP-4337-Alt-Mempool/contracts/core/BaseAccount.sol"
+    ],
+    [
+      "/Users/chenting/aa-sentry/datasets/aa4337_large_prod/sources/ERC-4337/contracts/core/BaseAccount.sol",
+      "Invalid compilation: \nUnknown file: datasets/aa4337_large_prod/sources/ERC-4337/contracts/core/BaseAccount.sol"
+    ],
+    [
+      "/Users/chenting/aa-sentry/datasets/aa4337_large_prod/sources/ERC-4337-/contracts/core/BaseAccount.sol",
+      "Invalid compilation: \nUnknown file: datasets/aa4337_large_prod/sources/ERC-4337-/contracts/core/BaseAccount.sol"
+    ],
+    [
+      "/Users/chenting/aa-sentry/datasets/aa4337_large_prod/sources/ERC-4337-/contracts/test/TestWarmColdAccount.sol",
+      "Invalid compilation: \nUnknown file: datasets/aa4337_large_prod/sources/ERC-4337-/contracts/core/Helpers.sol"
+    ],
+    [
+      "/Users/chenting/aa-sentry/datasets/aa4337_large_prod/sources/ERC-4337-/contracts/test/TestRevertAccount.sol",
+      "Invalid compilation: \nUnknown file: datasets/aa4337_large_prod/sources/ERC-4337-/contracts/core/BaseAccount.sol"
+    ],
+    [
+      "/Users/chenting/aa-sentry/datasets/aa4337_large_prod/sources/ERC-4337-/contracts/test/MaliciousAccount.sol",
+      "Invalid compilation: \nUnknown file: datasets/aa4337_large_prod/sources/ERC-4337-/contracts/core/Helpers.sol"
+    ],
+    [
+      "/Users/chenting/aa-sentry/datasets/aa4337_large_prod/sources/ERC-4337-contracts/core/BaseAccount.sol",
+      "Invalid compilation: \nUnknown file: datasets/aa4337_large_prod/sources/ERC-4337-contracts/core/BaseAccount.sol"
+    ],
+    [
+      "/Users/chenting/aa-sentry/datasets/aa4337_large_prod/sources/ERC-4337-contracts/test/TestWarmColdAccount.sol",
+      "Invalid compilation: \nUnknown file: datasets/aa4337_large_prod/sources/ERC-4337-contracts/core/Helpers.sol"
+    ],
+    [
+      "/Users/chenting/aa-sentry/datasets/aa4337_large_prod/sources/ERC-4337-contracts/test/TestRevertAccount.sol",
+      "Invalid compilation: \nUnknown file: datasets/aa4337_large_prod/sources/ERC-4337-contracts/core/BaseAccount.sol"
+    ],
+    [
+      "/Users/chenting/aa-sentry/datasets/aa4337_large_prod/sources/ERC-4337-contracts/test/MaliciousAccount.sol",
+      "Invalid compilation: \nUnknown file: datasets/aa4337_large_prod/sources/ERC-4337-contracts/core/Helpers.sol"
+    ],
+    [
+      "/Users/chenting/aa-sentry/datasets/aa4337_large_prod/sources/ERC-4337_ERC-6551_Demo/src/core/SimpleAccount.sol",
+      "Invalid compilation: \nUnknown file: datasets/aa4337_large_prod/sources/ERC-4337_ERC-6551_Demo/lib/openzeppelin-contracts/contracts/utils/Bytes.sol"
+    ],
+    [
+      "/Users/chenting/aa-sentry/datasets/aa4337_large_prod/sources/ERC4337-Account-Abstraction/src/account/SmartAccount.sol",
+      "Invalid compilation: \nInvalid solc compilation Error: Source \"account-abstraction/contracts/interfaces/IAccount.sol\" not found: Ambiguous import. Multiple match"
+    ],
+    [
+      "/Users/chenting/aa-sentry/datasets/aa4337_large_prod/sources/ERC4337_Example/contracts/core/BaseAccount.sol",
+      "Invalid compilation: \nUnknown file: datasets/aa4337_large_prod/sources/ERC4337_Example/contracts/core/BaseAccount.sol"
+    ],
+    [
+      "/Users/chenting/aa-sentry/datasets/aa4337_large_prod/sources/ERC4337_Example/contracts/test/TestWarmColdAccount.sol",
+      "Invalid compilation: \nUnknown file: datasets/aa4337_large_prod/sources/ERC4337_Example/contracts/core/Helpers.sol"
+    ],
+    [
+      "/Users/chenting/aa-sentry/datasets/aa4337_large_prod/sources/ERC4337_Example/contracts/test/TestRevertAccount.sol",
+      "Invalid compilation: \nUnknown file: datasets/aa4337_large_prod/sources/ERC4337_Example/contracts/core/BaseAccount.sol"
+    ],
+    [
+      "/Users/chenting/aa-sentry/datasets/aa4337_large_prod/sources/ERC4337_Example/contracts/test/MaliciousAccount.sol",
+      "Invalid compilation: \nUnknown file: datasets/aa4337_large_prod/sources/ERC4337_Example/contracts/core/EntryPoint.sol"
+    ],
+    [
+      "/Users/chenting/aa-sentry/datasets/aa4337_large_prod/sources/Flip-ERC4337-Account-Abstraction-wallet/Smart contracts/src/ERC4337/core/BaseAccount.sol",
+      "Invalid compilation: \nInvalid solc compilation Error: \"contracts/lib/openzeppelin-contracts/\" is not found.\n"
+    ]
+  ],
+  "rows": [
+    {
+      "variant": "full",
+      "display": "Full Aegis",
+      "TP": 0,
+      "FP": 0,
+      "FN": 0,
+      "Precision": 0,
+      "Recall": 0,
+      "F1": 0
+    },
+    {
+      "variant": "no_return_obligation",
+      "display": "Abl-A w/o Return-Obligation Channel",
+      "TP": 0,
+      "FP": 0,
+      "FN": 0,
+      "Precision": 0,
+      "Recall": 0,
+      "F1": 0
+    },
+    {
+      "variant": "no_template_exclusion",
+      "display": "Abl-A w/o Template/Delegation Exclusion Channel",
+      "TP": 0,
+      "FP": 0,
+      "FN": 0,
+      "Precision": 0,
+      "Recall": 0,
+      "F1": 0
+    },
+    {
+      "variant": "structural_only",
+      "display": "Abl-B Structural IR Only",
+      "TP": 0,
+      "FP": 0,
+      "FN": 0,
+      "Precision": 0,
+      "Recall": 0,
+      "F1": 0
+    },
+    {
+      "variant": "pattern_proxy",
+      "display": "Abl-B Pattern Proxy",
+      "TP": 0,
+      "FP": 0,
+      "FN": 0,
+      "Precision": 0,
+      "Recall": 0,
+      "F1": 0
+    }
+  ],
+  "elapsed_sec": 29.88
+}

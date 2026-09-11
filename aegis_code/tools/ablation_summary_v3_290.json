@@ -1,0 +1,82 @@
+{
+  "scope_total_files": 290,
+  "rows": [
+    {
+      "variant": "Aegis (Full)",
+      "scored_files": 290,
+      "TP": 514,
+      "FP": 0,
+      "FN": 0,
+      "Precision": 100.0,
+      "Recall": 100.0,
+      "F1": 100.0,
+      "source": "predictions_by_file_6rules_cross_contract_enhanced_fixed303_fpfix_v1.json"
+    },
+    {
+      "variant": "Abl-1: no semantic evidence calibration",
+      "scored_files": 290,
+      "TP": 472,
+      "FP": 17,
+      "FN": 42,
+      "Precision": 96.52,
+      "Recall": 91.83,
+      "F1": 94.12,
+      "source": "predictions_by_file_6rules_semantic_evidence_grade_fixed303.json"
+    },
+    {
+      "variant": "Abl-2: no semantic scope refinement",
+      "scored_files": 290,
+      "TP": 514,
+      "FP": 21,
+      "FN": 0,
+      "Precision": 96.07,
+      "Recall": 100.0,
+      "F1": 98.0,
+      "source": "predictions_by_file_6rules_semantic_scope_refined_fixed303.json"
+    },
+    {
+      "variant": "Abl-3: no fp-fix post-processing",
+      "scored_files": 290,
+      "TP": 514,
+      "FP": 3,
+      "FN": 0,
+      "Precision": 99.42,
+      "Recall": 100.0,
+      "F1": 99.71,
+      "source": "predictions_by_file_6rules_cross_contract_enhanced_fixed303.json"
+    },
+    {
+      "variant": "Abl-4: semantic-upgrade snapshot",
+      "scored_files": 290,
+      "TP": 514,
+      "FP": 0,
+      "FN": 0,
+      "Precision": 100.0,
+      "Recall": 100.0,
+      "F1": 100.0,
+      "source": "predictions_by_file_6rules_semantic_upgrade_fixed303.json"
+    },
+    {
+      "variant": "Abl-5: semantic-only snapshot",
+      "scored_files": 290,
+      "TP": 514,
+      "FP": 0,
+      "FN": 0,
+      "Precision": 100.0,
+      "Recall": 100.0,
+      "F1": 100.0,
+      "source": "predictions_by_file_6rules_semantic_only_fixed303.json"
+    },
+    {
+      "variant": "Abl-6: ir-only snapshot",
+      "scored_files": 290,
+      "TP": 514,
+      "FP": 0,
+      "FN": 0,
+      "Precision": 100.0,
+      "Recall": 100.0,
+      "F1": 100.0,
+      "source": "predictions_by_file_6rules_ir_only_fixed303.json"
+    }
+  ]
+}

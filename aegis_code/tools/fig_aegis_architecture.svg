@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="1400" height="1200" viewBox="0 0 1400 1200" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <style>
+      .box { fill: #ffffff; stroke: #1f2937; stroke-width: 2.2; rx: 8; ry: 8; }
+      .group { fill: #eef5ff; stroke: #b9d1ff; stroke-width: 1.5; rx: 10; ry: 10; }
+      .title { font: 700 28px 'Helvetica Neue', Arial, sans-serif; fill: #111827; }
+      .text { font: 20px 'Helvetica Neue', Arial, sans-serif; fill: #111827; }
+      .small { font: 18px 'Helvetica Neue', Arial, sans-serif; fill: #111827; }
+      .goalTitle { font: 700 24px 'Helvetica Neue', Arial, sans-serif; fill: #111827; }
+      .arrow { stroke: #374151; stroke-width: 3.2; fill: none; marker-end: url(#arrowHead); }
+      .dash { stroke-dasharray: 8 7; }
+    </style>
+    <marker id="arrowHead" markerWidth="10" markerHeight="10" refX="8" refY="3" orient="auto">
+      <polygon points="0 0, 8 3, 0 6" fill="#374151" />
+    </marker>
+  </defs>
+
+  <rect class="group" x="130" y="220" width="1040" height="710" />
+
+  <rect class="box" x="170" y="70" width="1000" height="110" />
+  <text class="title" x="200" y="115">Input Layer</text>
+  <text class="text" x="200" y="155">ERC-4337 Solidity projects (account contracts and validation routines)</text>
+
+  <rect class="box" x="170" y="250" width="1000" height="120" />
+  <text class="title" x="200" y="295">Stage 1: Semantic Fact Extraction</text>
+  <text class="small" x="200" y="335">Contract parsing and IR fact construction (CFG, DFG, call facts), plus validation-entry discovery.</text>
+
+  <rect class="box" x="170" y="420" width="1000" height="150" />
+  <text class="title" x="200" y="465">Stage 2: VOIR Construction (Validation-Oriented Intermediate Representation)</text>
+  <text class="small" x="200" y="505">Canonical semantic slots: authorization, caller binding, nonce reference/progression,</text>
+  <text class="small" x="200" y="535">intent-hash binding, validation outcome semantics, and path-policy consistency.</text>
+
+  <rect class="box" x="170" y="620" width="1000" height="180" />
+  <text class="title" x="200" y="665">Stage 3: Checker Compilation and Execution</text>
+  <text class="small" x="200" y="705">C1 Authorization Omission; C2 Nonce Validation Omission; C3 Incorrect Success Signaling;</text>
+  <text class="small" x="200" y="735">C4 Intent-Hash Mismatch; C5 Nonce Progression Failure; C6 Caller-Binding Failure.</text>
+
+  <rect class="box" x="170" y="860" width="1000" height="110" />
+  <text class="title" x="200" y="905">Output Layer</text>
+  <text class="text" x="200" y="945">Typed findings with evidence traces, source anchors, and audit-ready reports.</text>
+
+  <path class="arrow" d="M670 180 L670 248" />
+  <path class="arrow" d="M670 370 L670 418" />
+  <path class="arrow" d="M670 570 L670 618" />
+  <path class="arrow" d="M670 800 L670 858" />
+
+  <rect class="box" x="940" y="1010" width="360" height="150" />
+  <text class="goalTitle" x="970" y="1048">Design Goals</text>
+  <text class="small" x="970" y="1080">(G1) Semantic alignment</text>
+  <text class="small" x="970" y="1110">(G2) IR-only reasoning</text>
+  <text class="small" x="970" y="1140">(G3) Auditable evidence</text>
+
+  <path class="arrow dash" d="M940 1070 L880 1070 L880 560 L1170 560" />
+
+  <text class="small" x="170" y="1185" fill="#4b5563">Figure 4.1. Aegis architecture: source code → semantic facts → VOIR → six formally derived checkers → audit-ready findings.</text>
+</svg>

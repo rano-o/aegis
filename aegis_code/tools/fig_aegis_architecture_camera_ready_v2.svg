@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="1400" height="760" viewBox="0 0 1400 760" preserveAspectRatio="xMidYMid meet">
+  <defs>
+    <marker id="arrow" markerWidth="10" markerHeight="10" refX="8" refY="3" orient="auto">
+      <polygon points="0,0 8,3 0,6" fill="#344054"/>
+    </marker>
+    <style>
+      .h1{font:700 30px "Arial", sans-serif; fill:#111827}
+      .h2{font:700 18px "Arial", sans-serif; fill:#111827}
+      .tx{font:500 14px "Arial", sans-serif; fill:#1f2937}
+      .cp{font:600 13px "Arial", sans-serif; fill:#111827}
+      .cap{font:500 13px "Arial", sans-serif; fill:#374151}
+      .box{stroke:#1f2937; stroke-width:1.8}
+      .arr{stroke:#344054; stroke-width:2.6; fill:none; marker-end:url(#arrow)}
+    </style>
+  </defs>
+
+  <rect x="30" y="30" width="1340" height="700" rx="16" ry="16" fill="#f8fafc" stroke="#e5e7eb" stroke-width="1.3"/>
+  <text class="h1" x="60" y="80">Aegis: Design and Implementation Pipeline</text>
+
+  <rect x="50" y="110" width="1300" height="500" rx="12" ry="12" fill="#ffffff" stroke="#d1d5db" stroke-width="1.0"/>
+  <rect x="58" y="118" width="1000" height="484" rx="10" ry="10" fill="#f0f9ff" stroke="#bae6fd" stroke-width="1.1"/>
+  <text class="cp" x="74" y="142">Core Aegis Pipeline</text>
+  <rect x="1068" y="118" width="274" height="484" rx="10" ry="10" fill="#fff7ed" stroke="#fed7aa" stroke-width="1.1"/>
+  <text class="cp" x="1084" y="142">Assurance Layer</text>
+
+  <rect class="box" x="80" y="180" width="220" height="290" rx="10" ry="10" fill="#dbeafe"/>
+  <text class="h2" x="98" y="212">Input Parsing</text>
+  <text class="tx" x="98" y="242">• Solidity sources</text>
+  <text class="tx" x="98" y="268">• Validation-entry discovery</text>
+  <text class="tx" x="98" y="294">• CFG / DFG / CG facts</text>
+
+  <rect class="box" x="340" y="180" width="280" height="290" rx="10" ry="10" fill="#ccfbf1"/>
+  <text class="h2" x="358" y="212">VOIR Builder</text>
+  <text class="tx" x="358" y="242">• Authorization semantics</text>
+  <text class="tx" x="358" y="268">• Caller-binding facts</text>
+  <text class="tx" x="358" y="294">• Nonce semantics</text>
+  <text class="tx" x="358" y="320">• Hash-binding semantics</text>
+  <text class="tx" x="358" y="346">• Result semantics</text>
+
+  <rect class="box" x="660" y="180" width="370" height="290" rx="10" ry="10" fill="#e9d5ff"/>
+  <text class="h2" x="678" y="212">Checker Engine (6 Families)</text>
+  <text class="tx" x="678" y="242">• C1 Authorization Omission</text>
+  <text class="tx" x="678" y="268">• C2 Nonce Validation Omission</text>
+  <text class="tx" x="678" y="294">• C3 Incorrect Success Signaling</text>
+  <text class="tx" x="678" y="320">• C4 Intent-Hash Mismatch</text>
+  <text class="tx" x="678" y="346">• C5 Nonce Progression Failure</text>
+  <text class="tx" x="678" y="372">• C6 Caller-Binding Failure</text>
+
+  <rect class="box" x="1088" y="180" width="234" height="130" rx="10" ry="10" fill="#fee2e2"/>
+  <text class="h2" x="1106" y="212">Formal Alignment</text>
+  <text class="tx" x="1106" y="242">• O_i / Viol_i checks</text>
+  <text class="tx" x="1106" y="268">• Definition consistency</text>
+
+  <rect class="box" x="1088" y="330" width="234" height="140" rx="10" ry="10" fill="#dcfce7"/>
+  <text class="h2" x="1106" y="362">Finding Output</text>
+  <text class="tx" x="1106" y="392">• Typed vulnerability</text>
+  <text class="tx" x="1106" y="418">• Evidence + anchors</text>
+  <text class="tx" x="1106" y="444">• Audit-ready report</text>
+
+  <path class="arr" d="M300 325 L340 325"/>
+  <path class="arr" d="M620 325 L660 325"/>
+  <path class="arr" d="M1030 240 L1088 240"/>
+  <path class="arr" d="M1030 398 L1088 398"/>
+
+  <rect x="360" y="510" width="176" height="32" rx="16" ry="16" fill="#dbeafe" stroke="#93c5fd"/>
+  <text class="cp" x="388" y="531">Semantic Alignment</text>
+  <rect x="556" y="510" width="130" height="32" rx="16" ry="16" fill="#ccfbf1" stroke="#5eead4"/>
+  <text class="cp" x="594" y="531">IR-only</text>
+  <rect x="706" y="510" width="166" height="32" rx="16" ry="16" fill="#ede9fe" stroke="#c4b5fd"/>
+  <text class="cp" x="736" y="531">Auditability</text>
+
+  <text class="cap" x="60" y="652">Figure 4.1. Aegis architecture. Source code is transformed into VOIR semantic facts and checked by six formally</text>
+  <text class="cap" x="60" y="674">derived detectors, with explicit formal-alignment and auditable output layers.</text>
+</svg>

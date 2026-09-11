@@ -1,0 +1,75 @@
+\documentclass[tikz,border=4pt]{standalone}
+\usepackage{tikz}
+\usetikzlibrary{arrows.meta,positioning,fit,calc}
+
+\begin{document}
+\begin{tikzpicture}[
+  font=\footnotesize,
+  >=Latex,
+  node distance=6mm and 8mm,
+  stage/.style={draw, rounded corners=1.2pt, align=left, inner sep=5pt, fill=gray!6},
+  io/.style={draw, rounded corners=1.2pt, align=left, inner sep=4pt, fill=blue!4},
+  out/.style={draw, rounded corners=1.2pt, align=left, inner sep=4pt, fill=green!6},
+  arr/.style={-Latex, line width=0.65pt}
+]
+
+% Input
+\node[io, minimum width=3.8cm] (i1) {\textbf{Input}\\ERC-4337 account contracts};
+
+% S1
+\node[stage, minimum width=4.8cm, right=10mm of i1] (s1) {
+\textbf{VOIR Construction}\\
+\textit{Semantic lifting of validation logic}
+\begin{itemize}\itemsep1pt
+\item CFG/DFG normalization
+\item state effect modeling
+\item built-in ERC-4337 semantic profile
+\end{itemize}
+\textbf{Output:} VOIR graph and semantic facts
+};
+
+% S2
+\node[stage, minimum width=5.4cm, right=8mm of s1] (s2) {
+\textbf{Semantic Checker Layer}\\
+\textit{Predicate-violation detection over VOIR}
+\begin{itemize}\itemsep1pt
+\item Authorization Omission
+\item Nonce Validation Omission
+\item Incorrect Success Signaling
+\item Intent-Hash Mismatch
+\item Nonce Progression Failure
+\item Caller-Binding Failure
+\end{itemize}
+\textbf{Output:} violated predicates and witness constraints
+};
+
+% S3
+\node[stage, minimum width=4.3cm, right=8mm of s2] (s3) {
+\textbf{Evidence Consolidation}\\
+\textit{Contract-level finding synthesis}
+\begin{itemize}\itemsep1pt
+\item checker result aggregation
+\item path-to-source projection
+\end{itemize}
+\textbf{Output:} auditable findings
+};
+
+% Output
+\node[out, minimum width=3.9cm, right=8mm of s3] (o1) {
+\textbf{Aegis Analysis Report}\\
+vulnerability type, evidence trace,\\
+and source location metadata
+};
+
+% Arrows
+\draw[arr] (i1.east) -- (s1.west);
+\draw[arr] (s1.east) -- (s2.west);
+\draw[arr] (s2.east) -- (s3.west);
+\draw[arr] (s3.east) -- (o1.west);
+
+% Frame
+\node[draw, rounded corners=1.2pt, fit=(i1)(s1)(s2)(s3)(o1), inner sep=5pt,
+      label={[xshift=-2mm,yshift=1mm]north west:\textbf{Aegis Pipeline}}] {};
+
+\end{tikzpicture}
+\end{document}

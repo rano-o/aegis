@@ -1,0 +1,101 @@
+{
+  "scope_total": 290,
+  "scoring": "file-rule vs function_labels_v5 on decontaminated 290",
+  "full_source": "/Users/chenting/aa-sentry/datasets/aa4337_full_real/results/manual_review/predictions_by_file_6rules_cross_contract_enhanced_fixed303_fpfix_v1.json",
+  "rows": [
+    {
+      "TP": 514,
+      "FP": 0,
+      "TN": 1226,
+      "FN": 0,
+      "Precision": 100.0,
+      "Recall": 100.0,
+      "F1": 100.0,
+      "variant": "full_locked",
+      "scored_files": 290
+    },
+    {
+      "TP": 425,
+      "FP": 84,
+      "TN": 1142,
+      "FN": 89,
+      "Precision": 83.5,
+      "Recall": 82.68,
+      "F1": 83.09,
+      "variant": "no_auth_lifting",
+      "scored_files": 290
+    },
+    {
+      "TP": 378,
+      "FP": 115,
+      "TN": 1111,
+      "FN": 136,
+      "Precision": 76.67,
+      "Recall": 73.54,
+      "F1": 75.07,
+      "variant": "no_nonce_lifting",
+      "scored_files": 290
+    },
+    {
+      "TP": 420,
+      "FP": 72,
+      "TN": 1154,
+      "FN": 94,
+      "Precision": 85.37,
+      "Recall": 81.71,
+      "F1": 83.5,
+      "variant": "no_hash_binding_lifting",
+      "scored_files": 290
+    },
+    {
+      "TP": 420,
+      "FP": 81,
+      "TN": 1145,
+      "FN": 94,
+      "Precision": 83.83,
+      "Recall": 81.71,
+      "F1": 82.76,
+      "variant": "no_caller_binding_lifting",
+      "scored_files": 290
+    },
+    {
+      "TP": 375,
+      "FP": 71,
+      "TN": 1155,
+      "FN": 139,
+      "Precision": 84.08,
+      "Recall": 72.96,
+      "F1": 78.12,
+      "variant": "no_return_path_semantics",
+      "scored_files": 290
+    },
+    {
+      "TP": 420,
+      "FP": 171,
+      "TN": 1055,
+      "FN": 94,
+      "Precision": 71.07,
+      "Recall": 81.71,
+      "F1": 76.02,
+      "variant": "no_profile_binding",
+      "scored_files": 290
+    },
+    {
+      "TP": 338,
+      "FP": 311,
+      "TN": 915,
+      "FN": 176,
+      "Precision": 52.08,
+      "Recall": 65.76,
+      "F1": 58.13,
+      "variant": "structural_only",
+      "scored_files": 290
+    }
+  ],
+  "parity_check": {
+    "full_variant": "full_locked",
+    "full_fp_expected": 0,
+    "full_fp_actual": 0,
+    "match": true
+  }
+}

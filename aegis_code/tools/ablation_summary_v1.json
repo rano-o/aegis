@@ -1,0 +1,274 @@
+{
+  "scope_total_files": 290,
+  "processed_files": 78,
+  "failed_files": 212,
+  "elapsed_sec": 24.104640007019043,
+  "failed_examples": [
+    [
+      "/Users/chenting/aa-sentry/datasets/aa4337_large_prod/sources/AA_ERC-4337/contracts/src/test/TestRevertAccount.sol",
+      "Invalid compilation: \nInvalid solc compilation Error: Source \"@openzeppelin/contracts/utils/cryptography/ECDSA.sol\" not "
+    ],
+    [
+      "/Users/chenting/aa-sentry/datasets/aa4337_large_prod/sources/AA_ERC-4337/contracts/src/test/MaliciousAccount.sol",
+      "Invalid compilation: \nInvalid solc compilation Error: Source \"@openzeppelin/contracts/security/ReentrancyGuard.sol\" not "
+    ],
+    [
+      "/Users/chenting/aa-sentry/datasets/aa4337_large_prod/sources/AxenaWallet/axena-contracts/lib/account-abstraction/contracts/core/BaseAccount.sol",
+      "Invalid compilation: \nInvalid solc compilation Error: Source file requires different compiler version (current compiler "
+    ],
+    [
+      "/Users/chenting/aa-sentry/datasets/aa4337_large_prod/sources/AxenaWallet/axena-contracts/lib/account-abstraction/contracts/test/TestWarmColdAccount.sol",
+      "Invalid compilation: \nInvalid solc compilation Error: Source file requires different compiler version (current compiler "
+    ],
+    [
+      "/Users/chenting/aa-sentry/datasets/aa4337_large_prod/sources/AxenaWallet/axena-contracts/lib/account-abstraction/contracts/test/TestRevertAccount.sol",
+      "Invalid compilation: \nInvalid solc compilation Error: Source file requires different compiler version (current compiler "
+    ],
+    [
+      "/Users/chenting/aa-sentry/datasets/aa4337_large_prod/sources/AxenaWallet/axena-contracts/lib/account-abstraction/contracts/test/MaliciousAccount.sol",
+      "Invalid compilation: \nInvalid solc compilation Error: Source file requires different compiler version (current compiler "
+    ],
+    [
+      "/Users/chenting/aa-sentry/datasets/aa4337_large_prod/sources/AxenaWallet/axena-contracts/src/core/AgentWallet.sol",
+      "Invalid compilation: \nInvalid solc compilation Error: Source file requires different compiler version (current compiler "
+    ],
+    [
+      "/Users/chenting/aa-sentry/datasets/aa4337_large_prod/sources/AxenaWallet/axena-contracts/src/modules/validators/SessionKeyValidator.sol",
+      "Invalid compilation: \nInvalid solc compilation Error: Source file requires different compiler version (current compiler "
+    ],
+    [
+      "/Users/chenting/aa-sentry/datasets/aa4337_large_prod/sources/AxenaWallet/axena-contracts/src/modules/validators/ECDSAValidator.sol",
+      "Invalid compilation: \nInvalid solc compilation Error: Source file requires different compiler version (current compiler "
+    ],
+    [
+      "/Users/chenting/aa-sentry/datasets/aa4337_large_prod/sources/EIP-4337-AA/src/EIP_4337_AA.sol",
+      "Invalid compilation: \nInvalid solc compilation Error: Source file requires different compiler version (current compiler "
+    ],
+    [
+      "/Users/chenting/aa-sentry/datasets/aa4337_large_prod/sources/ERC-4337-/contracts/core/BaseAccount.sol",
+      "Invalid compilation: \nInvalid solc compilation Error: Source file requires different compiler version (current compiler "
+    ],
+    [
+      "/Users/chenting/aa-sentry/datasets/aa4337_large_prod/sources/ERC-4337-/contracts/test/TestWarmColdAccount.sol",
+      "Invalid compilation: \nInvalid solc compilation Error: Source file requires different compiler version (current compiler "
+    ],
+    [
+      "/Users/chenting/aa-sentry/datasets/aa4337_large_prod/sources/ERC-4337-/contracts/test/TestRevertAccount.sol",
+      "Invalid compilation: \nInvalid solc compilation Error: Source file requires different compiler version (current compiler "
+    ],
+    [
+      "/Users/chenting/aa-sentry/datasets/aa4337_large_prod/sources/ERC-4337-/contracts/test/MaliciousAccount.sol",
+      "Invalid compilation: \nInvalid solc compilation Error: Source file requires different compiler version (current compiler "
+    ],
+    [
+      "/Users/chenting/aa-sentry/datasets/aa4337_large_prod/sources/ERC-4337-contracts/core/BaseAccount.sol",
+      "Invalid compilation: \nInvalid solc compilation Error: Source file requires different compiler version (current compiler "
+    ],
+    [
+      "/Users/chenting/aa-sentry/datasets/aa4337_large_prod/sources/ERC-4337-contracts/test/TestWarmColdAccount.sol",
+      "Invalid compilation: \nInvalid solc compilation Error: Source file requires different compiler version (current compiler "
+    ],
+    [
+      "/Users/chenting/aa-sentry/datasets/aa4337_large_prod/sources/ERC-4337-contracts/test/TestRevertAccount.sol",
+      "Invalid compilation: \nInvalid solc compilation Error: Source file requires different compiler version (current compiler "
+    ],
+    [
+      "/Users/chenting/aa-sentry/datasets/aa4337_large_prod/sources/ERC-4337-contracts/test/MaliciousAccount.sol",
+      "Invalid compilation: \nInvalid solc compilation Error: Source file requires different compiler version (current compiler "
+    ],
+    [
+      "/Users/chenting/aa-sentry/datasets/aa4337_large_prod/sources/ERC-4337_ERC-6551_Demo/src/core/SimpleAccount.sol",
+      "Invalid compilation: \nInvalid solc compilation Error: Source \"@openzeppelin/contracts/utils/cryptography/ECDSA.sol\" not "
+    ],
+    [
+      "/Users/chenting/aa-sentry/datasets/aa4337_large_prod/sources/ERC4337-Account-Abstraction/src/account/SmartAccount.sol",
+      "Invalid compilation: \nInvalid solc compilation Error: Source file requires different compiler version (current compiler "
+    ],
+    [
+      "/Users/chenting/aa-sentry/datasets/aa4337_large_prod/sources/ERC4337_Example/contracts/test/TestRevertAccount.sol",
+      "Invalid compilation: \nInvalid solc compilation Error: Source \"@openzeppelin/contracts/utils/cryptography/ECDSA.sol\" not "
+    ],
+    [
+      "/Users/chenting/aa-sentry/datasets/aa4337_large_prod/sources/ERC4337_Example/contracts/test/MaliciousAccount.sol",
+      "Invalid compilation: \nInvalid solc compilation Error: Source \"@openzeppelin/contracts/security/ReentrancyGuard.sol\" not "
+    ],
+    [
+      "/Users/chenting/aa-sentry/datasets/aa4337_large_prod/sources/Minimal_account_ERC4337_Smart_Contract_Wallet_Account_Abstraction/lib/account-abstraction/contracts/core/BaseAccount.sol",
+      "Invalid compilation: \nInvalid solc compilation Error: Source file requires different compiler version (current compiler "
+    ],
+    [
+      "/Users/chenting/aa-sentry/datasets/aa4337_large_prod/sources/Minimal_account_ERC4337_Smart_Contract_Wallet_Account_Abstraction/lib/account-abstraction/contracts/test/TestWarmColdAccount.sol",
+      "Invalid compilation: \nInvalid solc compilation Error: Source file requires different compiler version (current compiler "
+    ],
+    [
+      "/Users/chenting/aa-sentry/datasets/aa4337_large_prod/sources/Minimal_account_ERC4337_Smart_Contract_Wallet_Account_Abstraction/lib/account-abstraction/contracts/test/TestRevertAccount.sol",
+      "Invalid compilation: \nInvalid solc compilation Error: Source file requires different compiler version (current compiler "
+    ],
+    [
+      "/Users/chenting/aa-sentry/datasets/aa4337_large_prod/sources/Minimal_account_ERC4337_Smart_Contract_Wallet_Account_Abstraction/lib/account-abstraction/contracts/test/MaliciousAccount.sol",
+      "Invalid compilation: \nInvalid solc compilation Error: Source file requires different compiler version (current compiler "
+    ],
+    [
+      "/Users/chenting/aa-sentry/datasets/aa4337_large_prod/sources/Minimal_account_ERC4337_Smart_Contract_Wallet_Account_Abstraction/lib/openzeppelin-contracts/contracts/mocks/account/modules/ERC7579Mock.sol",
+      "Invalid compilation: \nInvalid solc compilation Error: Source file requires different compiler version (current compiler "
+    ],
+    [
+      "/Users/chenting/aa-sentry/datasets/aa4337_large_prod/sources/Minimal_account_ERC4337_Smart_Contract_Wallet_Account_Abstraction/src/ethereum/MinimalAcc.sol",
+      "Invalid compilation: \nInvalid solc compilation Error: Source \"lib/account-abstraction/contracts/interfaces/IAccount.sol\""
+    ],
+    [
+      "/Users/chenting/aa-sentry/datasets/aa4337_large_prod/sources/Multify/foundry/node_modules/@account-abstraction/contracts/core/BaseAccount.sol",
+      "Invalid compilation: \nInvalid solc compilation Error: Source file requires different compiler version (current compiler "
+    ],
+    [
+      "/Users/chenting/aa-sentry/datasets/aa4337_large_prod/sources/Somnia-DeFi-Wallet/eolia-contracts/contracts/core/BaseAccount.sol",
+      "Invalid compilation: \nInvalid solc compilation Error: Source file requires different compiler version (current compiler "
+    ],
+    [
+      "/Users/chenting/aa-sentry/datasets/aa4337_large_prod/sources/USP-Token/packages/contracts/lib/account-abstraction/contracts/core/BaseAccount.sol",
+      "Invalid compilation: \nInvalid solc compilation Error: Source file requires different compiler version (current compiler "
+    ],
+    [
+      "/Users/chenting/aa-sentry/datasets/aa4337_large_prod/sources/USP-Token/packages/contracts/lib/account-abstraction/contracts/test/TestWarmColdAccount.sol",
+      "Invalid compilation: \nInvalid solc compilation Error: Source file requires different compiler version (current compiler "
+    ],
+    [
+      "/Users/chenting/aa-sentry/datasets/aa4337_large_prod/sources/USP-Token/packages/contracts/lib/account-abstraction/contracts/test/TestRevertAccount.sol",
+      "Invalid compilation: \nInvalid solc compilation Error: Source file requires different compiler version (current compiler "
+    ],
+    [
+      "/Users/chenting/aa-sentry/datasets/aa4337_large_prod/sources/USP-Token/packages/contracts/lib/account-abstraction/contracts/test/MaliciousAccount.sol",
+      "Invalid compilation: \nInvalid solc compilation Error: Source file requires different compiler version (current compiler "
+    ],
+    [
+      "/Users/chenting/aa-sentry/datasets/aa4337_large_prod/sources/USP-Token/packages/contracts/lib/openzeppelin-contracts/contracts/mocks/account/modules/ERC7579Mock.sol",
+      "Invalid compilation: \nInvalid solc compilation Error: Source file requires different compiler version (current compiler "
+    ],
+    [
+      "/Users/chenting/aa-sentry/datasets/aa4337_large_prod/sources/aa-coffee-shop/src/SimpleAccount.sol",
+      "Invalid compilation: \nInvalid solc compilation Error: Source file requires different compiler version (current compiler "
+    ],
+    [
+      "/Users/chenting/aa-sentry/datasets/aa4337_large_prod/sources/aa-hc-example/contracts/lib/account-abstraction/contracts/core/BaseAccount.sol",
+      "Invalid compilation: \nInvalid solc compilation Error: Source file requires different compiler version (current compiler "
+    ],
+    [
+      "/Users/chenting/aa-sentry/datasets/aa4337_large_prod/sources/aa-hc-example/contracts/lib/account-abstraction/contracts/test/TestWarmColdAccount.sol",
+      "Invalid compilation: \nInvalid solc compilation Error: Source file requires different compiler version (current compiler "
+    ],
+    [
+      "/Users/chenting/aa-sentry/datasets/aa4337_large_prod/sources/aa-hc-example/contracts/lib/account-abstraction/contracts/test/TestRevertAccount.sol",
+      "Invalid compilation: \nInvalid solc compilation Error: Source file requires different compiler version (current compiler "
+    ],
+    [
+      "/Users/chenting/aa-sentry/datasets/aa4337_large_prod/sources/aa-hc-example/contracts/lib/account-abstraction/contracts/test/MaliciousAccount.sol",
+      "Invalid compilation: \nInvalid solc compilation Error: Source file requires different compiler version (current compiler "
+    ]
+  ],
+  "rows": [
+    {
+      "variant": "full",
+      "display": "Full Aegis",
+      "tp": 72,
+      "fp": 0,
+      "fn": 0,
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0,
+      "precision_pct": 100.0,
+      "recall_pct": 100.0,
+      "f1_pct": 100.0
+    },
+    {
+      "variant": "no_caller_binding",
+      "display": "Abl-A w/o Caller-Binding Channel",
+      "tp": 72,
+      "fp": 0,
+      "fn": 0,
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0,
+      "precision_pct": 100.0,
+      "recall_pct": 100.0,
+      "f1_pct": 100.0
+    },
+    {
+      "variant": "no_hash_provenance",
+      "display": "Abl-A w/o Hash-Provenance Channel",
+      "tp": 72,
+      "fp": 0,
+      "fn": 0,
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0,
+      "precision_pct": 100.0,
+      "recall_pct": 100.0,
+      "f1_pct": 100.0
+    },
+    {
+      "variant": "no_return_obligation",
+      "display": "Abl-A w/o Return-Obligation Channel",
+      "tp": 54,
+      "fp": 0,
+      "fn": 18,
+      "precision": 1.0,
+      "recall": 0.75,
+      "f1": 0.8571428571428571,
+      "precision_pct": 100.0,
+      "recall_pct": 75.0,
+      "f1_pct": 85.71
+    },
+    {
+      "variant": "no_nonce_progress",
+      "display": "Abl-A w/o Nonce-Progress Channel",
+      "tp": 72,
+      "fp": 0,
+      "fn": 0,
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0,
+      "precision_pct": 100.0,
+      "recall_pct": 100.0,
+      "f1_pct": 100.0
+    },
+    {
+      "variant": "no_template_exclusion",
+      "display": "Abl-A w/o Template/Delegation Exclusion Channel",
+      "tp": 72,
+      "fp": 30,
+      "fn": 0,
+      "precision": 0.7058823529411765,
+      "recall": 1.0,
+      "f1": 0.8275862068965517,
+      "precision_pct": 70.59,
+      "recall_pct": 100.0,
+      "f1_pct": 82.76
+    },
+    {
+      "variant": "structural_only",
+      "display": "Abl-B Structural IR Only",
+      "tp": 38,
+      "fp": 113,
+      "fn": 34,
+      "precision": 0.25165562913907286,
+      "recall": 0.5277777777777778,
+      "f1": 0.34080717488789236,
+      "precision_pct": 25.17,
+      "recall_pct": 52.78,
+      "f1_pct": 34.08
+    },
+    {
+      "variant": "pattern_proxy",
+      "display": "Abl-B Pattern Proxy",
+      "tp": 18,
+      "fp": 49,
+      "fn": 54,
+      "precision": 0.26865671641791045,
+      "recall": 0.25,
+      "f1": 0.2589928057553957,
+      "precision_pct": 26.87,
+      "recall_pct": 25.0,
+      "f1_pct": 25.9
+    }
+  ]
+}
