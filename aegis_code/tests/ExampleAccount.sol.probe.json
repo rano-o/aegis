@@ -1,0 +1,52 @@
+{
+  "target": "/Users/chenting/aa-sentry/datasets/aa4337_large_prod/sources/entrypoint-hash-poc/src/ExampleAccount.sol",
+  "total_findings": 1,
+  "summary": {
+    "VU004": 1
+  },
+  "findings": [
+    {
+      "rule_id": "VU004",
+      "category": "validateUserOp",
+      "severity": "medium",
+      "contract": "ExampleAccount",
+      "function": "validateUserOp",
+      "file": "/Users/chenting/aa-sentry/datasets/aa4337_large_prod/sources/entrypoint-hash-poc/src/ExampleAccount.sol",
+      "lines": [
+        51,
+        52,
+        53,
+        54,
+        55,
+        56,
+        57,
+        58,
+        59,
+        60,
+        61,
+        62,
+        63,
+        64,
+        65,
+        66,
+        67,
+        68,
+        69,
+        70,
+        71,
+        72,
+        73,
+        74,
+        75,
+        76,
+        77,
+        78,
+        79,
+        80,
+        81
+      ],
+      "message": "validateUserOp likely fails to bind verification to a hash-like argument.",
+      "evidence": "call@node 3: recover | call@node 3: recover(hash, REF_121) | body@global: recomputed hash participates in auth path || function validateUserOp(UserOperation calldata userOp, bytes32, uint256 missingAccountFunds) external override virtual returns (uint256) { _requireFromEntryPoint(); bytes32 hash = keccak256( abi.encode( userOp.sender, userOp.nonce, userOp.i"
+    }
+  ]
+}
