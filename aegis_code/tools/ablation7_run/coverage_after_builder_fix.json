@@ -1,0 +1,27 @@
+{
+  "ok": 285,
+  "fail": 5,
+  "total": 290,
+  "fails": [
+    {
+      "file": "/Users/chenting/aa-sentry/datasets/aa4337_large_prod/sources/boost-accounts/src/validators/EOAValidator.sol",
+      "stderr": "atasets/aa4337_large_prod/sources/openzeppelin-contracts/contracts/utils/math\", \"/Users/chenting/aa-sentry/datasets/aa4337_large_prod/sources/safeSocial/lib/chainlink-brownie-contracts/contracts/src/v0.8/shared/interfaces\", \"/Users/chenting/aa-sentry/datasets/aa4337_large_prod/sources/safeSocial/lib/chainlink-brownie-contracts/contracts/src/v0.8/vendor/@eth-optimism/contracts-bedrock/v0.17.3/src/libraries\", \"/Users/chenting/aa-sentry/datasets/aa4337_large_prod/sources/uniswap-v3-core/contracts\", \"/Users/chenting/aa-sentry/datasets/aa4337_large_prod/sources/uniswap-v3-periphery/contracts\".\n --> datasets/aa4337_large_prod/sources/boost-accounts/lib/account-abstraction/contracts/interfaces/IAccount.sol:4:1:\n  |\n4 | import \"./PackedUserOperation.sol\";\n  | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n\n\n"
+    },
+    {
+      "file": "/Users/chenting/aa-sentry/datasets/aa4337_large_prod/sources/erc-4337-devnet/zerodev/kernel/0.3.2/src/Kernel.sol",
+      "stderr": "rs/chenting/aa-sentry/datasets/aa4337_large_prod/sources/ithaca-account/lib/solady/src/accounts\", \"/Users/chenting/aa-sentry/datasets/aa4337_large_prod/sources/openzeppelin-compat\", \"/Users/chenting/aa-sentry/datasets/aa4337_large_prod/sources/openzeppelin-compat/contracts\", \"/Users/chenting/aa-sentry/datasets/aa4337_large_prod/sources/openzeppelin-compat/contracts/security\", \"/Users/chenting/aa-sentry/datasets/aa4337_large_prod/sources/uniswap-v3-core/contracts\", \"/Users/chenting/aa-sentry/datasets/aa4337_large_prod/sources/uniswap-v3-periphery/contracts\".\n --> datasets/aa4337_large_prod/sources/erc-4337-devnet/zerodev/kernel/0.3.2/src/utils/ExecLib.sol:5:1:\n  |\n5 | import {LibERC7579} from \"solady/accounts/LibERC7579.sol\";\n  | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n\n\n"
+    },
+    {
+      "file": "/Users/chenting/aa-sentry/datasets/aa4337_large_prod/sources/kernel/src/Kernel.sol",
+      "stderr": "ntry/datasets/aa4337_large_prod/sources/kernel/src/core\", \"/Users/chenting/aa-sentry/datasets/aa4337_large_prod/sources/kernel/src/interfaces\", \"/Users/chenting/aa-sentry/datasets/aa4337_large_prod/sources/kernel/src/types\", \"/Users/chenting/aa-sentry/datasets/aa4337_large_prod/sources/kernel/src/utils\", \"/Users/chenting/aa-sentry/datasets/aa4337_large_prod/sources/openzeppelin-compat/contracts/security\", \"/Users/chenting/aa-sentry/datasets/aa4337_large_prod/sources/uniswap-v3-core/contracts\", \"/Users/chenting/aa-sentry/datasets/aa4337_large_prod/sources/uniswap-v3-periphery/contracts\".\n --> datasets/aa4337_large_prod/sources/kernel/src/utils/ExecLib.sol:5:1:\n  |\n5 | import {LibERC7579} from \"solady/accounts/LibERC7579.sol\";\n  | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n\n\n"
+    },
+    {
+      "file": "/Users/chenting/aa-sentry/datasets/aa4337_large_prod/sources/kernel/src/validator/MultiChainValidator.sol",
+      "stderr": "/src\", \"/Users/chenting/aa-sentry/datasets/aa4337_large_prod/sources/kernel/src/interfaces\", \"/Users/chenting/aa-sentry/datasets/aa4337_large_prod/sources/kernel/src/types\", \"/Users/chenting/aa-sentry/datasets/aa4337_large_prod/sources/openzeppelin-compat/contracts/security\", \"/Users/chenting/aa-sentry/datasets/aa4337_large_prod/sources/soul-wallet-contract/lib/solady/src/utils\", \"/Users/chenting/aa-sentry/datasets/aa4337_large_prod/sources/uniswap-v3-core/contracts\", \"/Users/chenting/aa-sentry/datasets/aa4337_large_prod/sources/uniswap-v3-periphery/contracts\".\n --> datasets/aa4337_large_prod/sources/kernel/src/validator/MultiChainValidator.sol:6:1:\n  |\n6 | import {MerkleProofLib} from \"solady/utils/MerkleProofLib.sol\";\n  | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n\n\n"
+    },
+    {
+      "file": "/Users/chenting/aa-sentry/datasets/aa4337_large_prod/sources/nexus/contracts/mocks/MockValidator_7739v2.sol",
+      "stderr": "ontracts/contracts/utils\", \"/Users/chenting/aa-sentry/datasets/aa4337_large_prod/sources/openzeppelin-contracts/contracts/utils/cryptography\", \"/Users/chenting/aa-sentry/datasets/aa4337_large_prod/sources/openzeppelin-contracts/contracts/utils/math\", \"/Users/chenting/aa-sentry/datasets/aa4337_large_prod/sources/soul-wallet-contract/lib/solady/src/utils\", \"/Users/chenting/aa-sentry/datasets/aa4337_large_prod/sources/uniswap-v3-core/contracts\", \"/Users/chenting/aa-sentry/datasets/aa4337_large_prod/sources/uniswap-v3-periphery/contracts\".\n --> datasets/aa4337_large_prod/sources/nexus/contracts/mocks/MockValidator_7739v2.sol:9:1:\n  |\n9 | import { SignatureCheckerLib } from \"solady/utils/SignatureCheckerLib.sol\";\n  | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n\n\n"
+    }
+  ]
+}

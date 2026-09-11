@@ -1,0 +1,36 @@
+{
+  "target": "/Users/chenting/aa-sentry/datasets/aa4337_large_prod/sources/bundler-spec-tests/tests/contracts/TestFakeWalletToken.sol",
+  "total_findings": 1,
+  "summary": {
+    "VU007": 1
+  },
+  "findings": [
+    {
+      "rule_id": "VU007",
+      "category": "validateUserOp",
+      "severity": "medium",
+      "contract": "TestFakeWalletToken",
+      "function": "validateUserOp",
+      "file": "/Users/chenting/aa-sentry/datasets/aa4337_large_prod/sources/bundler-spec-tests/tests/contracts/TestFakeWalletToken.sol",
+      "lines": [
+        32,
+        33,
+        34,
+        35,
+        36,
+        37,
+        38,
+        39,
+        40,
+        41,
+        42,
+        43,
+        44,
+        45,
+        46
+      ],
+      "message": "validateUserOp may miss strict caller binding to trusted EntryPoint flow.",
+      "evidence": "function validateUserOp(PackedUserOperation calldata userOp, bytes32, uint256 missingWalletFunds) public override returns (uint256 validationData) { if (missingWalletFunds>0) { msg.sender.call{value:missingWalletFunds}(\"\"); } if (userOp.cal"
+    }
+  ]
+}

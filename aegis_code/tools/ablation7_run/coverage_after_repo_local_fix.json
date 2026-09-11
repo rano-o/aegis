@@ -1,0 +1,11 @@
+{
+  "ok": 289,
+  "fail": 1,
+  "total": 290,
+  "fails": [
+    {
+      "file": "/Users/chenting/aa-sentry/datasets/aa4337_large_prod/sources/boost-accounts/src/validators/EOAValidator.sol",
+      "stderr": "enting/aa-sentry/datasets/aa4337_large_prod/sources/erc4337-validation/test/utils\", \"/Users/chenting/aa-sentry/datasets/aa4337_large_prod/sources/gnosis-safe-compat/contracts\", \"/Users/chenting/aa-sentry/datasets/aa4337_large_prod/sources/openzeppelin-compat/contracts/security\", \"/Users/chenting/aa-sentry/datasets/aa4337_large_prod/sources/safeSocial/lib/chainlink-brownie-contracts/contracts/src/v0.8/shared/interfaces\", \"/Users/chenting/aa-sentry/datasets/aa4337_large_prod/sources/safeSocial/lib/chainlink-brownie-contracts/contracts/src/v0.8/vendor/@eth-optimism/contracts-bedrock/v0.17.3/src/libraries\", \"/Users/chenting/aa-sentry/datasets/aa4337_large_prod/sources/uniswap-v3-core/contracts\", \"/Users/chenting/aa-sentry/datasets/aa4337_large_prod/sources/uniswap-v3-periphery/contracts\".\n --> datasets/aa4337_large_prod/sources/boost-accounts/lib/account-abstraction/contracts/interfaces/IAccount.sol:4:1:\n  |\n4 | import \"./PackedUserOperation.sol\";\n  | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n\n\n"
+    }
+  ]
+}

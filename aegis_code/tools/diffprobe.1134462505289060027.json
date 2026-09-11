@@ -1,0 +1,31 @@
+{
+  "target": "/Users/chenting/aa-sentry/datasets/aa4337_large_prod/sources/bundler/packages/bundler/contracts/tests/TestRuleAccount.sol",
+  "total_findings": 1,
+  "summary": {
+    "VU007": 1
+  },
+  "findings": [
+    {
+      "rule_id": "VU007",
+      "category": "validateUserOp",
+      "severity": "medium",
+      "contract": "TestRuleAccount",
+      "function": "validateUserOp",
+      "file": "/Users/chenting/aa-sentry/datasets/aa4337_large_prod/sources/bundler/packages/bundler/contracts/tests/TestRuleAccount.sol",
+      "lines": [
+        46,
+        47,
+        48,
+        49,
+        50,
+        51,
+        52,
+        53,
+        54,
+        55
+      ],
+      "message": "validateUserOp may miss strict caller binding to trusted EntryPoint flow.",
+      "evidence": "function validateUserOp(PackedUserOperation calldata userOp, bytes32, uint256 missingAccountFunds) external virtual override returns (uint256) { if (missingAccountFunds > 0) { /* solhint-disable-next-line avoid-low-level-calls */ (bool succ"
+    }
+  ]
+}

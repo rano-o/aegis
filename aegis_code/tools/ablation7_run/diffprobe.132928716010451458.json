@@ -1,0 +1,108 @@
+{
+  "target": "/Users/chenting/aa-sentry/datasets/aa4337_large_prod/sources/bundler/packages/bundler/contracts/tests/cross_sender_state/TestFakeWalletToken.sol",
+  "total_findings": 4,
+  "summary": {
+    "VU001": 1,
+    "VU002": 1,
+    "VU003": 1,
+    "VU007": 1
+  },
+  "findings": [
+    {
+      "rule_id": "VU001",
+      "category": "validateUserOp",
+      "severity": "high",
+      "contract": "TestFakeWalletToken",
+      "function": "validateUserOp",
+      "file": "/Users/chenting/aa-sentry/datasets/aa4337_large_prod/sources/bundler/packages/bundler/contracts/tests/cross_sender_state/TestFakeWalletToken.sol",
+      "lines": [
+        32,
+        33,
+        34,
+        35,
+        36,
+        37,
+        38,
+        39,
+        40,
+        41,
+        42,
+        43
+      ],
+      "message": "validateUserOp appears to miss robust signature/authorization checks.",
+      "evidence": "function validateUserOp(PackedUserOperation calldata userOp, bytes32, uint256) public override returns (uint256 validationData) { if (userOp.callData.length == 20) { // the first UserOperation sets the second sender's \"associated\" balance t"
+    },
+    {
+      "rule_id": "VU002",
+      "category": "validateUserOp",
+      "severity": "high",
+      "contract": "TestFakeWalletToken",
+      "function": "validateUserOp",
+      "file": "/Users/chenting/aa-sentry/datasets/aa4337_large_prod/sources/bundler/packages/bundler/contracts/tests/cross_sender_state/TestFakeWalletToken.sol",
+      "lines": [
+        32,
+        33,
+        34,
+        35,
+        36,
+        37,
+        38,
+        39,
+        40,
+        41,
+        42,
+        43
+      ],
+      "message": "validateUserOp does not reference nonce; replay protection may be incomplete.",
+      "evidence": "function validateUserOp(PackedUserOperation calldata userOp, bytes32, uint256) public override returns (uint256 validationData) { if (userOp.callData.length == 20) { // the first UserOperation sets the second sender's \"associated\" balance t"
+    },
+    {
+      "rule_id": "VU003",
+      "category": "validateUserOp",
+      "severity": "medium",
+      "contract": "TestFakeWalletToken",
+      "function": "validateUserOp",
+      "file": "/Users/chenting/aa-sentry/datasets/aa4337_large_prod/sources/bundler/packages/bundler/contracts/tests/cross_sender_state/TestFakeWalletToken.sol",
+      "lines": [
+        32,
+        33,
+        34,
+        35,
+        36,
+        37,
+        38,
+        39,
+        40,
+        41,
+        42,
+        43
+      ],
+      "message": "validateUserOp contains a constant-success return path without authentication/hash-binding semantics.",
+      "evidence": "return@node 6: 0 | return@node 6: 0 || function validateUserOp(PackedUserOperation calldata userOp, bytes32, uint256) public override returns (uint256 validationData) { if (userOp.callData.length == 20) { // the first UserOperation sets the second sender's \"associated\" balance t"
+    },
+    {
+      "rule_id": "VU007",
+      "category": "validateUserOp",
+      "severity": "medium",
+      "contract": "TestFakeWalletToken",
+      "function": "validateUserOp",
+      "file": "/Users/chenting/aa-sentry/datasets/aa4337_large_prod/sources/bundler/packages/bundler/contracts/tests/cross_sender_state/TestFakeWalletToken.sol",
+      "lines": [
+        32,
+        33,
+        34,
+        35,
+        36,
+        37,
+        38,
+        39,
+        40,
+        41,
+        42,
+        43
+      ],
+      "message": "validateUserOp may miss strict caller binding to trusted EntryPoint flow.",
+      "evidence": "function validateUserOp(PackedUserOperation calldata userOp, bytes32, uint256) public override returns (uint256 validationData) { if (userOp.callData.length == 20) { // the first UserOperation sets the second sender's \"associated\" balance t"
+    }
+  ]
+}

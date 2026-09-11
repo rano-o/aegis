@@ -1,0 +1,62 @@
+{
+  "target": "/Users/chenting/aa-sentry/datasets/aa4337_large_prod/sources/singleton-paymaster/lib/account-abstraction-v7/contracts/test/TestRevertAccount.sol",
+  "total_findings": 3,
+  "summary": {
+    "VU001": 1,
+    "VU002": 1,
+    "VU007": 1
+  },
+  "findings": [
+    {
+      "rule_id": "VU001",
+      "category": "validateUserOp",
+      "severity": "high",
+      "contract": "TestRevertAccount",
+      "function": "validateUserOp",
+      "file": "/Users/chenting/aa-sentry/datasets/aa4337_large_prod/sources/singleton-paymaster/lib/account-abstraction-v7/contracts/test/TestRevertAccount.sol",
+      "lines": [
+        12,
+        13,
+        14,
+        15,
+        16
+      ],
+      "message": "validateUserOp appears to miss robust signature/authorization checks.",
+      "evidence": "function validateUserOp(PackedUserOperation calldata, bytes32, uint256 missingAccountFunds) external override returns (uint256 validationData) { ep.depositTo{value : missingAccountFunds}(address(this)); return SIG_VALIDATION_SUCCESS; }"
+    },
+    {
+      "rule_id": "VU002",
+      "category": "validateUserOp",
+      "severity": "high",
+      "contract": "TestRevertAccount",
+      "function": "validateUserOp",
+      "file": "/Users/chenting/aa-sentry/datasets/aa4337_large_prod/sources/singleton-paymaster/lib/account-abstraction-v7/contracts/test/TestRevertAccount.sol",
+      "lines": [
+        12,
+        13,
+        14,
+        15,
+        16
+      ],
+      "message": "validateUserOp does not reference nonce; replay protection may be incomplete.",
+      "evidence": "function validateUserOp(PackedUserOperation calldata, bytes32, uint256 missingAccountFunds) external override returns (uint256 validationData) { ep.depositTo{value : missingAccountFunds}(address(this)); return SIG_VALIDATION_SUCCESS; }"
+    },
+    {
+      "rule_id": "VU007",
+      "category": "validateUserOp",
+      "severity": "medium",
+      "contract": "TestRevertAccount",
+      "function": "validateUserOp",
+      "file": "/Users/chenting/aa-sentry/datasets/aa4337_large_prod/sources/singleton-paymaster/lib/account-abstraction-v7/contracts/test/TestRevertAccount.sol",
+      "lines": [
+        12,
+        13,
+        14,
+        15,
+        16
+      ],
+      "message": "validateUserOp may miss strict caller binding to trusted EntryPoint flow.",
+      "evidence": "function validateUserOp(PackedUserOperation calldata, bytes32, uint256 missingAccountFunds) external override returns (uint256 validationData) { ep.depositTo{value : missingAccountFunds}(address(this)); return SIG_VALIDATION_SUCCESS; }"
+    }
+  ]
+}
