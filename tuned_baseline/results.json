@@ -1,0 +1,5873 @@
+{
+  "per_family": {
+    "VU001": {
+      "TP": 128,
+      "FP": 61,
+      "FN": 0,
+      "TN": 101,
+      "Precision": 67.72,
+      "Recall": 100.0,
+      "F1": 80.76
+    },
+    "VU002": {
+      "TP": 86,
+      "FP": 73,
+      "FN": 0,
+      "TN": 131,
+      "Precision": 54.09,
+      "Recall": 100.0,
+      "F1": 70.2
+    },
+    "VU003": {
+      "TP": 50,
+      "FP": 9,
+      "FN": 78,
+      "TN": 153,
+      "Precision": 84.75,
+      "Recall": 39.06,
+      "F1": 53.48
+    },
+    "VU004": {
+      "TP": 1,
+      "FP": 3,
+      "FN": 0,
+      "TN": 286,
+      "Precision": 25.0,
+      "Recall": 100.0,
+      "F1": 40.0
+    },
+    "VU005": {
+      "TP": 42,
+      "FP": 87,
+      "FN": 0,
+      "TN": 161,
+      "Precision": 32.56,
+      "Recall": 100.0,
+      "F1": 49.12
+    },
+    "VU007": {
+      "TP": 129,
+      "FP": 80,
+      "FN": 0,
+      "TN": 81,
+      "Precision": 61.72,
+      "Recall": 100.0,
+      "F1": 76.33
+    }
+  },
+  "macro": {
+    "Precision": 54.31,
+    "Recall": 89.84,
+    "F1": 61.65
+  },
+  "overall": {
+    "TP": 436,
+    "FP": 313,
+    "FN": 78,
+    "Precision": 58.21,
+    "Recall": 84.82,
+    "F1": 69.04
+  },
+  "per_contract": [
+    {
+      "file": "AA_ERC-4337/contracts/src/core/BaseAccount.sol",
+      "gt": {
+        "VU001": false,
+        "VU002": false,
+        "VU003": false,
+        "VU004": false,
+        "VU005": false,
+        "VU007": false
+      },
+      "pred": {
+        "VU001": false,
+        "VU002": false,
+        "VU003": false,
+        "VU004": false,
+        "VU005": true,
+        "VU007": false
+      },
+      "errors": {}
+    },
+    {
+      "file": "AA_ERC-4337/contracts/src/test/TestWarmColdAccount.sol",
+      "gt": {
+        "VU001": true,
+        "VU002": false,
+        "VU003": true,
+        "VU004": false,
+        "VU005": true,
+        "VU007": true
+      },
+      "pred": {
+        "VU001": true,
+        "VU002": false,
+        "VU003": true,
+        "VU004": false,
+        "VU005": true,
+        "VU007": true
+      },
+      "errors": {}
+    },
+    {
+      "file": "AA_ERC-4337/contracts/src/test/TestRevertAccount.sol",
+      "gt": {
+        "VU001": true,
+        "VU002": true,
+        "VU003": true,
+        "VU004": false,
+        "VU005": false,
+        "VU007": true
+      },
+      "pred": {
+        "VU001": true,
+        "VU002": true,
+        "VU003": true,
+        "VU004": false,
+        "VU005": false,
+        "VU007": true
+      },
+      "errors": {}
+    },
+    {
+      "file": "AA_ERC-4337/contracts/src/test/MaliciousAccount.sol",
+      "gt": {
+        "VU001": true,
+        "VU002": true,
+        "VU003": true,
+        "VU004": false,
+        "VU005": false,
+        "VU007": true
+      },
+      "pred": {
+        "VU001": true,
+        "VU002": true,
+        "VU003": true,
+        "VU004": false,
+        "VU005": false,
+        "VU007": true
+      },
+      "errors": {}
+    },
+    {
+      "file": "AxenaWallet/axena-contracts/lib/account-abstraction/contracts/core/BaseAccount.sol",
+      "gt": {
+        "VU001": false,
+        "VU002": false,
+        "VU003": false,
+        "VU004": false,
+        "VU005": false,
+        "VU007": false
+      },
+      "pred": {
+        "VU001": false,
+        "VU002": false,
+        "VU003": false,
+        "VU004": false,
+        "VU005": true,
+        "VU007": false
+      },
+      "errors": {}
+    },
+    {
+      "file": "AxenaWallet/axena-contracts/lib/account-abstraction/contracts/test/TestWarmColdAccount.sol",
+      "gt": {
+        "VU001": true,
+        "VU002": false,
+        "VU003": true,
+        "VU004": false,
+        "VU005": true,
+        "VU007": true
+      },
+      "pred": {
+        "VU001": true,
+        "VU002": false,
+        "VU003": false,
+        "VU004": false,
+        "VU005": true,
+        "VU007": true
+      },
+      "errors": {}
+    },
+    {
+      "file": "AxenaWallet/axena-contracts/lib/account-abstraction/contracts/test/TestRevertAccount.sol",
+      "gt": {
+        "VU001": true,
+        "VU002": true,
+        "VU003": true,
+        "VU004": false,
+        "VU005": false,
+        "VU007": true
+      },
+      "pred": {
+        "VU001": true,
+        "VU002": true,
+        "VU003": false,
+        "VU004": false,
+        "VU005": false,
+        "VU007": true
+      },
+      "errors": {}
+    },
+    {
+      "file": "AxenaWallet/axena-contracts/lib/account-abstraction/contracts/test/MaliciousAccount.sol",
+      "gt": {
+        "VU001": true,
+        "VU002": true,
+        "VU003": true,
+        "VU004": false,
+        "VU005": false,
+        "VU007": true
+      },
+      "pred": {
+        "VU001": true,
+        "VU002": true,
+        "VU003": false,
+        "VU004": false,
+        "VU005": false,
+        "VU007": true
+      },
+      "errors": {}
+    },
+    {
+      "file": "AxenaWallet/axena-contracts/lib/openzeppelin-contracts/contracts/interfaces/draft-IERC7579.sol",
+      "gt": {
+        "VU001": false,
+        "VU002": false,
+        "VU003": false,
+        "VU004": false,
+        "VU005": false,
+        "VU007": false
+      },
+      "pred": {
+        "VU001": true,
+        "VU002": true,
+        "VU003": false,
+        "VU004": false,
+        "VU005": false,
+        "VU007": true
+      },
+      "errors": {}
+    },
+    {
+      "file": "AxenaWallet/axena-contracts/src/core/AgentWallet.sol",
+      "gt": {
+        "VU001": false,
+        "VU002": false,
+        "VU003": false,
+        "VU004": false,
+        "VU005": false,
+        "VU007": false
+      },
+      "pred": {
+        "VU001": false,
+        "VU002": false,
+        "VU003": false,
+        "VU004": false,
+        "VU005": true,
+        "VU007": false
+      },
+      "errors": {}
+    },
+    {
+      "file": "AxenaWallet/axena-contracts/src/modules/validators/SessionKeyValidator.sol",
+      "gt": {
+        "VU001": false,
+        "VU002": false,
+        "VU003": false,
+        "VU004": false,
+        "VU005": false,
+        "VU007": false
+      },
+      "pred": {
+        "VU001": true,
+        "VU002": false,
+        "VU003": false,
+        "VU004": false,
+        "VU005": true,
+        "VU007": true
+      },
+      "errors": {}
+    },
+    {
+      "file": "AxenaWallet/axena-contracts/src/modules/validators/ECDSAValidator.sol",
+      "gt": {
+        "VU001": false,
+        "VU002": false,
+        "VU003": false,
+        "VU004": false,
+        "VU005": false,
+        "VU007": false
+      },
+      "pred": {
+        "VU001": true,
+        "VU002": true,
+        "VU003": false,
+        "VU004": false,
+        "VU005": false,
+        "VU007": true
+      },
+      "errors": {}
+    },
+    {
+      "file": "EIP-4337-AA/src/EIP_4337_AA.sol",
+      "gt": {
+        "VU001": false,
+        "VU002": false,
+        "VU003": false,
+        "VU004": false,
+        "VU005": false,
+        "VU007": false
+      },
+      "pred": {
+        "VU001": false,
+        "VU002": true,
+        "VU003": false,
+        "VU004": false,
+        "VU005": false,
+        "VU007": true
+      },
+      "errors": {}
+    },
+    {
+      "file": "EIP-4337-Alt-Mempool/contracts/core/BaseAccount.sol",
+      "gt": {
+        "VU001": false,
+        "VU002": false,
+        "VU003": false,
+        "VU004": false,
+        "VU005": false,
+        "VU007": false
+      },
+      "pred": {
+        "VU001": false,
+        "VU002": true,
+        "VU003": false,
+        "VU004": false,
+        "VU005": false,
+        "VU007": false
+      },
+      "errors": {}
+    },
+    {
+      "file": "ERC-4337/contracts/core/BaseAccount.sol",
+      "gt": {
+        "VU001": false,
+        "VU002": false,
+        "VU003": false,
+        "VU004": false,
+        "VU005": false,
+        "VU007": false
+      },
+      "pred": {
+        "VU001": false,
+        "VU002": false,
+        "VU003": false,
+        "VU004": false,
+        "VU005": true,
+        "VU007": false
+      },
+      "errors": {}
+    },
+    {
+      "file": "ERC-4337-/contracts/core/BaseAccount.sol",
+      "gt": {
+        "VU001": false,
+        "VU002": false,
+        "VU003": false,
+        "VU004": false,
+        "VU005": false,
+        "VU007": false
+      },
+      "pred": {
+        "VU001": false,
+        "VU002": false,
+        "VU003": false,
+        "VU004": false,
+        "VU005": true,
+        "VU007": false
+      },
+      "errors": {}
+    },
+    {
+      "file": "ERC-4337-/contracts/test/TestWarmColdAccount.sol",
+      "gt": {
+        "VU001": true,
+        "VU002": false,
+        "VU003": true,
+        "VU004": false,
+        "VU005": true,
+        "VU007": true
+      },
+      "pred": {
+        "VU001": true,
+        "VU002": false,
+        "VU003": false,
+        "VU004": false,
+        "VU005": true,
+        "VU007": true
+      },
+      "errors": {}
+    },
+    {
+      "file": "ERC-4337-/contracts/test/TestRevertAccount.sol",
+      "gt": {
+        "VU001": true,
+        "VU002": true,
+        "VU003": true,
+        "VU004": false,
+        "VU005": false,
+        "VU007": true
+      },
+      "pred": {
+        "VU001": true,
+        "VU002": true,
+        "VU003": false,
+        "VU004": false,
+        "VU005": false,
+        "VU007": true
+      },
+      "errors": {}
+    },
+    {
+      "file": "ERC-4337-/contracts/test/MaliciousAccount.sol",
+      "gt": {
+        "VU001": true,
+        "VU002": true,
+        "VU003": true,
+        "VU004": false,
+        "VU005": false,
+        "VU007": true
+      },
+      "pred": {
+        "VU001": true,
+        "VU002": true,
+        "VU003": false,
+        "VU004": false,
+        "VU005": false,
+        "VU007": true
+      },
+      "errors": {}
+    },
+    {
+      "file": "ERC-4337-contracts/core/BaseAccount.sol",
+      "gt": {
+        "VU001": false,
+        "VU002": false,
+        "VU003": false,
+        "VU004": false,
+        "VU005": false,
+        "VU007": false
+      },
+      "pred": {
+        "VU001": false,
+        "VU002": false,
+        "VU003": false,
+        "VU004": false,
+        "VU005": true,
+        "VU007": false
+      },
+      "errors": {}
+    },
+    {
+      "file": "ERC-4337-contracts/test/TestWarmColdAccount.sol",
+      "gt": {
+        "VU001": true,
+        "VU002": false,
+        "VU003": true,
+        "VU004": false,
+        "VU005": true,
+        "VU007": true
+      },
+      "pred": {
+        "VU001": true,
+        "VU002": false,
+        "VU003": false,
+        "VU004": false,
+        "VU005": true,
+        "VU007": true
+      },
+      "errors": {}
+    },
+    {
+      "file": "ERC-4337-contracts/test/TestRevertAccount.sol",
+      "gt": {
+        "VU001": true,
+        "VU002": true,
+        "VU003": true,
+        "VU004": false,
+        "VU005": false,
+        "VU007": true
+      },
+      "pred": {
+        "VU001": true,
+        "VU002": true,
+        "VU003": false,
+        "VU004": false,
+        "VU005": false,
+        "VU007": true
+      },
+      "errors": {}
+    },
+    {
+      "file": "ERC-4337-contracts/test/MaliciousAccount.sol",
+      "gt": {
+        "VU001": true,
+        "VU002": true,
+        "VU003": true,
+        "VU004": false,
+        "VU005": false,
+        "VU007": true
+      },
+      "pred": {
+        "VU001": true,
+        "VU002": true,
+        "VU003": false,
+        "VU004": false,
+        "VU005": false,
+        "VU007": true
+      },
+      "errors": {}
+    },
+    {
+      "file": "ERC-4337_ERC-6551_Demo/src/core/SimpleAccount.sol",
+      "gt": {
+        "VU001": false,
+        "VU002": false,
+        "VU003": false,
+        "VU004": false,
+        "VU005": false,
+        "VU007": false
+      },
+      "pred": {
+        "VU001": false,
+        "VU002": false,
+        "VU003": false,
+        "VU004": false,
+        "VU005": true,
+        "VU007": false
+      },
+      "errors": {}
+    },
+    {
+      "file": "ERC4337-Account-Abstraction/src/account/SmartAccount.sol",
+      "gt": {
+        "VU001": false,
+        "VU002": false,
+        "VU003": false,
+        "VU004": false,
+        "VU005": false,
+        "VU007": false
+      },
+      "pred": {
+        "VU001": false,
+        "VU002": false,
+        "VU003": true,
+        "VU004": false,
+        "VU005": true,
+        "VU007": false
+      },
+      "errors": {}
+    },
+    {
+      "file": "ERC4337_Example/contracts/core/BaseAccount.sol",
+      "gt": {
+        "VU001": false,
+        "VU002": false,
+        "VU003": false,
+        "VU004": false,
+        "VU005": false,
+        "VU007": false
+      },
+      "pred": {
+        "VU001": false,
+        "VU002": false,
+        "VU003": false,
+        "VU004": false,
+        "VU005": true,
+        "VU007": false
+      },
+      "errors": {}
+    },
+    {
+      "file": "ERC4337_Example/contracts/test/TestWarmColdAccount.sol",
+      "gt": {
+        "VU001": true,
+        "VU002": false,
+        "VU003": true,
+        "VU004": false,
+        "VU005": true,
+        "VU007": true
+      },
+      "pred": {
+        "VU001": true,
+        "VU002": false,
+        "VU003": true,
+        "VU004": false,
+        "VU005": true,
+        "VU007": true
+      },
+      "errors": {}
+    },
+    {
+      "file": "ERC4337_Example/contracts/test/TestRevertAccount.sol",
+      "gt": {
+        "VU001": true,
+        "VU002": true,
+        "VU003": true,
+        "VU004": false,
+        "VU005": false,
+        "VU007": true
+      },
+      "pred": {
+        "VU001": true,
+        "VU002": true,
+        "VU003": true,
+        "VU004": false,
+        "VU005": false,
+        "VU007": true
+      },
+      "errors": {}
+    },
+    {
+      "file": "ERC4337_Example/contracts/test/MaliciousAccount.sol",
+      "gt": {
+        "VU001": true,
+        "VU002": true,
+        "VU003": true,
+        "VU004": false,
+        "VU005": false,
+        "VU007": true
+      },
+      "pred": {
+        "VU001": true,
+        "VU002": true,
+        "VU003": true,
+        "VU004": false,
+        "VU005": false,
+        "VU007": true
+      },
+      "errors": {}
+    },
+    {
+      "file": "Flip-ERC4337-Account-Abstraction-wallet/Smart contracts/src/ERC4337/core/BaseAccount.sol",
+      "gt": {
+        "VU001": false,
+        "VU002": false,
+        "VU003": false,
+        "VU004": false,
+        "VU005": false,
+        "VU007": false
+      },
+      "pred": {
+        "VU001": true,
+        "VU002": false,
+        "VU003": false,
+        "VU004": false,
+        "VU005": true,
+        "VU007": false
+      },
+      "errors": {}
+    },
+    {
+      "file": "Flip-ERC4337-Account-Abstraction-wallet/Smart contracts/src/ERC4337/samples/gnosis/EIP4337Fallback.sol",
+      "gt": {
+        "VU001": false,
+        "VU002": false,
+        "VU003": false,
+        "VU004": false,
+        "VU005": false,
+        "VU007": false
+      },
+      "pred": {
+        "VU001": true,
+        "VU002": true,
+        "VU003": false,
+        "VU004": false,
+        "VU005": false,
+        "VU007": true
+      },
+      "errors": {}
+    },
+    {
+      "file": "Flip-ERC4337-Account-Abstraction-wallet/Smart contracts/src/ERC4337/samples/gnosis/EIP4337Manager.sol",
+      "gt": {
+        "VU001": false,
+        "VU002": false,
+        "VU003": false,
+        "VU004": false,
+        "VU005": false,
+        "VU007": false
+      },
+      "pred": {
+        "VU001": false,
+        "VU002": false,
+        "VU003": false,
+        "VU004": false,
+        "VU005": true,
+        "VU007": true
+      },
+      "errors": {}
+    },
+    {
+      "file": "Minimal_account_ERC4337_Smart_Contract_Wallet_Account_Abstraction/lib/account-abstraction/contracts/core/BaseAccount.sol",
+      "gt": {
+        "VU001": false,
+        "VU002": false,
+        "VU003": false,
+        "VU004": false,
+        "VU005": false,
+        "VU007": false
+      },
+      "pred": {
+        "VU001": false,
+        "VU002": false,
+        "VU003": false,
+        "VU004": false,
+        "VU005": true,
+        "VU007": false
+      },
+      "errors": {}
+    },
+    {
+      "file": "Minimal_account_ERC4337_Smart_Contract_Wallet_Account_Abstraction/lib/account-abstraction/contracts/test/TestWarmColdAccount.sol",
+      "gt": {
+        "VU001": true,
+        "VU002": false,
+        "VU003": true,
+        "VU004": false,
+        "VU005": true,
+        "VU007": true
+      },
+      "pred": {
+        "VU001": true,
+        "VU002": false,
+        "VU003": false,
+        "VU004": false,
+        "VU005": true,
+        "VU007": true
+      },
+      "errors": {}
+    },
+    {
+      "file": "Minimal_account_ERC4337_Smart_Contract_Wallet_Account_Abstraction/lib/account-abstraction/contracts/test/TestRevertAccount.sol",
+      "gt": {
+        "VU001": true,
+        "VU002": true,
+        "VU003": true,
+        "VU004": false,
+        "VU005": false,
+        "VU007": true
+      },
+      "pred": {
+        "VU001": true,
+        "VU002": true,
+        "VU003": false,
+        "VU004": false,
+        "VU005": false,
+        "VU007": true
+      },
+      "errors": {}
+    },
+    {
+      "file": "Minimal_account_ERC4337_Smart_Contract_Wallet_Account_Abstraction/lib/account-abstraction/contracts/test/MaliciousAccount.sol",
+      "gt": {
+        "VU001": true,
+        "VU002": true,
+        "VU003": true,
+        "VU004": false,
+        "VU005": false,
+        "VU007": true
+      },
+      "pred": {
+        "VU001": true,
+        "VU002": true,
+        "VU003": false,
+        "VU004": false,
+        "VU005": false,
+        "VU007": true
+      },
+      "errors": {}
+    },
+    {
+      "file": "Minimal_account_ERC4337_Smart_Contract_Wallet_Account_Abstraction/lib/openzeppelin-contracts/contracts/mocks/account/modules/ERC7579Mock.sol",
+      "gt": {
+        "VU001": false,
+        "VU002": false,
+        "VU003": false,
+        "VU004": false,
+        "VU005": false,
+        "VU007": false
+      },
+      "pred": {
+        "VU001": false,
+        "VU002": true,
+        "VU003": false,
+        "VU004": false,
+        "VU005": false,
+        "VU007": true
+      },
+      "errors": {}
+    },
+    {
+      "file": "Minimal_account_ERC4337_Smart_Contract_Wallet_Account_Abstraction/lib/openzeppelin-contracts/contracts/account/Account.sol",
+      "gt": {
+        "VU001": false,
+        "VU002": false,
+        "VU003": false,
+        "VU004": false,
+        "VU005": false,
+        "VU007": false
+      },
+      "pred": {
+        "VU001": true,
+        "VU002": true,
+        "VU003": true,
+        "VU004": false,
+        "VU005": false,
+        "VU007": true
+      },
+      "errors": {}
+    },
+    {
+      "file": "Minimal_account_ERC4337_Smart_Contract_Wallet_Account_Abstraction/lib/openzeppelin-contracts/contracts/interfaces/draft-IERC7579.sol",
+      "gt": {
+        "VU001": false,
+        "VU002": false,
+        "VU003": false,
+        "VU004": false,
+        "VU005": false,
+        "VU007": false
+      },
+      "pred": {
+        "VU001": true,
+        "VU002": true,
+        "VU003": false,
+        "VU004": false,
+        "VU005": false,
+        "VU007": true
+      },
+      "errors": {}
+    },
+    {
+      "file": "Minimal_account_ERC4337_Smart_Contract_Wallet_Account_Abstraction/src/ethereum/MinimalAcc.sol",
+      "gt": {
+        "VU001": false,
+        "VU002": false,
+        "VU003": false,
+        "VU004": false,
+        "VU005": false,
+        "VU007": true
+      },
+      "pred": {
+        "VU001": false,
+        "VU002": true,
+        "VU003": false,
+        "VU004": false,
+        "VU005": false,
+        "VU007": true
+      },
+      "errors": {}
+    },
+    {
+      "file": "Multify/foundry/node_modules/@account-abstraction/contracts/core/BaseAccount.sol",
+      "gt": {
+        "VU001": false,
+        "VU002": false,
+        "VU003": false,
+        "VU004": false,
+        "VU005": false,
+        "VU007": false
+      },
+      "pred": {
+        "VU001": false,
+        "VU002": false,
+        "VU003": false,
+        "VU004": false,
+        "VU005": true,
+        "VU007": false
+      },
+      "errors": {}
+    },
+    {
+      "file": "Multify/foundry/node_modules/@openzeppelin/contracts/account/Account.sol",
+      "gt": {
+        "VU001": false,
+        "VU002": false,
+        "VU003": false,
+        "VU004": false,
+        "VU005": false,
+        "VU007": false
+      },
+      "pred": {
+        "VU001": true,
+        "VU002": true,
+        "VU003": true,
+        "VU004": false,
+        "VU005": false,
+        "VU007": true
+      },
+      "errors": {}
+    },
+    {
+      "file": "Multify/foundry/node_modules/@openzeppelin/contracts/interfaces/draft-IERC7579.sol",
+      "gt": {
+        "VU001": false,
+        "VU002": false,
+        "VU003": false,
+        "VU004": false,
+        "VU005": false,
+        "VU007": false
+      },
+      "pred": {
+        "VU001": true,
+        "VU002": true,
+        "VU003": false,
+        "VU004": false,
+        "VU005": false,
+        "VU007": true
+      },
+      "errors": {}
+    },
+    {
+      "file": "Projeto-ERC-4337/lib/openzeppelin-contracts/contracts/interfaces/draft-IERC7579.sol",
+      "gt": {
+        "VU001": false,
+        "VU002": false,
+        "VU003": false,
+        "VU004": false,
+        "VU005": false,
+        "VU007": false
+      },
+      "pred": {
+        "VU001": true,
+        "VU002": true,
+        "VU003": false,
+        "VU004": false,
+        "VU005": false,
+        "VU007": true
+      },
+      "errors": {}
+    },
+    {
+      "file": "Somnia-DeFi-Wallet/eolia-contracts/contracts/core/BaseAccount.sol",
+      "gt": {
+        "VU001": false,
+        "VU002": false,
+        "VU003": false,
+        "VU004": false,
+        "VU005": false,
+        "VU007": false
+      },
+      "pred": {
+        "VU001": false,
+        "VU002": false,
+        "VU003": false,
+        "VU004": false,
+        "VU005": true,
+        "VU007": false
+      },
+      "errors": {}
+    },
+    {
+      "file": "USP-Token/packages/contracts/lib/account-abstraction/contracts/core/BaseAccount.sol",
+      "gt": {
+        "VU001": false,
+        "VU002": false,
+        "VU003": false,
+        "VU004": false,
+        "VU005": false,
+        "VU007": false
+      },
+      "pred": {
+        "VU001": false,
+        "VU002": false,
+        "VU003": false,
+        "VU004": false,
+        "VU005": true,
+        "VU007": false
+      },
+      "errors": {}
+    },
+    {
+      "file": "USP-Token/packages/contracts/lib/account-abstraction/contracts/test/TestWarmColdAccount.sol",
+      "gt": {
+        "VU001": true,
+        "VU002": false,
+        "VU003": true,
+        "VU004": false,
+        "VU005": true,
+        "VU007": true
+      },
+      "pred": {
+        "VU001": true,
+        "VU002": false,
+        "VU003": false,
+        "VU004": false,
+        "VU005": true,
+        "VU007": true
+      },
+      "errors": {}
+    },
+    {
+      "file": "USP-Token/packages/contracts/lib/account-abstraction/contracts/test/TestRevertAccount.sol",
+      "gt": {
+        "VU001": true,
+        "VU002": true,
+        "VU003": true,
+        "VU004": false,
+        "VU005": false,
+        "VU007": true
+      },
+      "pred": {
+        "VU001": true,
+        "VU002": true,
+        "VU003": false,
+        "VU004": false,
+        "VU005": false,
+        "VU007": true
+      },
+      "errors": {}
+    },
+    {
+      "file": "USP-Token/packages/contracts/lib/account-abstraction/contracts/test/MaliciousAccount.sol",
+      "gt": {
+        "VU001": true,
+        "VU002": true,
+        "VU003": true,
+        "VU004": false,
+        "VU005": false,
+        "VU007": true
+      },
+      "pred": {
+        "VU001": true,
+        "VU002": true,
+        "VU003": false,
+        "VU004": false,
+        "VU005": false,
+        "VU007": true
+      },
+      "errors": {}
+    },
+    {
+      "file": "USP-Token/packages/contracts/lib/openzeppelin-contracts/contracts/mocks/account/modules/ERC7579Mock.sol",
+      "gt": {
+        "VU001": false,
+        "VU002": false,
+        "VU003": false,
+        "VU004": false,
+        "VU005": false,
+        "VU007": false
+      },
+      "pred": {
+        "VU001": false,
+        "VU002": true,
+        "VU003": false,
+        "VU004": false,
+        "VU005": false,
+        "VU007": true
+      },
+      "errors": {}
+    },
+    {
+      "file": "USP-Token/packages/contracts/lib/openzeppelin-contracts/contracts/account/Account.sol",
+      "gt": {
+        "VU001": false,
+        "VU002": false,
+        "VU003": false,
+        "VU004": false,
+        "VU005": false,
+        "VU007": false
+      },
+      "pred": {
+        "VU001": true,
+        "VU002": true,
+        "VU003": true,
+        "VU004": false,
+        "VU005": false,
+        "VU007": true
+      },
+      "errors": {}
+    },
+    {
+      "file": "USP-Token/packages/contracts/lib/openzeppelin-contracts/contracts/interfaces/draft-IERC7579.sol",
+      "gt": {
+        "VU001": false,
+        "VU002": false,
+        "VU003": false,
+        "VU004": false,
+        "VU005": false,
+        "VU007": false
+      },
+      "pred": {
+        "VU001": true,
+        "VU002": true,
+        "VU003": false,
+        "VU004": false,
+        "VU005": false,
+        "VU007": true
+      },
+      "errors": {}
+    },
+    {
+      "file": "aa-coffee-shop/src/SimpleAccount.sol",
+      "gt": {
+        "VU001": false,
+        "VU002": false,
+        "VU003": false,
+        "VU004": false,
+        "VU005": false,
+        "VU007": false
+      },
+      "pred": {
+        "VU001": false,
+        "VU002": true,
+        "VU003": false,
+        "VU004": false,
+        "VU005": false,
+        "VU007": false
+      },
+      "errors": {}
+    },
+    {
+      "file": "aa-hc-example/contracts/lib/account-abstraction/contracts/core/BaseAccount.sol",
+      "gt": {
+        "VU001": false,
+        "VU002": false,
+        "VU003": false,
+        "VU004": false,
+        "VU005": false,
+        "VU007": false
+      },
+      "pred": {
+        "VU001": false,
+        "VU002": false,
+        "VU003": false,
+        "VU004": false,
+        "VU005": true,
+        "VU007": false
+      },
+      "errors": {}
+    },
+    {
+      "file": "aa-hc-example/contracts/lib/account-abstraction/contracts/test/TestWarmColdAccount.sol",
+      "gt": {
+        "VU001": true,
+        "VU002": false,
+        "VU003": true,
+        "VU004": false,
+        "VU005": true,
+        "VU007": true
+      },
+      "pred": {
+        "VU001": true,
+        "VU002": false,
+        "VU003": false,
+        "VU004": false,
+        "VU005": true,
+        "VU007": true
+      },
+      "errors": {}
+    },
+    {
+      "file": "aa-hc-example/contracts/lib/account-abstraction/contracts/test/TestRevertAccount.sol",
+      "gt": {
+        "VU001": true,
+        "VU002": true,
+        "VU003": true,
+        "VU004": false,
+        "VU005": false,
+        "VU007": true
+      },
+      "pred": {
+        "VU001": true,
+        "VU002": true,
+        "VU003": false,
+        "VU004": false,
+        "VU005": false,
+        "VU007": true
+      },
+      "errors": {}
+    },
+    {
+      "file": "aa-hc-example/contracts/lib/account-abstraction/contracts/test/MaliciousAccount.sol",
+      "gt": {
+        "VU001": true,
+        "VU002": true,
+        "VU003": true,
+        "VU004": false,
+        "VU005": false,
+        "VU007": true
+      },
+      "pred": {
+        "VU001": true,
+        "VU002": true,
+        "VU003": false,
+        "VU004": false,
+        "VU005": false,
+        "VU007": true
+      },
+      "errors": {}
+    },
+    {
+      "file": "aakit/contracts/src/utils/ERC4337Account.sol",
+      "gt": {
+        "VU001": false,
+        "VU002": false,
+        "VU003": false,
+        "VU004": false,
+        "VU005": false,
+        "VU007": false
+      },
+      "pred": {
+        "VU001": false,
+        "VU002": true,
+        "VU003": false,
+        "VU004": false,
+        "VU005": false,
+        "VU007": false
+      },
+      "errors": {}
+    },
+    {
+      "file": "aakit/contracts/src/validators/PasskeyValidator.sol",
+      "gt": {
+        "VU001": false,
+        "VU002": false,
+        "VU003": false,
+        "VU004": false,
+        "VU005": false,
+        "VU007": false
+      },
+      "pred": {
+        "VU001": true,
+        "VU002": true,
+        "VU003": false,
+        "VU004": false,
+        "VU005": false,
+        "VU007": true
+      },
+      "errors": {}
+    },
+    {
+      "file": "aakit/contracts/src/interfaces/IERC7579.sol",
+      "gt": {
+        "VU001": false,
+        "VU002": false,
+        "VU003": false,
+        "VU004": false,
+        "VU005": false,
+        "VU007": false
+      },
+      "pred": {
+        "VU001": true,
+        "VU002": true,
+        "VU003": false,
+        "VU004": false,
+        "VU005": false,
+        "VU007": true
+      },
+      "errors": {}
+    },
+    {
+      "file": "account-abstraction/contracts/core/BaseAccount.sol",
+      "gt": {
+        "VU001": false,
+        "VU002": false,
+        "VU003": false,
+        "VU004": false,
+        "VU005": false,
+        "VU007": false
+      },
+      "pred": {
+        "VU001": false,
+        "VU002": false,
+        "VU003": false,
+        "VU004": false,
+        "VU005": true,
+        "VU007": false
+      },
+      "errors": {}
+    },
+    {
+      "file": "account-abstraction/contracts/test/TestWarmColdAccount.sol",
+      "gt": {
+        "VU001": true,
+        "VU002": false,
+        "VU003": true,
+        "VU004": false,
+        "VU005": true,
+        "VU007": true
+      },
+      "pred": {
+        "VU001": true,
+        "VU002": false,
+        "VU003": false,
+        "VU004": false,
+        "VU005": true,
+        "VU007": true
+      },
+      "errors": {}
+    },
+    {
+      "file": "account-abstraction/contracts/test/TestRevertAccount.sol",
+      "gt": {
+        "VU001": true,
+        "VU002": true,
+        "VU003": true,
+        "VU004": false,
+        "VU005": false,
+        "VU007": true
+      },
+      "pred": {
+        "VU001": true,
+        "VU002": true,
+        "VU003": false,
+        "VU004": false,
+        "VU005": false,
+        "VU007": true
+      },
+      "errors": {}
+    },
+    {
+      "file": "account-abstraction/contracts/test/MaliciousAccount.sol",
+      "gt": {
+        "VU001": true,
+        "VU002": true,
+        "VU003": true,
+        "VU004": false,
+        "VU005": false,
+        "VU007": true
+      },
+      "pred": {
+        "VU001": true,
+        "VU002": true,
+        "VU003": false,
+        "VU004": false,
+        "VU005": false,
+        "VU007": true
+      },
+      "errors": {}
+    },
+    {
+      "file": "account-abstraction-foundry/lib/account-abstraction/contracts/core/BaseAccount.sol",
+      "gt": {
+        "VU001": false,
+        "VU002": false,
+        "VU003": false,
+        "VU004": false,
+        "VU005": false,
+        "VU007": false
+      },
+      "pred": {
+        "VU001": false,
+        "VU002": false,
+        "VU003": false,
+        "VU004": false,
+        "VU005": true,
+        "VU007": false
+      },
+      "errors": {}
+    },
+    {
+      "file": "account-abstraction-foundry/lib/account-abstraction/contracts/test/TestWarmColdAccount.sol",
+      "gt": {
+        "VU001": true,
+        "VU002": false,
+        "VU003": true,
+        "VU004": false,
+        "VU005": true,
+        "VU007": true
+      },
+      "pred": {
+        "VU001": true,
+        "VU002": false,
+        "VU003": false,
+        "VU004": false,
+        "VU005": true,
+        "VU007": true
+      },
+      "errors": {}
+    },
+    {
+      "file": "account-abstraction-foundry/lib/account-abstraction/contracts/test/TestRevertAccount.sol",
+      "gt": {
+        "VU001": true,
+        "VU002": true,
+        "VU003": true,
+        "VU004": false,
+        "VU005": false,
+        "VU007": true
+      },
+      "pred": {
+        "VU001": true,
+        "VU002": true,
+        "VU003": false,
+        "VU004": false,
+        "VU005": false,
+        "VU007": true
+      },
+      "errors": {}
+    },
+    {
+      "file": "account-abstraction-foundry/lib/account-abstraction/contracts/test/MaliciousAccount.sol",
+      "gt": {
+        "VU001": true,
+        "VU002": true,
+        "VU003": true,
+        "VU004": false,
+        "VU005": false,
+        "VU007": true
+      },
+      "pred": {
+        "VU001": true,
+        "VU002": true,
+        "VU003": false,
+        "VU004": false,
+        "VU005": false,
+        "VU007": true
+      },
+      "errors": {}
+    },
+    {
+      "file": "account-abstraction-stream/src/core/BaseAccount.sol",
+      "gt": {
+        "VU001": false,
+        "VU002": false,
+        "VU003": false,
+        "VU004": false,
+        "VU005": false,
+        "VU007": false
+      },
+      "pred": {
+        "VU001": false,
+        "VU002": false,
+        "VU003": false,
+        "VU004": false,
+        "VU005": true,
+        "VU007": false
+      },
+      "errors": {}
+    },
+    {
+      "file": "account-abstraction-webauthn/contracts/lib/account-abstraction/contracts/core/BaseAccount.sol",
+      "gt": {
+        "VU001": false,
+        "VU002": false,
+        "VU003": false,
+        "VU004": false,
+        "VU005": false,
+        "VU007": false
+      },
+      "pred": {
+        "VU001": false,
+        "VU002": false,
+        "VU003": false,
+        "VU004": false,
+        "VU005": true,
+        "VU007": false
+      },
+      "errors": {}
+    },
+    {
+      "file": "account-abstraction-webauthn/contracts/lib/account-abstraction/contracts/test/TestWarmColdAccount.sol",
+      "gt": {
+        "VU001": true,
+        "VU002": false,
+        "VU003": true,
+        "VU004": false,
+        "VU005": true,
+        "VU007": true
+      },
+      "pred": {
+        "VU001": true,
+        "VU002": false,
+        "VU003": true,
+        "VU004": false,
+        "VU005": true,
+        "VU007": true
+      },
+      "errors": {}
+    },
+    {
+      "file": "account-abstraction-webauthn/contracts/lib/account-abstraction/contracts/test/TestRevertAccount.sol",
+      "gt": {
+        "VU001": true,
+        "VU002": true,
+        "VU003": true,
+        "VU004": false,
+        "VU005": false,
+        "VU007": true
+      },
+      "pred": {
+        "VU001": true,
+        "VU002": true,
+        "VU003": true,
+        "VU004": false,
+        "VU005": false,
+        "VU007": true
+      },
+      "errors": {}
+    },
+    {
+      "file": "account-abstraction-webauthn/contracts/lib/account-abstraction/contracts/test/MaliciousAccount.sol",
+      "gt": {
+        "VU001": true,
+        "VU002": true,
+        "VU003": true,
+        "VU004": false,
+        "VU005": false,
+        "VU007": true
+      },
+      "pred": {
+        "VU001": true,
+        "VU002": true,
+        "VU003": true,
+        "VU004": false,
+        "VU005": false,
+        "VU007": true
+      },
+      "errors": {}
+    },
+    {
+      "file": "account-abstraction-webauthn/contracts/lib/solady/test/utils/mocks/MockEntryPoint.sol",
+      "gt": {
+        "VU001": false,
+        "VU002": false,
+        "VU003": false,
+        "VU004": false,
+        "VU005": false,
+        "VU007": false
+      },
+      "pred": {
+        "VU001": true,
+        "VU002": true,
+        "VU003": false,
+        "VU004": false,
+        "VU005": false,
+        "VU007": true
+      },
+      "errors": {}
+    },
+    {
+      "file": "account-abstraction-webauthn/contracts/lib/solady/src/accounts/ERC4337.sol",
+      "gt": {
+        "VU001": false,
+        "VU002": false,
+        "VU003": false,
+        "VU004": false,
+        "VU005": false,
+        "VU007": false
+      },
+      "pred": {
+        "VU001": false,
+        "VU002": false,
+        "VU003": false,
+        "VU004": false,
+        "VU005": true,
+        "VU007": false
+      },
+      "errors": {}
+    },
+    {
+      "file": "alto/contracts/lib/singleton-paymaster/test/utils/account-abstraction/v07/core/BaseAccount.sol",
+      "gt": {
+        "VU001": false,
+        "VU002": false,
+        "VU003": false,
+        "VU004": false,
+        "VU005": false,
+        "VU007": false
+      },
+      "pred": {
+        "VU001": false,
+        "VU002": false,
+        "VU003": false,
+        "VU004": false,
+        "VU005": true,
+        "VU007": false
+      },
+      "errors": {}
+    },
+    {
+      "file": "alto/contracts/lib/singleton-paymaster/lib/account-abstraction-v7/contracts/core/BaseAccount.sol",
+      "gt": {
+        "VU001": false,
+        "VU002": false,
+        "VU003": false,
+        "VU004": false,
+        "VU005": false,
+        "VU007": false
+      },
+      "pred": {
+        "VU001": false,
+        "VU002": false,
+        "VU003": false,
+        "VU004": false,
+        "VU005": true,
+        "VU007": false
+      },
+      "errors": {}
+    },
+    {
+      "file": "alto/contracts/lib/singleton-paymaster/lib/account-abstraction-v7/contracts/test/TestWarmColdAccount.sol",
+      "gt": {
+        "VU001": true,
+        "VU002": false,
+        "VU003": true,
+        "VU004": false,
+        "VU005": true,
+        "VU007": true
+      },
+      "pred": {
+        "VU001": true,
+        "VU002": false,
+        "VU003": false,
+        "VU004": false,
+        "VU005": true,
+        "VU007": true
+      },
+      "errors": {}
+    },
+    {
+      "file": "alto/contracts/lib/singleton-paymaster/lib/account-abstraction-v7/contracts/test/TestRevertAccount.sol",
+      "gt": {
+        "VU001": true,
+        "VU002": true,
+        "VU003": true,
+        "VU004": false,
+        "VU005": false,
+        "VU007": true
+      },
+      "pred": {
+        "VU001": true,
+        "VU002": true,
+        "VU003": false,
+        "VU004": false,
+        "VU005": false,
+        "VU007": true
+      },
+      "errors": {}
+    },
+    {
+      "file": "alto/contracts/lib/singleton-paymaster/lib/account-abstraction-v7/contracts/test/MaliciousAccount.sol",
+      "gt": {
+        "VU001": true,
+        "VU002": true,
+        "VU003": true,
+        "VU004": false,
+        "VU005": false,
+        "VU007": true
+      },
+      "pred": {
+        "VU001": true,
+        "VU002": true,
+        "VU003": false,
+        "VU004": false,
+        "VU005": false,
+        "VU007": true
+      },
+      "errors": {}
+    },
+    {
+      "file": "alto/contracts/lib/singleton-paymaster/lib/account-abstraction-v6/contracts/core/BaseAccount.sol",
+      "gt": {
+        "VU001": false,
+        "VU002": false,
+        "VU003": false,
+        "VU004": false,
+        "VU005": false,
+        "VU007": false
+      },
+      "pred": {
+        "VU001": false,
+        "VU002": false,
+        "VU003": false,
+        "VU004": false,
+        "VU005": true,
+        "VU007": false
+      },
+      "errors": {}
+    },
+    {
+      "file": "alto/contracts/lib/singleton-paymaster/lib/account-abstraction-v6/contracts/test/TestWarmColdAccount.sol",
+      "gt": {
+        "VU001": true,
+        "VU002": false,
+        "VU003": true,
+        "VU004": false,
+        "VU005": true,
+        "VU007": true
+      },
+      "pred": {
+        "VU001": true,
+        "VU002": false,
+        "VU003": true,
+        "VU004": false,
+        "VU005": true,
+        "VU007": true
+      },
+      "errors": {}
+    },
+    {
+      "file": "alto/contracts/lib/singleton-paymaster/lib/account-abstraction-v6/contracts/test/TestRevertAccount.sol",
+      "gt": {
+        "VU001": true,
+        "VU002": true,
+        "VU003": true,
+        "VU004": false,
+        "VU005": false,
+        "VU007": true
+      },
+      "pred": {
+        "VU001": true,
+        "VU002": true,
+        "VU003": true,
+        "VU004": false,
+        "VU005": false,
+        "VU007": true
+      },
+      "errors": {}
+    },
+    {
+      "file": "alto/contracts/lib/singleton-paymaster/lib/account-abstraction-v6/contracts/test/MaliciousAccount.sol",
+      "gt": {
+        "VU001": true,
+        "VU002": true,
+        "VU003": true,
+        "VU004": false,
+        "VU005": false,
+        "VU007": true
+      },
+      "pred": {
+        "VU001": true,
+        "VU002": true,
+        "VU003": true,
+        "VU004": false,
+        "VU005": false,
+        "VU007": true
+      },
+      "errors": {}
+    },
+    {
+      "file": "alto/contracts/lib/singleton-paymaster/lib/account-abstraction-v6/contracts/samples/gnosis/EIP4337Fallback.sol",
+      "gt": {
+        "VU001": false,
+        "VU002": false,
+        "VU003": false,
+        "VU004": false,
+        "VU005": false,
+        "VU007": false
+      },
+      "pred": {
+        "VU001": true,
+        "VU002": true,
+        "VU003": false,
+        "VU004": false,
+        "VU005": false,
+        "VU007": true
+      },
+      "errors": {}
+    },
+    {
+      "file": "alto/contracts/lib/singleton-paymaster/lib/account-abstraction-v6/contracts/samples/gnosis/EIP4337Manager.sol",
+      "gt": {
+        "VU001": false,
+        "VU002": false,
+        "VU003": false,
+        "VU004": false,
+        "VU005": false,
+        "VU007": false
+      },
+      "pred": {
+        "VU001": false,
+        "VU002": false,
+        "VU003": false,
+        "VU004": false,
+        "VU005": true,
+        "VU007": true
+      },
+      "errors": {}
+    },
+    {
+      "file": "alto/contracts/lib/singleton-paymaster/lib/account-abstraction-v8/contracts/core/BaseAccount.sol",
+      "gt": {
+        "VU001": false,
+        "VU002": false,
+        "VU003": false,
+        "VU004": false,
+        "VU005": false,
+        "VU007": false
+      },
+      "pred": {
+        "VU001": false,
+        "VU002": false,
+        "VU003": false,
+        "VU004": false,
+        "VU005": true,
+        "VU007": false
+      },
+      "errors": {}
+    },
+    {
+      "file": "alto/contracts/lib/singleton-paymaster/lib/account-abstraction-v8/contracts/test/TestWarmColdAccount.sol",
+      "gt": {
+        "VU001": true,
+        "VU002": false,
+        "VU003": true,
+        "VU004": false,
+        "VU005": true,
+        "VU007": true
+      },
+      "pred": {
+        "VU001": true,
+        "VU002": false,
+        "VU003": false,
+        "VU004": false,
+        "VU005": true,
+        "VU007": true
+      },
+      "errors": {}
+    },
+    {
+      "file": "alto/contracts/lib/singleton-paymaster/lib/account-abstraction-v8/contracts/test/TestRevertAccount.sol",
+      "gt": {
+        "VU001": true,
+        "VU002": true,
+        "VU003": true,
+        "VU004": false,
+        "VU005": false,
+        "VU007": true
+      },
+      "pred": {
+        "VU001": true,
+        "VU002": true,
+        "VU003": false,
+        "VU004": false,
+        "VU005": false,
+        "VU007": true
+      },
+      "errors": {}
+    },
+    {
+      "file": "alto/contracts/lib/singleton-paymaster/lib/account-abstraction-v8/contracts/test/MaliciousAccount.sol",
+      "gt": {
+        "VU001": true,
+        "VU002": true,
+        "VU003": true,
+        "VU004": false,
+        "VU005": false,
+        "VU007": true
+      },
+      "pred": {
+        "VU001": true,
+        "VU002": true,
+        "VU003": false,
+        "VU004": false,
+        "VU005": false,
+        "VU007": true
+      },
+      "errors": {}
+    },
+    {
+      "file": "alto/contracts/lib/singleton-paymaster/lib/solady/test/utils/mocks/MockEntryPoint.sol",
+      "gt": {
+        "VU001": false,
+        "VU002": false,
+        "VU003": false,
+        "VU004": false,
+        "VU005": false,
+        "VU007": false
+      },
+      "pred": {
+        "VU001": true,
+        "VU002": true,
+        "VU003": false,
+        "VU004": false,
+        "VU005": false,
+        "VU007": true
+      },
+      "errors": {}
+    },
+    {
+      "file": "alto/contracts/lib/singleton-paymaster/lib/solady/src/accounts/ERC4337.sol",
+      "gt": {
+        "VU001": false,
+        "VU002": false,
+        "VU003": false,
+        "VU004": false,
+        "VU005": false,
+        "VU007": false
+      },
+      "pred": {
+        "VU001": false,
+        "VU002": false,
+        "VU003": false,
+        "VU004": false,
+        "VU005": true,
+        "VU007": false
+      },
+      "errors": {}
+    },
+    {
+      "file": "alto/contracts/lib/account-abstraction-v9/contracts/core/BaseAccount.sol",
+      "gt": {
+        "VU001": false,
+        "VU002": false,
+        "VU003": false,
+        "VU004": false,
+        "VU005": false,
+        "VU007": false
+      },
+      "pred": {
+        "VU001": false,
+        "VU002": false,
+        "VU003": false,
+        "VU004": false,
+        "VU005": true,
+        "VU007": false
+      },
+      "errors": {}
+    },
+    {
+      "file": "alto/contracts/lib/account-abstraction-v9/contracts/test/TestWarmColdAccount.sol",
+      "gt": {
+        "VU001": true,
+        "VU002": false,
+        "VU003": true,
+        "VU004": false,
+        "VU005": true,
+        "VU007": true
+      },
+      "pred": {
+        "VU001": true,
+        "VU002": false,
+        "VU003": false,
+        "VU004": false,
+        "VU005": true,
+        "VU007": true
+      },
+      "errors": {}
+    },
+    {
+      "file": "alto/contracts/lib/account-abstraction-v9/contracts/test/TestRevertAccount.sol",
+      "gt": {
+        "VU001": true,
+        "VU002": true,
+        "VU003": true,
+        "VU004": false,
+        "VU005": false,
+        "VU007": true
+      },
+      "pred": {
+        "VU001": true,
+        "VU002": true,
+        "VU003": false,
+        "VU004": false,
+        "VU005": false,
+        "VU007": true
+      },
+      "errors": {}
+    },
+    {
+      "file": "alto/contracts/lib/account-abstraction-v9/contracts/test/MaliciousAccount.sol",
+      "gt": {
+        "VU001": true,
+        "VU002": true,
+        "VU003": true,
+        "VU004": false,
+        "VU005": false,
+        "VU007": true
+      },
+      "pred": {
+        "VU001": true,
+        "VU002": true,
+        "VU003": false,
+        "VU004": false,
+        "VU005": false,
+        "VU007": true
+      },
+      "errors": {}
+    },
+    {
+      "file": "alto/contracts/lib/account-abstraction-v7/contracts/core/BaseAccount.sol",
+      "gt": {
+        "VU001": false,
+        "VU002": false,
+        "VU003": false,
+        "VU004": false,
+        "VU005": false,
+        "VU007": false
+      },
+      "pred": {
+        "VU001": false,
+        "VU002": false,
+        "VU003": false,
+        "VU004": false,
+        "VU005": true,
+        "VU007": false
+      },
+      "errors": {}
+    },
+    {
+      "file": "alto/contracts/lib/account-abstraction-v7/contracts/test/TestWarmColdAccount.sol",
+      "gt": {
+        "VU001": true,
+        "VU002": false,
+        "VU003": true,
+        "VU004": false,
+        "VU005": true,
+        "VU007": true
+      },
+      "pred": {
+        "VU001": true,
+        "VU002": false,
+        "VU003": false,
+        "VU004": false,
+        "VU005": true,
+        "VU007": true
+      },
+      "errors": {}
+    },
+    {
+      "file": "alto/contracts/lib/account-abstraction-v7/contracts/test/TestRevertAccount.sol",
+      "gt": {
+        "VU001": true,
+        "VU002": true,
+        "VU003": true,
+        "VU004": false,
+        "VU005": false,
+        "VU007": true
+      },
+      "pred": {
+        "VU001": true,
+        "VU002": true,
+        "VU003": false,
+        "VU004": false,
+        "VU005": false,
+        "VU007": true
+      },
+      "errors": {}
+    },
+    {
+      "file": "alto/contracts/lib/account-abstraction-v7/contracts/test/MaliciousAccount.sol",
+      "gt": {
+        "VU001": true,
+        "VU002": true,
+        "VU003": true,
+        "VU004": false,
+        "VU005": false,
+        "VU007": true
+      },
+      "pred": {
+        "VU001": true,
+        "VU002": true,
+        "VU003": false,
+        "VU004": false,
+        "VU005": false,
+        "VU007": true
+      },
+      "errors": {}
+    },
+    {
+      "file": "alto/contracts/lib/account-abstraction-v6/contracts/core/BaseAccount.sol",
+      "gt": {
+        "VU001": false,
+        "VU002": false,
+        "VU003": false,
+        "VU004": false,
+        "VU005": false,
+        "VU007": false
+      },
+      "pred": {
+        "VU001": false,
+        "VU002": false,
+        "VU003": false,
+        "VU004": false,
+        "VU005": true,
+        "VU007": false
+      },
+      "errors": {}
+    },
+    {
+      "file": "alto/contracts/lib/account-abstraction-v6/contracts/test/TestWarmColdAccount.sol",
+      "gt": {
+        "VU001": true,
+        "VU002": false,
+        "VU003": true,
+        "VU004": false,
+        "VU005": true,
+        "VU007": true
+      },
+      "pred": {
+        "VU001": true,
+        "VU002": false,
+        "VU003": true,
+        "VU004": false,
+        "VU005": true,
+        "VU007": true
+      },
+      "errors": {}
+    },
+    {
+      "file": "alto/contracts/lib/account-abstraction-v6/contracts/test/TestRevertAccount.sol",
+      "gt": {
+        "VU001": true,
+        "VU002": true,
+        "VU003": true,
+        "VU004": false,
+        "VU005": false,
+        "VU007": true
+      },
+      "pred": {
+        "VU001": true,
+        "VU002": true,
+        "VU003": true,
+        "VU004": false,
+        "VU005": false,
+        "VU007": true
+      },
+      "errors": {}
+    },
+    {
+      "file": "alto/contracts/lib/account-abstraction-v6/contracts/test/MaliciousAccount.sol",
+      "gt": {
+        "VU001": true,
+        "VU002": true,
+        "VU003": true,
+        "VU004": false,
+        "VU005": false,
+        "VU007": true
+      },
+      "pred": {
+        "VU001": true,
+        "VU002": true,
+        "VU003": true,
+        "VU004": false,
+        "VU005": false,
+        "VU007": true
+      },
+      "errors": {}
+    },
+    {
+      "file": "alto/contracts/lib/account-abstraction-v6/contracts/samples/gnosis/EIP4337Fallback.sol",
+      "gt": {
+        "VU001": false,
+        "VU002": false,
+        "VU003": false,
+        "VU004": false,
+        "VU005": false,
+        "VU007": false
+      },
+      "pred": {
+        "VU001": true,
+        "VU002": true,
+        "VU003": false,
+        "VU004": false,
+        "VU005": false,
+        "VU007": true
+      },
+      "errors": {}
+    },
+    {
+      "file": "alto/contracts/lib/account-abstraction-v6/contracts/samples/gnosis/EIP4337Manager.sol",
+      "gt": {
+        "VU001": false,
+        "VU002": false,
+        "VU003": false,
+        "VU004": false,
+        "VU005": false,
+        "VU007": false
+      },
+      "pred": {
+        "VU001": false,
+        "VU002": false,
+        "VU003": false,
+        "VU004": false,
+        "VU005": true,
+        "VU007": true
+      },
+      "errors": {}
+    },
+    {
+      "file": "alto/contracts/lib/account-abstraction-v8/contracts/core/BaseAccount.sol",
+      "gt": {
+        "VU001": false,
+        "VU002": false,
+        "VU003": false,
+        "VU004": false,
+        "VU005": false,
+        "VU007": false
+      },
+      "pred": {
+        "VU001": false,
+        "VU002": false,
+        "VU003": false,
+        "VU004": false,
+        "VU005": true,
+        "VU007": false
+      },
+      "errors": {}
+    },
+    {
+      "file": "alto/contracts/lib/account-abstraction-v8/contracts/test/TestWarmColdAccount.sol",
+      "gt": {
+        "VU001": true,
+        "VU002": false,
+        "VU003": true,
+        "VU004": false,
+        "VU005": true,
+        "VU007": true
+      },
+      "pred": {
+        "VU001": true,
+        "VU002": false,
+        "VU003": false,
+        "VU004": false,
+        "VU005": true,
+        "VU007": true
+      },
+      "errors": {}
+    },
+    {
+      "file": "alto/contracts/lib/account-abstraction-v8/contracts/test/TestRevertAccount.sol",
+      "gt": {
+        "VU001": true,
+        "VU002": true,
+        "VU003": true,
+        "VU004": false,
+        "VU005": false,
+        "VU007": true
+      },
+      "pred": {
+        "VU001": true,
+        "VU002": true,
+        "VU003": false,
+        "VU004": false,
+        "VU005": false,
+        "VU007": true
+      },
+      "errors": {}
+    },
+    {
+      "file": "alto/contracts/lib/account-abstraction-v8/contracts/test/MaliciousAccount.sol",
+      "gt": {
+        "VU001": true,
+        "VU002": true,
+        "VU003": true,
+        "VU004": false,
+        "VU005": false,
+        "VU007": true
+      },
+      "pred": {
+        "VU001": true,
+        "VU002": true,
+        "VU003": false,
+        "VU004": false,
+        "VU005": false,
+        "VU007": true
+      },
+      "errors": {}
+    },
+    {
+      "file": "alto/contracts/lib/solady/test/utils/mocks/MockEntryPoint.sol",
+      "gt": {
+        "VU001": false,
+        "VU002": false,
+        "VU003": false,
+        "VU004": false,
+        "VU005": false,
+        "VU007": false
+      },
+      "pred": {
+        "VU001": true,
+        "VU002": true,
+        "VU003": false,
+        "VU004": false,
+        "VU005": false,
+        "VU007": true
+      },
+      "errors": {}
+    },
+    {
+      "file": "alto/contracts/lib/solady/src/accounts/ERC4337.sol",
+      "gt": {
+        "VU001": false,
+        "VU002": false,
+        "VU003": false,
+        "VU004": false,
+        "VU005": false,
+        "VU007": false
+      },
+      "pred": {
+        "VU001": false,
+        "VU002": false,
+        "VU003": false,
+        "VU004": false,
+        "VU005": true,
+        "VU007": false
+      },
+      "errors": {}
+    },
+    {
+      "file": "artela-account-abstraction/contracts/core/BaseAccount.sol",
+      "gt": {
+        "VU001": false,
+        "VU002": false,
+        "VU003": false,
+        "VU004": false,
+        "VU005": false,
+        "VU007": false
+      },
+      "pred": {
+        "VU001": false,
+        "VU002": false,
+        "VU003": false,
+        "VU004": false,
+        "VU005": true,
+        "VU007": false
+      },
+      "errors": {}
+    },
+    {
+      "file": "artela-account-abstraction/contracts/test/TestWarmColdAccount.sol",
+      "gt": {
+        "VU001": true,
+        "VU002": false,
+        "VU003": true,
+        "VU004": false,
+        "VU005": true,
+        "VU007": true
+      },
+      "pred": {
+        "VU001": true,
+        "VU002": false,
+        "VU003": true,
+        "VU004": false,
+        "VU005": true,
+        "VU007": true
+      },
+      "errors": {}
+    },
+    {
+      "file": "artela-account-abstraction/contracts/test/TestRevertAccount.sol",
+      "gt": {
+        "VU001": true,
+        "VU002": true,
+        "VU003": true,
+        "VU004": false,
+        "VU005": false,
+        "VU007": true
+      },
+      "pred": {
+        "VU001": true,
+        "VU002": true,
+        "VU003": true,
+        "VU004": false,
+        "VU005": false,
+        "VU007": true
+      },
+      "errors": {}
+    },
+    {
+      "file": "artela-account-abstraction/contracts/test/MaliciousAccount.sol",
+      "gt": {
+        "VU001": true,
+        "VU002": true,
+        "VU003": true,
+        "VU004": false,
+        "VU005": false,
+        "VU007": true
+      },
+      "pred": {
+        "VU001": true,
+        "VU002": true,
+        "VU003": true,
+        "VU004": false,
+        "VU005": false,
+        "VU007": true
+      },
+      "errors": {}
+    },
+    {
+      "file": "artela-account-abstraction/contracts/samples/AspectEnabledSimpleAccount.sol",
+      "gt": {
+        "VU001": false,
+        "VU002": false,
+        "VU003": false,
+        "VU004": false,
+        "VU005": false,
+        "VU007": false
+      },
+      "pred": {
+        "VU001": false,
+        "VU002": false,
+        "VU003": false,
+        "VU004": false,
+        "VU005": true,
+        "VU007": false
+      },
+      "errors": {}
+    },
+    {
+      "file": "base-paymaster/lib/account-abstraction/contracts/core/BaseAccount.sol",
+      "gt": {
+        "VU001": false,
+        "VU002": false,
+        "VU003": false,
+        "VU004": false,
+        "VU005": false,
+        "VU007": false
+      },
+      "pred": {
+        "VU001": false,
+        "VU002": false,
+        "VU003": false,
+        "VU004": false,
+        "VU005": true,
+        "VU007": false
+      },
+      "errors": {}
+    },
+    {
+      "file": "base-paymaster/lib/account-abstraction/contracts/test/TestWarmColdAccount.sol",
+      "gt": {
+        "VU001": true,
+        "VU002": false,
+        "VU003": true,
+        "VU004": false,
+        "VU005": true,
+        "VU007": true
+      },
+      "pred": {
+        "VU001": true,
+        "VU002": false,
+        "VU003": true,
+        "VU004": false,
+        "VU005": true,
+        "VU007": true
+      },
+      "errors": {}
+    },
+    {
+      "file": "base-paymaster/lib/account-abstraction/contracts/test/TestRevertAccount.sol",
+      "gt": {
+        "VU001": true,
+        "VU002": true,
+        "VU003": true,
+        "VU004": false,
+        "VU005": false,
+        "VU007": true
+      },
+      "pred": {
+        "VU001": true,
+        "VU002": true,
+        "VU003": true,
+        "VU004": false,
+        "VU005": false,
+        "VU007": true
+      },
+      "errors": {}
+    },
+    {
+      "file": "base-paymaster/lib/account-abstraction/contracts/test/MaliciousAccount.sol",
+      "gt": {
+        "VU001": true,
+        "VU002": true,
+        "VU003": true,
+        "VU004": false,
+        "VU005": false,
+        "VU007": true
+      },
+      "pred": {
+        "VU001": true,
+        "VU002": true,
+        "VU003": true,
+        "VU004": false,
+        "VU005": false,
+        "VU007": true
+      },
+      "errors": {}
+    },
+    {
+      "file": "base-paymaster/lib/account-abstraction/contracts/samples/gnosis/EIP4337Fallback.sol",
+      "gt": {
+        "VU001": false,
+        "VU002": false,
+        "VU003": false,
+        "VU004": false,
+        "VU005": false,
+        "VU007": false
+      },
+      "pred": {
+        "VU001": true,
+        "VU002": true,
+        "VU003": false,
+        "VU004": false,
+        "VU005": false,
+        "VU007": true
+      },
+      "errors": {}
+    },
+    {
+      "file": "base-paymaster/lib/account-abstraction/contracts/samples/gnosis/EIP4337Manager.sol",
+      "gt": {
+        "VU001": false,
+        "VU002": false,
+        "VU003": false,
+        "VU004": false,
+        "VU005": false,
+        "VU007": false
+      },
+      "pred": {
+        "VU001": false,
+        "VU002": false,
+        "VU003": false,
+        "VU004": false,
+        "VU005": true,
+        "VU007": true
+      },
+      "errors": {}
+    },
+    {
+      "file": "base-paymaster/lib/solady/test/utils/mocks/MockEntryPoint.sol",
+      "gt": {
+        "VU001": false,
+        "VU002": false,
+        "VU003": false,
+        "VU004": false,
+        "VU005": false,
+        "VU007": false
+      },
+      "pred": {
+        "VU001": true,
+        "VU002": true,
+        "VU003": false,
+        "VU004": false,
+        "VU005": false,
+        "VU007": true
+      },
+      "errors": {}
+    },
+    {
+      "file": "base-paymaster/lib/solady/src/accounts/ERC4337.sol",
+      "gt": {
+        "VU001": false,
+        "VU002": false,
+        "VU003": false,
+        "VU004": false,
+        "VU005": false,
+        "VU007": false
+      },
+      "pred": {
+        "VU001": false,
+        "VU002": false,
+        "VU003": false,
+        "VU004": false,
+        "VU005": true,
+        "VU007": false
+      },
+      "errors": {}
+    },
+    {
+      "file": "boost-accounts/src/validators/EOAValidator.sol",
+      "gt": {
+        "VU001": false,
+        "VU002": false,
+        "VU003": false,
+        "VU004": false,
+        "VU005": false,
+        "VU007": false
+      },
+      "pred": {
+        "VU001": true,
+        "VU002": true,
+        "VU003": false,
+        "VU004": false,
+        "VU005": false,
+        "VU007": true
+      },
+      "errors": {}
+    },
+    {
+      "file": "bundler/packages/bundler/contracts/tests/TestRuleAccount.sol",
+      "gt": {
+        "VU001": true,
+        "VU002": true,
+        "VU003": true,
+        "VU004": false,
+        "VU005": false,
+        "VU007": true
+      },
+      "pred": {
+        "VU001": true,
+        "VU002": true,
+        "VU003": true,
+        "VU004": false,
+        "VU005": false,
+        "VU007": true
+      },
+      "errors": {}
+    },
+    {
+      "file": "bundler/packages/bundler/contracts/tests/TestRulesAccount.sol",
+      "gt": {
+        "VU001": true,
+        "VU002": true,
+        "VU003": true,
+        "VU004": false,
+        "VU005": false,
+        "VU007": true
+      },
+      "pred": {
+        "VU001": true,
+        "VU002": true,
+        "VU003": true,
+        "VU004": false,
+        "VU005": false,
+        "VU007": true
+      },
+      "errors": {}
+    },
+    {
+      "file": "bundler/packages/bundler/contracts/tests/cross_sender_state/TestFakeWalletToken.sol",
+      "gt": {
+        "VU001": true,
+        "VU002": true,
+        "VU003": true,
+        "VU004": false,
+        "VU005": false,
+        "VU007": true
+      },
+      "pred": {
+        "VU001": true,
+        "VU002": true,
+        "VU003": true,
+        "VU004": false,
+        "VU005": false,
+        "VU007": true
+      },
+      "errors": {}
+    },
+    {
+      "file": "bundler-spec-tests/tests/contracts/TestFakeWalletToken.sol",
+      "gt": {
+        "VU001": true,
+        "VU002": true,
+        "VU003": true,
+        "VU004": false,
+        "VU005": false,
+        "VU007": true
+      },
+      "pred": {
+        "VU001": true,
+        "VU002": true,
+        "VU003": true,
+        "VU004": false,
+        "VU005": false,
+        "VU007": true
+      },
+      "errors": {}
+    },
+    {
+      "file": "bundler-spec-tests/tests/contracts/TestRulesAccount.sol",
+      "gt": {
+        "VU001": true,
+        "VU002": true,
+        "VU003": true,
+        "VU004": false,
+        "VU005": false,
+        "VU007": true
+      },
+      "pred": {
+        "VU001": true,
+        "VU002": true,
+        "VU003": true,
+        "VU004": false,
+        "VU005": false,
+        "VU007": true
+      },
+      "errors": {}
+    },
+    {
+      "file": "bundler-spec-tests/tests/contracts/TestReputationAccount.sol",
+      "gt": {
+        "VU001": true,
+        "VU002": true,
+        "VU003": true,
+        "VU004": false,
+        "VU005": false,
+        "VU007": true
+      },
+      "pred": {
+        "VU001": true,
+        "VU002": true,
+        "VU003": true,
+        "VU004": false,
+        "VU005": false,
+        "VU007": true
+      },
+      "errors": {}
+    },
+    {
+      "file": "elytro-wallet-core/test/calldataPack.t.sol",
+      "gt": {
+        "VU001": false,
+        "VU002": false,
+        "VU003": false,
+        "VU004": false,
+        "VU005": false,
+        "VU007": false
+      },
+      "pred": {
+        "VU001": true,
+        "VU002": false,
+        "VU003": false,
+        "VU004": true,
+        "VU005": true,
+        "VU007": true
+      },
+      "errors": {}
+    },
+    {
+      "file": "elytro-wallet-core/contracts/validators/EOAValidator.sol",
+      "gt": {
+        "VU001": false,
+        "VU002": false,
+        "VU003": false,
+        "VU004": false,
+        "VU005": false,
+        "VU007": false
+      },
+      "pred": {
+        "VU001": true,
+        "VU002": true,
+        "VU003": false,
+        "VU004": false,
+        "VU005": false,
+        "VU007": true
+      },
+      "errors": {}
+    },
+    {
+      "file": "entrypoint-hash-poc/lib/account-abstraction/contracts/core/BaseAccount.sol",
+      "gt": {
+        "VU001": false,
+        "VU002": false,
+        "VU003": false,
+        "VU004": false,
+        "VU005": false,
+        "VU007": false
+      },
+      "pred": {
+        "VU001": false,
+        "VU002": true,
+        "VU003": false,
+        "VU004": false,
+        "VU005": false,
+        "VU007": false
+      },
+      "errors": {}
+    },
+    {
+      "file": "entrypoint-hash-poc/lib/account-abstraction/contracts/test/TestWarmColdAccount.sol",
+      "gt": {
+        "VU001": true,
+        "VU002": false,
+        "VU003": true,
+        "VU004": false,
+        "VU005": true,
+        "VU007": true
+      },
+      "pred": {
+        "VU001": true,
+        "VU002": false,
+        "VU003": true,
+        "VU004": false,
+        "VU005": true,
+        "VU007": true
+      },
+      "errors": {}
+    },
+    {
+      "file": "entrypoint-hash-poc/lib/account-abstraction/contracts/test/TestRevertAccount.sol",
+      "gt": {
+        "VU001": true,
+        "VU002": true,
+        "VU003": true,
+        "VU004": false,
+        "VU005": false,
+        "VU007": true
+      },
+      "pred": {
+        "VU001": true,
+        "VU002": true,
+        "VU003": true,
+        "VU004": false,
+        "VU005": false,
+        "VU007": true
+      },
+      "errors": {}
+    },
+    {
+      "file": "entrypoint-hash-poc/lib/account-abstraction/contracts/test/MaliciousAccount.sol",
+      "gt": {
+        "VU001": true,
+        "VU002": false,
+        "VU003": true,
+        "VU004": false,
+        "VU005": true,
+        "VU007": true
+      },
+      "pred": {
+        "VU001": true,
+        "VU002": false,
+        "VU003": true,
+        "VU004": false,
+        "VU005": true,
+        "VU007": true
+      },
+      "errors": {}
+    },
+    {
+      "file": "entrypoint-hash-poc/lib/account-abstraction/contracts/samples/gnosis/EIP4337Fallback.sol",
+      "gt": {
+        "VU001": false,
+        "VU002": false,
+        "VU003": false,
+        "VU004": false,
+        "VU005": false,
+        "VU007": false
+      },
+      "pred": {
+        "VU001": true,
+        "VU002": true,
+        "VU003": false,
+        "VU004": false,
+        "VU005": false,
+        "VU007": true
+      },
+      "errors": {}
+    },
+    {
+      "file": "entrypoint-hash-poc/lib/account-abstraction/contracts/samples/gnosis/EIP4337Manager.sol",
+      "gt": {
+        "VU001": false,
+        "VU002": false,
+        "VU003": false,
+        "VU004": false,
+        "VU005": false,
+        "VU007": false
+      },
+      "pred": {
+        "VU001": false,
+        "VU002": false,
+        "VU003": false,
+        "VU004": false,
+        "VU005": true,
+        "VU007": true
+      },
+      "errors": {}
+    },
+    {
+      "file": "entrypoint-hash-poc/src/ExampleAccount.sol",
+      "gt": {
+        "VU001": false,
+        "VU002": false,
+        "VU003": false,
+        "VU004": true,
+        "VU005": false,
+        "VU007": false
+      },
+      "pred": {
+        "VU001": false,
+        "VU002": false,
+        "VU003": false,
+        "VU004": true,
+        "VU005": true,
+        "VU007": false
+      },
+      "errors": {}
+    },
+    {
+      "file": "erc-4337-article-demo/src/EntryPoint/BaseAccount.sol",
+      "gt": {
+        "VU001": false,
+        "VU002": false,
+        "VU003": false,
+        "VU004": false,
+        "VU005": false,
+        "VU007": false
+      },
+      "pred": {
+        "VU001": false,
+        "VU002": false,
+        "VU003": false,
+        "VU004": false,
+        "VU005": true,
+        "VU007": false
+      },
+      "errors": {}
+    },
+    {
+      "file": "erc-4337-devnet/eth-infinitism/simple-account/0.7/contracts/core/BaseAccount.sol",
+      "gt": {
+        "VU001": false,
+        "VU002": false,
+        "VU003": false,
+        "VU004": false,
+        "VU005": false,
+        "VU007": false
+      },
+      "pred": {
+        "VU001": false,
+        "VU002": false,
+        "VU003": false,
+        "VU004": false,
+        "VU005": true,
+        "VU007": false
+      },
+      "errors": {}
+    },
+    {
+      "file": "erc-4337-devnet/eth-infinitism/simple-account/0.8/contracts/core/BaseAccount.sol",
+      "gt": {
+        "VU001": false,
+        "VU002": false,
+        "VU003": false,
+        "VU004": false,
+        "VU005": false,
+        "VU007": false
+      },
+      "pred": {
+        "VU001": false,
+        "VU002": false,
+        "VU003": false,
+        "VU004": false,
+        "VU005": true,
+        "VU007": false
+      },
+      "errors": {}
+    },
+    {
+      "file": "erc-4337-devnet/eth-infinitism/simple-account/0.6/contracts/core/BaseAccount.sol",
+      "gt": {
+        "VU001": false,
+        "VU002": false,
+        "VU003": false,
+        "VU004": false,
+        "VU005": false,
+        "VU007": false
+      },
+      "pred": {
+        "VU001": false,
+        "VU002": false,
+        "VU003": false,
+        "VU004": false,
+        "VU005": true,
+        "VU007": false
+      },
+      "errors": {}
+    },
+    {
+      "file": "erc-4337-devnet/zerodev/kernel/0.3.2/src/Kernel.sol",
+      "gt": {
+        "VU001": false,
+        "VU002": false,
+        "VU003": false,
+        "VU004": false,
+        "VU005": false,
+        "VU007": false
+      },
+      "pred": {
+        "VU001": true,
+        "VU002": false,
+        "VU003": false,
+        "VU004": false,
+        "VU005": false,
+        "VU007": false
+      },
+      "errors": {}
+    },
+    {
+      "file": "erc-4337-devnet/alchemy/modular-account/2.0.0/src/account/AccountBase.sol",
+      "gt": {
+        "VU001": false,
+        "VU002": false,
+        "VU003": false,
+        "VU004": false,
+        "VU005": false,
+        "VU007": false
+      },
+      "pred": {
+        "VU001": true,
+        "VU002": true,
+        "VU003": false,
+        "VU004": false,
+        "VU005": false,
+        "VU007": false
+      },
+      "errors": {}
+    },
+    {
+      "file": "erc-4337-devnet/alchemy/light-account/2.0.0/lib/account-abstraction/contracts/core/BaseAccount.sol",
+      "gt": {
+        "VU001": false,
+        "VU002": false,
+        "VU003": false,
+        "VU004": false,
+        "VU005": false,
+        "VU007": false
+      },
+      "pred": {
+        "VU001": false,
+        "VU002": false,
+        "VU003": false,
+        "VU004": false,
+        "VU005": true,
+        "VU007": false
+      },
+      "errors": {}
+    },
+    {
+      "file": "erc-4337-devnet/alchemy/light-account/1.1.0/lib/account-abstraction/contracts/core/BaseAccount.sol",
+      "gt": {
+        "VU001": false,
+        "VU002": false,
+        "VU003": false,
+        "VU004": false,
+        "VU005": false,
+        "VU007": false
+      },
+      "pred": {
+        "VU001": false,
+        "VU002": false,
+        "VU003": false,
+        "VU004": false,
+        "VU005": true,
+        "VU007": false
+      },
+      "errors": {}
+    },
+    {
+      "file": "erc20-paymaster/lib/account-abstraction-v7/contracts/core/BaseAccount.sol",
+      "gt": {
+        "VU001": false,
+        "VU002": false,
+        "VU003": false,
+        "VU004": false,
+        "VU005": false,
+        "VU007": false
+      },
+      "pred": {
+        "VU001": false,
+        "VU002": false,
+        "VU003": false,
+        "VU004": false,
+        "VU005": true,
+        "VU007": false
+      },
+      "errors": {}
+    },
+    {
+      "file": "erc20-paymaster/lib/account-abstraction-v7/contracts/test/TestWarmColdAccount.sol",
+      "gt": {
+        "VU001": true,
+        "VU002": false,
+        "VU003": true,
+        "VU004": false,
+        "VU005": true,
+        "VU007": true
+      },
+      "pred": {
+        "VU001": true,
+        "VU002": false,
+        "VU003": false,
+        "VU004": false,
+        "VU005": true,
+        "VU007": true
+      },
+      "errors": {}
+    },
+    {
+      "file": "erc20-paymaster/lib/account-abstraction-v7/contracts/test/TestRevertAccount.sol",
+      "gt": {
+        "VU001": true,
+        "VU002": true,
+        "VU003": true,
+        "VU004": false,
+        "VU005": false,
+        "VU007": true
+      },
+      "pred": {
+        "VU001": true,
+        "VU002": true,
+        "VU003": false,
+        "VU004": false,
+        "VU005": false,
+        "VU007": true
+      },
+      "errors": {}
+    },
+    {
+      "file": "erc20-paymaster/lib/account-abstraction-v7/contracts/test/MaliciousAccount.sol",
+      "gt": {
+        "VU001": true,
+        "VU002": true,
+        "VU003": true,
+        "VU004": false,
+        "VU005": false,
+        "VU007": true
+      },
+      "pred": {
+        "VU001": true,
+        "VU002": true,
+        "VU003": false,
+        "VU004": false,
+        "VU005": false,
+        "VU007": true
+      },
+      "errors": {}
+    },
+    {
+      "file": "erc20-paymaster/lib/account-abstraction-v6/contracts/core/BaseAccount.sol",
+      "gt": {
+        "VU001": false,
+        "VU002": false,
+        "VU003": false,
+        "VU004": false,
+        "VU005": false,
+        "VU007": false
+      },
+      "pred": {
+        "VU001": false,
+        "VU002": false,
+        "VU003": false,
+        "VU004": false,
+        "VU005": true,
+        "VU007": false
+      },
+      "errors": {}
+    },
+    {
+      "file": "erc20-paymaster/lib/account-abstraction-v6/contracts/test/TestWarmColdAccount.sol",
+      "gt": {
+        "VU001": true,
+        "VU002": false,
+        "VU003": true,
+        "VU004": false,
+        "VU005": true,
+        "VU007": true
+      },
+      "pred": {
+        "VU001": true,
+        "VU002": false,
+        "VU003": true,
+        "VU004": false,
+        "VU005": true,
+        "VU007": true
+      },
+      "errors": {}
+    },
+    {
+      "file": "erc20-paymaster/lib/account-abstraction-v6/contracts/test/TestRevertAccount.sol",
+      "gt": {
+        "VU001": true,
+        "VU002": true,
+        "VU003": true,
+        "VU004": false,
+        "VU005": false,
+        "VU007": true
+      },
+      "pred": {
+        "VU001": true,
+        "VU002": true,
+        "VU003": true,
+        "VU004": false,
+        "VU005": false,
+        "VU007": true
+      },
+      "errors": {}
+    },
+    {
+      "file": "erc20-paymaster/lib/account-abstraction-v6/contracts/test/MaliciousAccount.sol",
+      "gt": {
+        "VU001": true,
+        "VU002": true,
+        "VU003": true,
+        "VU004": false,
+        "VU005": false,
+        "VU007": true
+      },
+      "pred": {
+        "VU001": true,
+        "VU002": true,
+        "VU003": true,
+        "VU004": false,
+        "VU005": false,
+        "VU007": true
+      },
+      "errors": {}
+    },
+    {
+      "file": "erc20-paymaster/lib/account-abstraction-v6/contracts/samples/gnosis/EIP4337Fallback.sol",
+      "gt": {
+        "VU001": false,
+        "VU002": false,
+        "VU003": false,
+        "VU004": false,
+        "VU005": false,
+        "VU007": false
+      },
+      "pred": {
+        "VU001": true,
+        "VU002": true,
+        "VU003": false,
+        "VU004": false,
+        "VU005": false,
+        "VU007": true
+      },
+      "errors": {}
+    },
+    {
+      "file": "erc20-paymaster/lib/account-abstraction-v6/contracts/samples/gnosis/EIP4337Manager.sol",
+      "gt": {
+        "VU001": false,
+        "VU002": false,
+        "VU003": false,
+        "VU004": false,
+        "VU005": false,
+        "VU007": false
+      },
+      "pred": {
+        "VU001": false,
+        "VU002": false,
+        "VU003": false,
+        "VU004": false,
+        "VU005": true,
+        "VU007": true
+      },
+      "errors": {}
+    },
+    {
+      "file": "erc20-paymaster/src/account-abstraction/v07/core/BaseAccount.sol",
+      "gt": {
+        "VU001": false,
+        "VU002": false,
+        "VU003": false,
+        "VU004": false,
+        "VU005": false,
+        "VU007": false
+      },
+      "pred": {
+        "VU001": false,
+        "VU002": false,
+        "VU003": false,
+        "VU004": false,
+        "VU005": true,
+        "VU007": false
+      },
+      "errors": {}
+    },
+    {
+      "file": "erc4337-account-abstraction-toolkit/lib/openzeppelin-contracts/contracts/mocks/account/modules/ERC7579Mock.sol",
+      "gt": {
+        "VU001": false,
+        "VU002": false,
+        "VU003": false,
+        "VU004": false,
+        "VU005": false,
+        "VU007": false
+      },
+      "pred": {
+        "VU001": false,
+        "VU002": true,
+        "VU003": false,
+        "VU004": false,
+        "VU005": false,
+        "VU007": true
+      },
+      "errors": {}
+    },
+    {
+      "file": "erc4337-account-abstraction-toolkit/lib/openzeppelin-contracts/contracts/account/Account.sol",
+      "gt": {
+        "VU001": false,
+        "VU002": false,
+        "VU003": false,
+        "VU004": false,
+        "VU005": false,
+        "VU007": false
+      },
+      "pred": {
+        "VU001": true,
+        "VU002": true,
+        "VU003": true,
+        "VU004": false,
+        "VU005": false,
+        "VU007": true
+      },
+      "errors": {}
+    },
+    {
+      "file": "erc4337-account-abstraction-toolkit/lib/openzeppelin-contracts/contracts/interfaces/draft-IERC7579.sol",
+      "gt": {
+        "VU001": false,
+        "VU002": false,
+        "VU003": false,
+        "VU004": false,
+        "VU005": false,
+        "VU007": false
+      },
+      "pred": {
+        "VU001": true,
+        "VU002": true,
+        "VU003": false,
+        "VU004": false,
+        "VU005": false,
+        "VU007": true
+      },
+      "errors": {}
+    },
+    {
+      "file": "erc4337-account-abstraction-toolkit/src/modules/SessionKeyModule.sol",
+      "gt": {
+        "VU001": false,
+        "VU002": false,
+        "VU003": false,
+        "VU004": false,
+        "VU005": false,
+        "VU007": false
+      },
+      "pred": {
+        "VU001": true,
+        "VU002": true,
+        "VU003": false,
+        "VU004": false,
+        "VU005": false,
+        "VU007": true
+      },
+      "errors": {}
+    },
+    {
+      "file": "erc4337-account-abstraction-toolkit/src/modules/MultisigValidatorModule.sol",
+      "gt": {
+        "VU001": false,
+        "VU002": false,
+        "VU003": false,
+        "VU004": false,
+        "VU005": false,
+        "VU007": false
+      },
+      "pred": {
+        "VU001": false,
+        "VU002": true,
+        "VU003": false,
+        "VU004": false,
+        "VU005": false,
+        "VU007": true
+      },
+      "errors": {}
+    },
+    {
+      "file": "erc4337-account-abstraction-toolkit/src/interfaces/IModule.sol",
+      "gt": {
+        "VU001": false,
+        "VU002": false,
+        "VU003": false,
+        "VU004": false,
+        "VU005": false,
+        "VU007": false
+      },
+      "pred": {
+        "VU001": true,
+        "VU002": true,
+        "VU003": false,
+        "VU004": false,
+        "VU005": false,
+        "VU007": true
+      },
+      "errors": {}
+    },
+    {
+      "file": "erc4337-contracts-v07/contracts/core/BaseAccount.sol",
+      "gt": {
+        "VU001": false,
+        "VU002": false,
+        "VU003": false,
+        "VU004": false,
+        "VU005": false,
+        "VU007": false
+      },
+      "pred": {
+        "VU001": false,
+        "VU002": false,
+        "VU003": false,
+        "VU004": false,
+        "VU005": true,
+        "VU007": false
+      },
+      "errors": {}
+    },
+    {
+      "file": "erc4337-contracts-v07/contracts/test/TestWarmColdAccount.sol",
+      "gt": {
+        "VU001": true,
+        "VU002": false,
+        "VU003": true,
+        "VU004": false,
+        "VU005": true,
+        "VU007": true
+      },
+      "pred": {
+        "VU001": true,
+        "VU002": false,
+        "VU003": false,
+        "VU004": false,
+        "VU005": true,
+        "VU007": true
+      },
+      "errors": {}
+    },
+    {
+      "file": "erc4337-contracts-v07/contracts/test/TestRevertAccount.sol",
+      "gt": {
+        "VU001": true,
+        "VU002": true,
+        "VU003": true,
+        "VU004": false,
+        "VU005": false,
+        "VU007": true
+      },
+      "pred": {
+        "VU001": true,
+        "VU002": true,
+        "VU003": false,
+        "VU004": false,
+        "VU005": false,
+        "VU007": true
+      },
+      "errors": {}
+    },
+    {
+      "file": "erc4337-contracts-v07/contracts/test/MaliciousAccount.sol",
+      "gt": {
+        "VU001": true,
+        "VU002": true,
+        "VU003": true,
+        "VU004": false,
+        "VU005": false,
+        "VU007": true
+      },
+      "pred": {
+        "VU001": true,
+        "VU002": true,
+        "VU003": false,
+        "VU004": false,
+        "VU005": false,
+        "VU007": true
+      },
+      "errors": {}
+    },
+    {
+      "file": "erc7579-implementation/src/modules/SimpleExecutionValidator.sol",
+      "gt": {
+        "VU001": false,
+        "VU002": false,
+        "VU003": false,
+        "VU004": false,
+        "VU005": false,
+        "VU007": false
+      },
+      "pred": {
+        "VU001": true,
+        "VU002": true,
+        "VU003": false,
+        "VU004": false,
+        "VU005": false,
+        "VU007": true
+      },
+      "errors": {}
+    },
+    {
+      "file": "foundry-abstract-Zk/src/ethereum/MinimalAccount.sol",
+      "gt": {
+        "VU001": false,
+        "VU002": false,
+        "VU003": false,
+        "VU004": false,
+        "VU005": false,
+        "VU007": false
+      },
+      "pred": {
+        "VU001": false,
+        "VU002": true,
+        "VU003": false,
+        "VU004": false,
+        "VU005": false,
+        "VU007": true
+      },
+      "errors": {}
+    },
+    {
+      "file": "foundry-account-abstaction/lib/account-abstraction/contracts/core/BaseAccount.sol",
+      "gt": {
+        "VU001": false,
+        "VU002": false,
+        "VU003": false,
+        "VU004": false,
+        "VU005": false,
+        "VU007": false
+      },
+      "pred": {
+        "VU001": false,
+        "VU002": false,
+        "VU003": false,
+        "VU004": false,
+        "VU005": true,
+        "VU007": false
+      },
+      "errors": {}
+    },
+    {
+      "file": "foundry-account-abstaction/lib/account-abstraction/contracts/test/TestWarmColdAccount.sol",
+      "gt": {
+        "VU001": true,
+        "VU002": false,
+        "VU003": true,
+        "VU004": false,
+        "VU005": true,
+        "VU007": true
+      },
+      "pred": {
+        "VU001": true,
+        "VU002": false,
+        "VU003": false,
+        "VU004": false,
+        "VU005": true,
+        "VU007": true
+      },
+      "errors": {}
+    },
+    {
+      "file": "foundry-account-abstaction/lib/account-abstraction/contracts/test/TestRevertAccount.sol",
+      "gt": {
+        "VU001": true,
+        "VU002": true,
+        "VU003": true,
+        "VU004": false,
+        "VU005": false,
+        "VU007": true
+      },
+      "pred": {
+        "VU001": true,
+        "VU002": true,
+        "VU003": false,
+        "VU004": false,
+        "VU005": false,
+        "VU007": true
+      },
+      "errors": {}
+    },
+    {
+      "file": "foundry-account-abstaction/lib/account-abstraction/contracts/test/MaliciousAccount.sol",
+      "gt": {
+        "VU001": true,
+        "VU002": true,
+        "VU003": true,
+        "VU004": false,
+        "VU005": false,
+        "VU007": true
+      },
+      "pred": {
+        "VU001": true,
+        "VU002": true,
+        "VU003": false,
+        "VU004": false,
+        "VU005": false,
+        "VU007": true
+      },
+      "errors": {}
+    },
+    {
+      "file": "foundry-account-abstaction/lib/openzeppelin-contracts/contracts/mocks/account/modules/ERC7579Mock.sol",
+      "gt": {
+        "VU001": false,
+        "VU002": false,
+        "VU003": false,
+        "VU004": false,
+        "VU005": false,
+        "VU007": false
+      },
+      "pred": {
+        "VU001": false,
+        "VU002": true,
+        "VU003": false,
+        "VU004": false,
+        "VU005": false,
+        "VU007": true
+      },
+      "errors": {}
+    },
+    {
+      "file": "foundry-account-abstaction/lib/openzeppelin-contracts/contracts/account/Account.sol",
+      "gt": {
+        "VU001": false,
+        "VU002": false,
+        "VU003": false,
+        "VU004": false,
+        "VU005": false,
+        "VU007": false
+      },
+      "pred": {
+        "VU001": true,
+        "VU002": true,
+        "VU003": true,
+        "VU004": false,
+        "VU005": false,
+        "VU007": true
+      },
+      "errors": {}
+    },
+    {
+      "file": "foundry-account-abstaction/lib/openzeppelin-contracts/contracts/interfaces/draft-IERC7579.sol",
+      "gt": {
+        "VU001": false,
+        "VU002": false,
+        "VU003": false,
+        "VU004": false,
+        "VU005": false,
+        "VU007": false
+      },
+      "pred": {
+        "VU001": true,
+        "VU002": true,
+        "VU003": false,
+        "VU004": false,
+        "VU005": false,
+        "VU007": true
+      },
+      "errors": {}
+    },
+    {
+      "file": "foundry-account-abstraction/src/ethereum/MinimalAccount.sol",
+      "gt": {
+        "VU001": false,
+        "VU002": false,
+        "VU003": false,
+        "VU004": false,
+        "VU005": false,
+        "VU007": false
+      },
+      "pred": {
+        "VU001": false,
+        "VU002": false,
+        "VU003": false,
+        "VU004": false,
+        "VU005": true,
+        "VU007": true
+      },
+      "errors": {}
+    },
+    {
+      "file": "ithaca-account/lib/solady/test/utils/mocks/MockEntryPoint.sol",
+      "gt": {
+        "VU001": false,
+        "VU002": false,
+        "VU003": false,
+        "VU004": false,
+        "VU005": false,
+        "VU007": false
+      },
+      "pred": {
+        "VU001": true,
+        "VU002": true,
+        "VU003": false,
+        "VU004": false,
+        "VU005": false,
+        "VU007": true
+      },
+      "errors": {}
+    },
+    {
+      "file": "ithaca-account/lib/solady/src/accounts/ERC4337.sol",
+      "gt": {
+        "VU001": false,
+        "VU002": false,
+        "VU003": false,
+        "VU004": false,
+        "VU005": false,
+        "VU007": false
+      },
+      "pred": {
+        "VU001": false,
+        "VU002": false,
+        "VU003": false,
+        "VU004": false,
+        "VU005": true,
+        "VU007": false
+      },
+      "errors": {}
+    },
+    {
+      "file": "kernel/lib/solady/test/utils/mocks/MockEntryPoint.sol",
+      "gt": {
+        "VU001": false,
+        "VU002": false,
+        "VU003": false,
+        "VU004": false,
+        "VU005": false,
+        "VU007": false
+      },
+      "pred": {
+        "VU001": true,
+        "VU002": true,
+        "VU003": false,
+        "VU004": false,
+        "VU005": false,
+        "VU007": true
+      },
+      "errors": {}
+    },
+    {
+      "file": "kernel/lib/solady/src/accounts/ERC4337.sol",
+      "gt": {
+        "VU001": false,
+        "VU002": false,
+        "VU003": false,
+        "VU004": false,
+        "VU005": false,
+        "VU007": false
+      },
+      "pred": {
+        "VU001": false,
+        "VU002": false,
+        "VU003": false,
+        "VU004": false,
+        "VU005": true,
+        "VU007": false
+      },
+      "errors": {}
+    },
+    {
+      "file": "kernel/src/Kernel.sol",
+      "gt": {
+        "VU001": false,
+        "VU002": false,
+        "VU003": false,
+        "VU004": false,
+        "VU005": false,
+        "VU007": false
+      },
+      "pred": {
+        "VU001": true,
+        "VU002": false,
+        "VU003": false,
+        "VU004": false,
+        "VU005": false,
+        "VU007": false
+      },
+      "errors": {}
+    },
+    {
+      "file": "kernel/src/validator/MultiChainValidator.sol",
+      "gt": {
+        "VU001": false,
+        "VU002": false,
+        "VU003": false,
+        "VU004": false,
+        "VU005": false,
+        "VU007": false
+      },
+      "pred": {
+        "VU001": false,
+        "VU002": true,
+        "VU003": false,
+        "VU004": true,
+        "VU005": false,
+        "VU007": true
+      },
+      "errors": {}
+    },
+    {
+      "file": "kernel/src/validator/EmitIdentifierValidator.sol",
+      "gt": {
+        "VU001": false,
+        "VU002": false,
+        "VU003": false,
+        "VU004": false,
+        "VU005": false,
+        "VU007": false
+      },
+      "pred": {
+        "VU001": true,
+        "VU002": true,
+        "VU003": false,
+        "VU004": false,
+        "VU005": false,
+        "VU007": true
+      },
+      "errors": {}
+    },
+    {
+      "file": "modular-account/lib/light-account/lib/account-abstraction/contracts/core/BaseAccount.sol",
+      "gt": {
+        "VU001": false,
+        "VU002": false,
+        "VU003": false,
+        "VU004": false,
+        "VU005": false,
+        "VU007": false
+      },
+      "pred": {
+        "VU001": false,
+        "VU002": false,
+        "VU003": false,
+        "VU004": false,
+        "VU005": true,
+        "VU007": false
+      },
+      "errors": {}
+    },
+    {
+      "file": "modular-account/lib/light-account/lib/account-abstraction/contracts/test/TestWarmColdAccount.sol",
+      "gt": {
+        "VU001": true,
+        "VU002": false,
+        "VU003": true,
+        "VU004": false,
+        "VU005": true,
+        "VU007": true
+      },
+      "pred": {
+        "VU001": true,
+        "VU002": false,
+        "VU003": false,
+        "VU004": false,
+        "VU005": true,
+        "VU007": true
+      },
+      "errors": {}
+    },
+    {
+      "file": "modular-account/lib/light-account/lib/account-abstraction/contracts/test/TestRevertAccount.sol",
+      "gt": {
+        "VU001": true,
+        "VU002": true,
+        "VU003": true,
+        "VU004": false,
+        "VU005": false,
+        "VU007": true
+      },
+      "pred": {
+        "VU001": true,
+        "VU002": true,
+        "VU003": false,
+        "VU004": false,
+        "VU005": false,
+        "VU007": true
+      },
+      "errors": {}
+    },
+    {
+      "file": "modular-account/lib/light-account/lib/account-abstraction/contracts/test/MaliciousAccount.sol",
+      "gt": {
+        "VU001": true,
+        "VU002": true,
+        "VU003": true,
+        "VU004": false,
+        "VU005": false,
+        "VU007": true
+      },
+      "pred": {
+        "VU001": true,
+        "VU002": true,
+        "VU003": false,
+        "VU004": false,
+        "VU005": false,
+        "VU007": true
+      },
+      "errors": {}
+    },
+    {
+      "file": "modular-account/lib/light-account/lib/modular-account/lib/account-abstraction/contracts/core/BaseAccount.sol",
+      "gt": {
+        "VU001": false,
+        "VU002": false,
+        "VU003": false,
+        "VU004": false,
+        "VU005": false,
+        "VU007": false
+      },
+      "pred": {
+        "VU001": false,
+        "VU002": false,
+        "VU003": false,
+        "VU004": false,
+        "VU005": true,
+        "VU007": false
+      },
+      "errors": {}
+    },
+    {
+      "file": "modular-account/lib/light-account/lib/modular-account/lib/account-abstraction/contracts/test/TestWarmColdAccount.sol",
+      "gt": {
+        "VU001": true,
+        "VU002": false,
+        "VU003": true,
+        "VU004": false,
+        "VU005": true,
+        "VU007": true
+      },
+      "pred": {
+        "VU001": true,
+        "VU002": false,
+        "VU003": true,
+        "VU004": false,
+        "VU005": true,
+        "VU007": true
+      },
+      "errors": {}
+    },
+    {
+      "file": "modular-account/lib/light-account/lib/modular-account/lib/account-abstraction/contracts/test/TestRevertAccount.sol",
+      "gt": {
+        "VU001": true,
+        "VU002": true,
+        "VU003": true,
+        "VU004": false,
+        "VU005": false,
+        "VU007": true
+      },
+      "pred": {
+        "VU001": true,
+        "VU002": true,
+        "VU003": true,
+        "VU004": false,
+        "VU005": false,
+        "VU007": true
+      },
+      "errors": {}
+    },
+    {
+      "file": "modular-account/lib/light-account/lib/modular-account/lib/account-abstraction/contracts/test/MaliciousAccount.sol",
+      "gt": {
+        "VU001": true,
+        "VU002": true,
+        "VU003": true,
+        "VU004": false,
+        "VU005": false,
+        "VU007": true
+      },
+      "pred": {
+        "VU001": true,
+        "VU002": true,
+        "VU003": true,
+        "VU004": false,
+        "VU005": false,
+        "VU007": true
+      },
+      "errors": {}
+    },
+    {
+      "file": "modular-account/lib/light-account/lib/modular-account/lib/account-abstraction/contracts/samples/gnosis/EIP4337Fallback.sol",
+      "gt": {
+        "VU001": false,
+        "VU002": false,
+        "VU003": false,
+        "VU004": false,
+        "VU005": false,
+        "VU007": false
+      },
+      "pred": {
+        "VU001": true,
+        "VU002": true,
+        "VU003": false,
+        "VU004": false,
+        "VU005": false,
+        "VU007": true
+      },
+      "errors": {}
+    },
+    {
+      "file": "modular-account/lib/light-account/lib/modular-account/lib/account-abstraction/contracts/samples/gnosis/EIP4337Manager.sol",
+      "gt": {
+        "VU001": false,
+        "VU002": false,
+        "VU003": false,
+        "VU004": false,
+        "VU005": false,
+        "VU007": false
+      },
+      "pred": {
+        "VU001": false,
+        "VU002": false,
+        "VU003": false,
+        "VU004": false,
+        "VU005": true,
+        "VU007": true
+      },
+      "errors": {}
+    },
+    {
+      "file": "modular-account/lib/light-account/lib/modular-account/lib/light-account/lib/account-abstraction/contracts/core/BaseAccount.sol",
+      "gt": {
+        "VU001": false,
+        "VU002": false,
+        "VU003": false,
+        "VU004": false,
+        "VU005": false,
+        "VU007": false
+      },
+      "pred": {
+        "VU001": false,
+        "VU002": false,
+        "VU003": false,
+        "VU004": false,
+        "VU005": true,
+        "VU007": false
+      },
+      "errors": {}
+    },
+    {
+      "file": "modular-account/lib/light-account/lib/modular-account/lib/light-account/lib/account-abstraction/contracts/test/TestWarmColdAccount.sol",
+      "gt": {
+        "VU001": true,
+        "VU002": false,
+        "VU003": true,
+        "VU004": false,
+        "VU005": true,
+        "VU007": true
+      },
+      "pred": {
+        "VU001": true,
+        "VU002": false,
+        "VU003": true,
+        "VU004": false,
+        "VU005": true,
+        "VU007": true
+      },
+      "errors": {}
+    },
+    {
+      "file": "modular-account/lib/light-account/lib/modular-account/lib/light-account/lib/account-abstraction/contracts/test/TestRevertAccount.sol",
+      "gt": {
+        "VU001": true,
+        "VU002": true,
+        "VU003": true,
+        "VU004": false,
+        "VU005": false,
+        "VU007": true
+      },
+      "pred": {
+        "VU001": true,
+        "VU002": true,
+        "VU003": true,
+        "VU004": false,
+        "VU005": false,
+        "VU007": true
+      },
+      "errors": {}
+    },
+    {
+      "file": "modular-account/lib/light-account/lib/modular-account/lib/light-account/lib/account-abstraction/contracts/test/MaliciousAccount.sol",
+      "gt": {
+        "VU001": true,
+        "VU002": true,
+        "VU003": true,
+        "VU004": false,
+        "VU005": false,
+        "VU007": true
+      },
+      "pred": {
+        "VU001": true,
+        "VU002": true,
+        "VU003": true,
+        "VU004": false,
+        "VU005": false,
+        "VU007": true
+      },
+      "errors": {}
+    },
+    {
+      "file": "modular-account/lib/light-account/lib/modular-account/lib/light-account/lib/account-abstraction/contracts/samples/gnosis/EIP4337Fallback.sol",
+      "gt": {
+        "VU001": false,
+        "VU002": false,
+        "VU003": false,
+        "VU004": false,
+        "VU005": false,
+        "VU007": false
+      },
+      "pred": {
+        "VU001": true,
+        "VU002": true,
+        "VU003": false,
+        "VU004": false,
+        "VU005": false,
+        "VU007": true
+      },
+      "errors": {}
+    },
+    {
+      "file": "modular-account/lib/light-account/lib/modular-account/lib/light-account/lib/account-abstraction/contracts/samples/gnosis/EIP4337Manager.sol",
+      "gt": {
+        "VU001": false,
+        "VU002": false,
+        "VU003": false,
+        "VU004": false,
+        "VU005": false,
+        "VU007": false
+      },
+      "pred": {
+        "VU001": false,
+        "VU002": false,
+        "VU003": false,
+        "VU004": false,
+        "VU005": true,
+        "VU007": true
+      },
+      "errors": {}
+    },
+    {
+      "file": "modular-account/lib/webauthn-sol/lib/solady/test/utils/mocks/MockEntryPoint.sol",
+      "gt": {
+        "VU001": false,
+        "VU002": false,
+        "VU003": false,
+        "VU004": false,
+        "VU005": false,
+        "VU007": false
+      },
+      "pred": {
+        "VU001": true,
+        "VU002": true,
+        "VU003": false,
+        "VU004": false,
+        "VU005": false,
+        "VU007": true
+      },
+      "errors": {}
+    },
+    {
+      "file": "modular-account/lib/webauthn-sol/lib/solady/src/accounts/ERC4337.sol",
+      "gt": {
+        "VU001": false,
+        "VU002": false,
+        "VU003": false,
+        "VU004": false,
+        "VU005": false,
+        "VU007": false
+      },
+      "pred": {
+        "VU001": false,
+        "VU002": false,
+        "VU003": false,
+        "VU004": false,
+        "VU005": true,
+        "VU007": false
+      },
+      "errors": {}
+    },
+    {
+      "file": "modular-account/src/account/AccountBase.sol",
+      "gt": {
+        "VU001": false,
+        "VU002": false,
+        "VU003": false,
+        "VU004": false,
+        "VU005": false,
+        "VU007": false
+      },
+      "pred": {
+        "VU001": true,
+        "VU002": true,
+        "VU003": false,
+        "VU004": false,
+        "VU005": false,
+        "VU007": false
+      },
+      "errors": {}
+    },
+    {
+      "file": "monolith/contracts/lib/account-abstraction/contracts/core/BaseAccount.sol",
+      "gt": {
+        "VU001": false,
+        "VU002": false,
+        "VU003": false,
+        "VU004": false,
+        "VU005": false,
+        "VU007": false
+      },
+      "pred": {
+        "VU001": false,
+        "VU002": false,
+        "VU003": false,
+        "VU004": false,
+        "VU005": true,
+        "VU007": false
+      },
+      "errors": {}
+    },
+    {
+      "file": "monolith/contracts/lib/account-abstraction/contracts/test/TestWarmColdAccount.sol",
+      "gt": {
+        "VU001": true,
+        "VU002": false,
+        "VU003": true,
+        "VU004": false,
+        "VU005": true,
+        "VU007": true
+      },
+      "pred": {
+        "VU001": true,
+        "VU002": false,
+        "VU003": false,
+        "VU004": false,
+        "VU005": true,
+        "VU007": true
+      },
+      "errors": {}
+    },
+    {
+      "file": "monolith/contracts/lib/account-abstraction/contracts/test/TestRevertAccount.sol",
+      "gt": {
+        "VU001": true,
+        "VU002": true,
+        "VU003": true,
+        "VU004": false,
+        "VU005": false,
+        "VU007": true
+      },
+      "pred": {
+        "VU001": true,
+        "VU002": true,
+        "VU003": false,
+        "VU004": false,
+        "VU005": false,
+        "VU007": true
+      },
+      "errors": {}
+    },
+    {
+      "file": "monolith/contracts/lib/account-abstraction/contracts/test/MaliciousAccount.sol",
+      "gt": {
+        "VU001": true,
+        "VU002": true,
+        "VU003": true,
+        "VU004": false,
+        "VU005": false,
+        "VU007": true
+      },
+      "pred": {
+        "VU001": true,
+        "VU002": true,
+        "VU003": false,
+        "VU004": false,
+        "VU005": false,
+        "VU007": true
+      },
+      "errors": {}
+    },
+    {
+      "file": "monolith/contracts/lib/openzeppelin-contracts/contracts/mocks/account/modules/ERC7579Mock.sol",
+      "gt": {
+        "VU001": false,
+        "VU002": false,
+        "VU003": false,
+        "VU004": false,
+        "VU005": false,
+        "VU007": false
+      },
+      "pred": {
+        "VU001": false,
+        "VU002": true,
+        "VU003": false,
+        "VU004": false,
+        "VU005": false,
+        "VU007": true
+      },
+      "errors": {}
+    },
+    {
+      "file": "monolith/contracts/lib/openzeppelin-contracts/contracts/account/Account.sol",
+      "gt": {
+        "VU001": false,
+        "VU002": false,
+        "VU003": false,
+        "VU004": false,
+        "VU005": false,
+        "VU007": false
+      },
+      "pred": {
+        "VU001": true,
+        "VU002": true,
+        "VU003": true,
+        "VU004": false,
+        "VU005": false,
+        "VU007": true
+      },
+      "errors": {}
+    },
+    {
+      "file": "monolith/contracts/lib/openzeppelin-contracts/contracts/interfaces/draft-IERC7579.sol",
+      "gt": {
+        "VU001": false,
+        "VU002": false,
+        "VU003": false,
+        "VU004": false,
+        "VU005": false,
+        "VU007": false
+      },
+      "pred": {
+        "VU001": true,
+        "VU002": true,
+        "VU003": false,
+        "VU004": false,
+        "VU005": false,
+        "VU007": true
+      },
+      "errors": {}
+    },
+    {
+      "file": "monolith/contracts/src/MonolithWallet.sol",
+      "gt": {
+        "VU001": false,
+        "VU002": false,
+        "VU003": false,
+        "VU004": false,
+        "VU005": false,
+        "VU007": false
+      },
+      "pred": {
+        "VU001": false,
+        "VU002": true,
+        "VU003": false,
+        "VU004": false,
+        "VU005": false,
+        "VU007": false
+      },
+      "errors": {}
+    },
+    {
+      "file": "nexus/contracts/mocks/MockValidator_7739v2.sol",
+      "gt": {
+        "VU001": false,
+        "VU002": false,
+        "VU003": false,
+        "VU004": false,
+        "VU005": false,
+        "VU007": false
+      },
+      "pred": {
+        "VU001": true,
+        "VU002": true,
+        "VU003": false,
+        "VU004": false,
+        "VU005": false,
+        "VU007": true
+      },
+      "errors": {}
+    },
+    {
+      "file": "nexus-next-gen-smart-account-wallet-erc-4337/contracts/src/NexusAccount.sol",
+      "gt": {
+        "VU001": false,
+        "VU002": false,
+        "VU003": false,
+        "VU004": false,
+        "VU005": false,
+        "VU007": false
+      },
+      "pred": {
+        "VU001": false,
+        "VU002": true,
+        "VU003": false,
+        "VU004": false,
+        "VU005": false,
+        "VU007": false
+      },
+      "errors": {}
+    },
+    {
+      "file": "openzeppelin-contracts/contracts/mocks/account/modules/ERC7579Mock.sol",
+      "gt": {
+        "VU001": false,
+        "VU002": false,
+        "VU003": false,
+        "VU004": false,
+        "VU005": false,
+        "VU007": false
+      },
+      "pred": {
+        "VU001": false,
+        "VU002": true,
+        "VU003": false,
+        "VU004": false,
+        "VU005": false,
+        "VU007": true
+      },
+      "errors": {}
+    },
+    {
+      "file": "openzeppelin-contracts/contracts/account/Account.sol",
+      "gt": {
+        "VU001": false,
+        "VU002": false,
+        "VU003": false,
+        "VU004": false,
+        "VU005": false,
+        "VU007": false
+      },
+      "pred": {
+        "VU001": true,
+        "VU002": true,
+        "VU003": true,
+        "VU004": false,
+        "VU005": false,
+        "VU007": true
+      },
+      "errors": {}
+    },
+    {
+      "file": "openzeppelin-contracts/contracts/interfaces/draft-IERC7579.sol",
+      "gt": {
+        "VU001": false,
+        "VU002": false,
+        "VU003": false,
+        "VU004": false,
+        "VU005": false,
+        "VU007": false
+      },
+      "pred": {
+        "VU001": true,
+        "VU002": true,
+        "VU003": false,
+        "VU004": false,
+        "VU005": false,
+        "VU007": true
+      },
+      "errors": {}
+    },
+    {
+      "file": "passkeys-smart-wallet/contracts/lib/account-abstraction/contracts/core/BaseAccount.sol",
+      "gt": {
+        "VU001": false,
+        "VU002": false,
+        "VU003": false,
+        "VU004": false,
+        "VU005": false,
+        "VU007": false
+      },
+      "pred": {
+        "VU001": false,
+        "VU002": false,
+        "VU003": false,
+        "VU004": false,
+        "VU005": true,
+        "VU007": false
+      },
+      "errors": {}
+    },
+    {
+      "file": "passkeys-smart-wallet/contracts/lib/account-abstraction/contracts/test/TestWarmColdAccount.sol",
+      "gt": {
+        "VU001": true,
+        "VU002": false,
+        "VU003": true,
+        "VU004": false,
+        "VU005": true,
+        "VU007": true
+      },
+      "pred": {
+        "VU001": true,
+        "VU002": false,
+        "VU003": true,
+        "VU004": false,
+        "VU005": true,
+        "VU007": true
+      },
+      "errors": {}
+    },
+    {
+      "file": "passkeys-smart-wallet/contracts/lib/account-abstraction/contracts/test/TestRevertAccount.sol",
+      "gt": {
+        "VU001": true,
+        "VU002": true,
+        "VU003": true,
+        "VU004": false,
+        "VU005": false,
+        "VU007": true
+      },
+      "pred": {
+        "VU001": true,
+        "VU002": true,
+        "VU003": true,
+        "VU004": false,
+        "VU005": false,
+        "VU007": true
+      },
+      "errors": {}
+    },
+    {
+      "file": "passkeys-smart-wallet/contracts/lib/account-abstraction/contracts/test/MaliciousAccount.sol",
+      "gt": {
+        "VU001": true,
+        "VU002": true,
+        "VU003": true,
+        "VU004": false,
+        "VU005": false,
+        "VU007": true
+      },
+      "pred": {
+        "VU001": true,
+        "VU002": true,
+        "VU003": true,
+        "VU004": false,
+        "VU005": false,
+        "VU007": true
+      },
+      "errors": {}
+    },
+    {
+      "file": "passkeys-smart-wallet/contracts/lib/account-abstraction/contracts/samples/gnosis/EIP4337Fallback.sol",
+      "gt": {
+        "VU001": false,
+        "VU002": false,
+        "VU003": false,
+        "VU004": false,
+        "VU005": false,
+        "VU007": false
+      },
+      "pred": {
+        "VU001": true,
+        "VU002": true,
+        "VU003": false,
+        "VU004": false,
+        "VU005": false,
+        "VU007": true
+      },
+      "errors": {}
+    },
+    {
+      "file": "passkeys-smart-wallet/contracts/lib/account-abstraction/contracts/samples/gnosis/EIP4337Manager.sol",
+      "gt": {
+        "VU001": false,
+        "VU002": false,
+        "VU003": false,
+        "VU004": false,
+        "VU005": false,
+        "VU007": false
+      },
+      "pred": {
+        "VU001": false,
+        "VU002": false,
+        "VU003": false,
+        "VU004": false,
+        "VU005": true,
+        "VU007": true
+      },
+      "errors": {}
+    },
+    {
+      "file": "rundler/crates/contracts/contracts/v0_7/lib/account-abstraction/contracts/core/BaseAccount.sol",
+      "gt": {
+        "VU001": false,
+        "VU002": false,
+        "VU003": false,
+        "VU004": false,
+        "VU005": false,
+        "VU007": false
+      },
+      "pred": {
+        "VU001": false,
+        "VU002": false,
+        "VU003": false,
+        "VU004": false,
+        "VU005": true,
+        "VU007": false
+      },
+      "errors": {}
+    },
+    {
+      "file": "rundler/crates/contracts/contracts/v0_7/lib/account-abstraction/contracts/test/TestWarmColdAccount.sol",
+      "gt": {
+        "VU001": true,
+        "VU002": false,
+        "VU003": true,
+        "VU004": false,
+        "VU005": true,
+        "VU007": true
+      },
+      "pred": {
+        "VU001": true,
+        "VU002": false,
+        "VU003": false,
+        "VU004": false,
+        "VU005": true,
+        "VU007": true
+      },
+      "errors": {}
+    },
+    {
+      "file": "rundler/crates/contracts/contracts/v0_7/lib/account-abstraction/contracts/test/TestRevertAccount.sol",
+      "gt": {
+        "VU001": true,
+        "VU002": true,
+        "VU003": true,
+        "VU004": false,
+        "VU005": false,
+        "VU007": true
+      },
+      "pred": {
+        "VU001": true,
+        "VU002": true,
+        "VU003": false,
+        "VU004": false,
+        "VU005": false,
+        "VU007": true
+      },
+      "errors": {}
+    },
+    {
+      "file": "rundler/crates/contracts/contracts/v0_7/lib/account-abstraction/contracts/test/MaliciousAccount.sol",
+      "gt": {
+        "VU001": true,
+        "VU002": true,
+        "VU003": true,
+        "VU004": false,
+        "VU005": false,
+        "VU007": true
+      },
+      "pred": {
+        "VU001": true,
+        "VU002": true,
+        "VU003": false,
+        "VU004": false,
+        "VU005": false,
+        "VU007": true
+      },
+      "errors": {}
+    },
+    {
+      "file": "rundler/crates/contracts/contracts/v0_9/lib/account-abstraction/contracts/core/BaseAccount.sol",
+      "gt": {
+        "VU001": false,
+        "VU002": false,
+        "VU003": false,
+        "VU004": false,
+        "VU005": false,
+        "VU007": false
+      },
+      "pred": {
+        "VU001": false,
+        "VU002": false,
+        "VU003": false,
+        "VU004": false,
+        "VU005": true,
+        "VU007": false
+      },
+      "errors": {}
+    },
+    {
+      "file": "rundler/crates/contracts/contracts/v0_9/lib/account-abstraction/contracts/test/TestWarmColdAccount.sol",
+      "gt": {
+        "VU001": true,
+        "VU002": false,
+        "VU003": true,
+        "VU004": false,
+        "VU005": true,
+        "VU007": true
+      },
+      "pred": {
+        "VU001": true,
+        "VU002": false,
+        "VU003": false,
+        "VU004": false,
+        "VU005": true,
+        "VU007": true
+      },
+      "errors": {}
+    },
+    {
+      "file": "rundler/crates/contracts/contracts/v0_9/lib/account-abstraction/contracts/test/TestRevertAccount.sol",
+      "gt": {
+        "VU001": true,
+        "VU002": true,
+        "VU003": true,
+        "VU004": false,
+        "VU005": false,
+        "VU007": true
+      },
+      "pred": {
+        "VU001": true,
+        "VU002": true,
+        "VU003": false,
+        "VU004": false,
+        "VU005": false,
+        "VU007": true
+      },
+      "errors": {}
+    },
+    {
+      "file": "rundler/crates/contracts/contracts/v0_9/lib/account-abstraction/contracts/test/MaliciousAccount.sol",
+      "gt": {
+        "VU001": true,
+        "VU002": true,
+        "VU003": true,
+        "VU004": false,
+        "VU005": false,
+        "VU007": true
+      },
+      "pred": {
+        "VU001": true,
+        "VU002": true,
+        "VU003": false,
+        "VU004": false,
+        "VU005": false,
+        "VU007": true
+      },
+      "errors": {}
+    },
+    {
+      "file": "rundler/crates/contracts/contracts/v0_8/lib/account-abstraction/contracts/core/BaseAccount.sol",
+      "gt": {
+        "VU001": false,
+        "VU002": false,
+        "VU003": false,
+        "VU004": false,
+        "VU005": false,
+        "VU007": false
+      },
+      "pred": {
+        "VU001": false,
+        "VU002": false,
+        "VU003": false,
+        "VU004": false,
+        "VU005": true,
+        "VU007": false
+      },
+      "errors": {}
+    },
+    {
+      "file": "rundler/crates/contracts/contracts/v0_8/lib/account-abstraction/contracts/test/TestWarmColdAccount.sol",
+      "gt": {
+        "VU001": true,
+        "VU002": false,
+        "VU003": true,
+        "VU004": false,
+        "VU005": true,
+        "VU007": true
+      },
+      "pred": {
+        "VU001": true,
+        "VU002": false,
+        "VU003": false,
+        "VU004": false,
+        "VU005": true,
+        "VU007": true
+      },
+      "errors": {}
+    },
+    {
+      "file": "rundler/crates/contracts/contracts/v0_8/lib/account-abstraction/contracts/test/TestRevertAccount.sol",
+      "gt": {
+        "VU001": true,
+        "VU002": true,
+        "VU003": true,
+        "VU004": false,
+        "VU005": false,
+        "VU007": true
+      },
+      "pred": {
+        "VU001": true,
+        "VU002": true,
+        "VU003": false,
+        "VU004": false,
+        "VU005": false,
+        "VU007": true
+      },
+      "errors": {}
+    },
+    {
+      "file": "rundler/crates/contracts/contracts/v0_8/lib/account-abstraction/contracts/test/MaliciousAccount.sol",
+      "gt": {
+        "VU001": true,
+        "VU002": true,
+        "VU003": true,
+        "VU004": false,
+        "VU005": false,
+        "VU007": true
+      },
+      "pred": {
+        "VU001": true,
+        "VU002": true,
+        "VU003": false,
+        "VU004": false,
+        "VU005": false,
+        "VU007": true
+      },
+      "errors": {}
+    },
+    {
+      "file": "rundler/crates/contracts/contracts/v0_6/lib/account-abstraction/contracts/core/BaseAccount.sol",
+      "gt": {
+        "VU001": false,
+        "VU002": false,
+        "VU003": false,
+        "VU004": false,
+        "VU005": false,
+        "VU007": false
+      },
+      "pred": {
+        "VU001": false,
+        "VU002": false,
+        "VU003": false,
+        "VU004": false,
+        "VU005": true,
+        "VU007": false
+      },
+      "errors": {}
+    },
+    {
+      "file": "rundler/crates/contracts/contracts/v0_6/lib/account-abstraction/contracts/test/TestWarmColdAccount.sol",
+      "gt": {
+        "VU001": true,
+        "VU002": false,
+        "VU003": true,
+        "VU004": false,
+        "VU005": true,
+        "VU007": true
+      },
+      "pred": {
+        "VU001": true,
+        "VU002": false,
+        "VU003": true,
+        "VU004": false,
+        "VU005": true,
+        "VU007": true
+      },
+      "errors": {}
+    },
+    {
+      "file": "rundler/crates/contracts/contracts/v0_6/lib/account-abstraction/contracts/test/TestRevertAccount.sol",
+      "gt": {
+        "VU001": true,
+        "VU002": true,
+        "VU003": true,
+        "VU004": false,
+        "VU005": false,
+        "VU007": true
+      },
+      "pred": {
+        "VU001": true,
+        "VU002": true,
+        "VU003": true,
+        "VU004": false,
+        "VU005": false,
+        "VU007": true
+      },
+      "errors": {}
+    },
+    {
+      "file": "rundler/crates/contracts/contracts/v0_6/lib/account-abstraction/contracts/test/MaliciousAccount.sol",
+      "gt": {
+        "VU001": true,
+        "VU002": true,
+        "VU003": true,
+        "VU004": false,
+        "VU005": false,
+        "VU007": true
+      },
+      "pred": {
+        "VU001": true,
+        "VU002": true,
+        "VU003": true,
+        "VU004": false,
+        "VU005": false,
+        "VU007": true
+      },
+      "errors": {}
+    },
+    {
+      "file": "rundler/crates/contracts/contracts/v0_6/lib/account-abstraction/contracts/samples/gnosis/EIP4337Fallback.sol",
+      "gt": {
+        "VU001": false,
+        "VU002": false,
+        "VU003": false,
+        "VU004": false,
+        "VU005": false,
+        "VU007": false
+      },
+      "pred": {
+        "VU001": true,
+        "VU002": true,
+        "VU003": false,
+        "VU004": false,
+        "VU005": false,
+        "VU007": true
+      },
+      "errors": {}
+    },
+    {
+      "file": "rundler/crates/contracts/contracts/v0_6/lib/account-abstraction/contracts/samples/gnosis/EIP4337Manager.sol",
+      "gt": {
+        "VU001": false,
+        "VU002": false,
+        "VU003": false,
+        "VU004": false,
+        "VU005": false,
+        "VU007": false
+      },
+      "pred": {
+        "VU001": false,
+        "VU002": false,
+        "VU003": false,
+        "VU004": false,
+        "VU005": true,
+        "VU007": true
+      },
+      "errors": {}
+    },
+    {
+      "file": "safeSocial/src/SafeSocial.sol",
+      "gt": {
+        "VU001": false,
+        "VU002": false,
+        "VU003": false,
+        "VU004": false,
+        "VU005": false,
+        "VU007": false
+      },
+      "pred": {
+        "VU001": false,
+        "VU002": false,
+        "VU003": false,
+        "VU004": false,
+        "VU005": true,
+        "VU007": false
+      },
+      "errors": {}
+    },
+    {
+      "file": "singleton-paymaster/test/utils/account-abstraction/v07/core/BaseAccount.sol",
+      "gt": {
+        "VU001": false,
+        "VU002": false,
+        "VU003": false,
+        "VU004": false,
+        "VU005": false,
+        "VU007": false
+      },
+      "pred": {
+        "VU001": false,
+        "VU002": false,
+        "VU003": false,
+        "VU004": false,
+        "VU005": true,
+        "VU007": false
+      },
+      "errors": {}
+    },
+    {
+      "file": "singleton-paymaster/lib/account-abstraction-v7/contracts/core/BaseAccount.sol",
+      "gt": {
+        "VU001": false,
+        "VU002": false,
+        "VU003": false,
+        "VU004": false,
+        "VU005": false,
+        "VU007": false
+      },
+      "pred": {
+        "VU001": false,
+        "VU002": false,
+        "VU003": false,
+        "VU004": false,
+        "VU005": true,
+        "VU007": false
+      },
+      "errors": {}
+    },
+    {
+      "file": "singleton-paymaster/lib/account-abstraction-v7/contracts/test/TestWarmColdAccount.sol",
+      "gt": {
+        "VU001": true,
+        "VU002": false,
+        "VU003": true,
+        "VU004": false,
+        "VU005": true,
+        "VU007": true
+      },
+      "pred": {
+        "VU001": true,
+        "VU002": false,
+        "VU003": false,
+        "VU004": false,
+        "VU005": true,
+        "VU007": true
+      },
+      "errors": {}
+    },
+    {
+      "file": "singleton-paymaster/lib/account-abstraction-v7/contracts/test/TestRevertAccount.sol",
+      "gt": {
+        "VU001": true,
+        "VU002": true,
+        "VU003": true,
+        "VU004": false,
+        "VU005": false,
+        "VU007": true
+      },
+      "pred": {
+        "VU001": true,
+        "VU002": true,
+        "VU003": false,
+        "VU004": false,
+        "VU005": false,
+        "VU007": true
+      },
+      "errors": {}
+    },
+    {
+      "file": "singleton-paymaster/lib/account-abstraction-v7/contracts/test/MaliciousAccount.sol",
+      "gt": {
+        "VU001": true,
+        "VU002": true,
+        "VU003": true,
+        "VU004": false,
+        "VU005": false,
+        "VU007": true
+      },
+      "pred": {
+        "VU001": true,
+        "VU002": true,
+        "VU003": false,
+        "VU004": false,
+        "VU005": false,
+        "VU007": true
+      },
+      "errors": {}
+    },
+    {
+      "file": "singleton-paymaster/lib/account-abstraction-v6/contracts/core/BaseAccount.sol",
+      "gt": {
+        "VU001": false,
+        "VU002": false,
+        "VU003": false,
+        "VU004": false,
+        "VU005": false,
+        "VU007": false
+      },
+      "pred": {
+        "VU001": false,
+        "VU002": false,
+        "VU003": false,
+        "VU004": false,
+        "VU005": true,
+        "VU007": false
+      },
+      "errors": {}
+    },
+    {
+      "file": "singleton-paymaster/lib/account-abstraction-v6/contracts/test/TestWarmColdAccount.sol",
+      "gt": {
+        "VU001": true,
+        "VU002": false,
+        "VU003": true,
+        "VU004": false,
+        "VU005": true,
+        "VU007": true
+      },
+      "pred": {
+        "VU001": true,
+        "VU002": false,
+        "VU003": true,
+        "VU004": false,
+        "VU005": true,
+        "VU007": true
+      },
+      "errors": {}
+    },
+    {
+      "file": "singleton-paymaster/lib/account-abstraction-v6/contracts/test/TestRevertAccount.sol",
+      "gt": {
+        "VU001": true,
+        "VU002": true,
+        "VU003": true,
+        "VU004": false,
+        "VU005": false,
+        "VU007": true
+      },
+      "pred": {
+        "VU001": true,
+        "VU002": true,
+        "VU003": true,
+        "VU004": false,
+        "VU005": false,
+        "VU007": true
+      },
+      "errors": {}
+    },
+    {
+      "file": "singleton-paymaster/lib/account-abstraction-v6/contracts/test/MaliciousAccount.sol",
+      "gt": {
+        "VU001": true,
+        "VU002": true,
+        "VU003": true,
+        "VU004": false,
+        "VU005": false,
+        "VU007": true
+      },
+      "pred": {
+        "VU001": true,
+        "VU002": true,
+        "VU003": true,
+        "VU004": false,
+        "VU005": false,
+        "VU007": true
+      },
+      "errors": {}
+    },
+    {
+      "file": "singleton-paymaster/lib/account-abstraction-v6/contracts/samples/gnosis/EIP4337Fallback.sol",
+      "gt": {
+        "VU001": false,
+        "VU002": false,
+        "VU003": false,
+        "VU004": false,
+        "VU005": false,
+        "VU007": false
+      },
+      "pred": {
+        "VU001": true,
+        "VU002": true,
+        "VU003": false,
+        "VU004": false,
+        "VU005": false,
+        "VU007": true
+      },
+      "errors": {}
+    },
+    {
+      "file": "singleton-paymaster/lib/account-abstraction-v6/contracts/samples/gnosis/EIP4337Manager.sol",
+      "gt": {
+        "VU001": false,
+        "VU002": false,
+        "VU003": false,
+        "VU004": false,
+        "VU005": false,
+        "VU007": false
+      },
+      "pred": {
+        "VU001": false,
+        "VU002": false,
+        "VU003": false,
+        "VU004": false,
+        "VU005": true,
+        "VU007": true
+      },
+      "errors": {}
+    },
+    {
+      "file": "singleton-paymaster/lib/solady/test/utils/mocks/MockEntryPoint.sol",
+      "gt": {
+        "VU001": false,
+        "VU002": false,
+        "VU003": false,
+        "VU004": false,
+        "VU005": false,
+        "VU007": false
+      },
+      "pred": {
+        "VU001": true,
+        "VU002": true,
+        "VU003": false,
+        "VU004": false,
+        "VU005": false,
+        "VU007": true
+      },
+      "errors": {}
+    },
+    {
+      "file": "singleton-paymaster/lib/solady/src/accounts/ERC4337.sol",
+      "gt": {
+        "VU001": false,
+        "VU002": false,
+        "VU003": false,
+        "VU004": false,
+        "VU005": false,
+        "VU007": false
+      },
+      "pred": {
+        "VU001": false,
+        "VU002": false,
+        "VU003": false,
+        "VU004": false,
+        "VU005": true,
+        "VU007": false
+      },
+      "errors": {}
+    },
+    {
+      "file": "smart-wallet/lib/account-abstraction/contracts/core/BaseAccount.sol",
+      "gt": {
+        "VU001": false,
+        "VU002": false,
+        "VU003": false,
+        "VU004": false,
+        "VU005": false,
+        "VU007": false
+      },
+      "pred": {
+        "VU001": false,
+        "VU002": false,
+        "VU003": false,
+        "VU004": false,
+        "VU005": true,
+        "VU007": false
+      },
+      "errors": {}
+    },
+    {
+      "file": "smart-wallet/lib/account-abstraction/contracts/test/TestWarmColdAccount.sol",
+      "gt": {
+        "VU001": true,
+        "VU002": false,
+        "VU003": true,
+        "VU004": false,
+        "VU005": true,
+        "VU007": true
+      },
+      "pred": {
+        "VU001": true,
+        "VU002": false,
+        "VU003": true,
+        "VU004": false,
+        "VU005": true,
+        "VU007": true
+      },
+      "errors": {}
+    },
+    {
+      "file": "smart-wallet/lib/account-abstraction/contracts/test/TestRevertAccount.sol",
+      "gt": {
+        "VU001": true,
+        "VU002": true,
+        "VU003": true,
+        "VU004": false,
+        "VU005": false,
+        "VU007": true
+      },
+      "pred": {
+        "VU001": true,
+        "VU002": true,
+        "VU003": true,
+        "VU004": false,
+        "VU005": false,
+        "VU007": true
+      },
+      "errors": {}
+    },
+    {
+      "file": "smart-wallet/lib/account-abstraction/contracts/samples/gnosis/EIP4337Fallback.sol",
+      "gt": {
+        "VU001": false,
+        "VU002": false,
+        "VU003": false,
+        "VU004": false,
+        "VU005": false,
+        "VU007": false
+      },
+      "pred": {
+        "VU001": true,
+        "VU002": true,
+        "VU003": false,
+        "VU004": false,
+        "VU005": false,
+        "VU007": true
+      },
+      "errors": {}
+    },
+    {
+      "file": "smart-wallet/lib/account-abstraction/contracts/samples/gnosis/EIP4337Manager.sol",
+      "gt": {
+        "VU001": false,
+        "VU002": false,
+        "VU003": false,
+        "VU004": false,
+        "VU005": false,
+        "VU007": false
+      },
+      "pred": {
+        "VU001": false,
+        "VU002": false,
+        "VU003": false,
+        "VU004": false,
+        "VU005": true,
+        "VU007": true
+      },
+      "errors": {}
+    },
+    {
+      "file": "smart-wallet-skeleton/src/Smart_Wallet.sol",
+      "gt": {
+        "VU001": false,
+        "VU002": false,
+        "VU003": false,
+        "VU004": false,
+        "VU005": false,
+        "VU007": false
+      },
+      "pred": {
+        "VU001": true,
+        "VU002": false,
+        "VU003": false,
+        "VU004": false,
+        "VU005": true,
+        "VU007": true
+      },
+      "errors": {}
+    },
+    {
+      "file": "soul-wallet-contract/lib/soulwallet-core/test/calldataPack.t.sol",
+      "gt": {
+        "VU001": false,
+        "VU002": false,
+        "VU003": false,
+        "VU004": false,
+        "VU005": false,
+        "VU007": false
+      },
+      "pred": {
+        "VU001": true,
+        "VU002": false,
+        "VU003": false,
+        "VU004": true,
+        "VU005": true,
+        "VU007": true
+      },
+      "errors": {}
+    },
+    {
+      "file": "soul-wallet-contract/lib/soulwallet-core/contracts/validators/EOAValidator.sol",
+      "gt": {
+        "VU001": false,
+        "VU002": false,
+        "VU003": false,
+        "VU004": false,
+        "VU005": false,
+        "VU007": false
+      },
+      "pred": {
+        "VU001": true,
+        "VU002": true,
+        "VU003": false,
+        "VU004": false,
+        "VU005": false,
+        "VU007": true
+      },
+      "errors": {}
+    },
+    {
+      "file": "soul-wallet-contract/lib/soulwallet-core/lib/account-abstraction/contracts/core/BaseAccount.sol",
+      "gt": {
+        "VU001": false,
+        "VU002": false,
+        "VU003": false,
+        "VU004": false,
+        "VU005": false,
+        "VU007": false
+      },
+      "pred": {
+        "VU001": false,
+        "VU002": false,
+        "VU003": false,
+        "VU004": false,
+        "VU005": true,
+        "VU007": false
+      },
+      "errors": {}
+    },
+    {
+      "file": "soul-wallet-contract/lib/soulwallet-core/lib/account-abstraction/contracts/test/TestWarmColdAccount.sol",
+      "gt": {
+        "VU001": true,
+        "VU002": false,
+        "VU003": true,
+        "VU004": false,
+        "VU005": true,
+        "VU007": true
+      },
+      "pred": {
+        "VU001": true,
+        "VU002": false,
+        "VU003": false,
+        "VU004": false,
+        "VU005": true,
+        "VU007": true
+      },
+      "errors": {}
+    },
+    {
+      "file": "soul-wallet-contract/lib/soulwallet-core/lib/account-abstraction/contracts/test/TestRevertAccount.sol",
+      "gt": {
+        "VU001": true,
+        "VU002": true,
+        "VU003": true,
+        "VU004": false,
+        "VU005": false,
+        "VU007": true
+      },
+      "pred": {
+        "VU001": true,
+        "VU002": true,
+        "VU003": false,
+        "VU004": false,
+        "VU005": false,
+        "VU007": true
+      },
+      "errors": {}
+    },
+    {
+      "file": "soul-wallet-contract/lib/soulwallet-core/lib/account-abstraction/contracts/test/MaliciousAccount.sol",
+      "gt": {
+        "VU001": true,
+        "VU002": true,
+        "VU003": true,
+        "VU004": false,
+        "VU005": false,
+        "VU007": true
+      },
+      "pred": {
+        "VU001": true,
+        "VU002": true,
+        "VU003": false,
+        "VU004": false,
+        "VU005": false,
+        "VU007": true
+      },
+      "errors": {}
+    },
+    {
+      "file": "soul-wallet-contract/lib/account-abstraction/contracts/core/BaseAccount.sol",
+      "gt": {
+        "VU001": false,
+        "VU002": false,
+        "VU003": false,
+        "VU004": false,
+        "VU005": false,
+        "VU007": false
+      },
+      "pred": {
+        "VU001": false,
+        "VU002": false,
+        "VU003": false,
+        "VU004": false,
+        "VU005": true,
+        "VU007": false
+      },
+      "errors": {}
+    },
+    {
+      "file": "soul-wallet-contract/lib/account-abstraction/contracts/test/TestWarmColdAccount.sol",
+      "gt": {
+        "VU001": true,
+        "VU002": false,
+        "VU003": true,
+        "VU004": false,
+        "VU005": true,
+        "VU007": true
+      },
+      "pred": {
+        "VU001": true,
+        "VU002": false,
+        "VU003": false,
+        "VU004": false,
+        "VU005": true,
+        "VU007": true
+      },
+      "errors": {}
+    },
+    {
+      "file": "soul-wallet-contract/lib/account-abstraction/contracts/test/TestRevertAccount.sol",
+      "gt": {
+        "VU001": true,
+        "VU002": true,
+        "VU003": true,
+        "VU004": false,
+        "VU005": false,
+        "VU007": true
+      },
+      "pred": {
+        "VU001": true,
+        "VU002": true,
+        "VU003": false,
+        "VU004": false,
+        "VU005": false,
+        "VU007": true
+      },
+      "errors": {}
+    },
+    {
+      "file": "soul-wallet-contract/lib/account-abstraction/contracts/test/MaliciousAccount.sol",
+      "gt": {
+        "VU001": true,
+        "VU002": true,
+        "VU003": true,
+        "VU004": false,
+        "VU005": false,
+        "VU007": true
+      },
+      "pred": {
+        "VU001": true,
+        "VU002": true,
+        "VU003": false,
+        "VU004": false,
+        "VU005": false,
+        "VU007": true
+      },
+      "errors": {}
+    },
+    {
+      "file": "soul-wallet-contract/lib/solady/test/utils/mocks/MockEntryPoint.sol",
+      "gt": {
+        "VU001": false,
+        "VU002": false,
+        "VU003": false,
+        "VU004": false,
+        "VU005": false,
+        "VU007": false
+      },
+      "pred": {
+        "VU001": true,
+        "VU002": true,
+        "VU003": false,
+        "VU004": false,
+        "VU005": false,
+        "VU007": true
+      },
+      "errors": {}
+    },
+    {
+      "file": "soul-wallet-contract/lib/solady/src/accounts/ERC4337.sol",
+      "gt": {
+        "VU001": false,
+        "VU002": false,
+        "VU003": false,
+        "VU004": false,
+        "VU005": false,
+        "VU007": false
+      },
+      "pred": {
+        "VU001": false,
+        "VU002": false,
+        "VU003": false,
+        "VU004": false,
+        "VU005": true,
+        "VU007": false
+      },
+      "errors": {}
+    },
+    {
+      "file": "sweep/contracts/lib/openzeppelin-contracts/contracts/mocks/account/modules/ERC7579Mock.sol",
+      "gt": {
+        "VU001": false,
+        "VU002": false,
+        "VU003": false,
+        "VU004": false,
+        "VU005": false,
+        "VU007": false
+      },
+      "pred": {
+        "VU001": false,
+        "VU002": true,
+        "VU003": false,
+        "VU004": false,
+        "VU005": false,
+        "VU007": true
+      },
+      "errors": {}
+    },
+    {
+      "file": "sweep/contracts/lib/openzeppelin-contracts/contracts/account/Account.sol",
+      "gt": {
+        "VU001": false,
+        "VU002": false,
+        "VU003": false,
+        "VU004": false,
+        "VU005": false,
+        "VU007": false
+      },
+      "pred": {
+        "VU001": true,
+        "VU002": true,
+        "VU003": true,
+        "VU004": false,
+        "VU005": false,
+        "VU007": true
+      },
+      "errors": {}
+    },
+    {
+      "file": "sweep/contracts/lib/openzeppelin-contracts/contracts/interfaces/draft-IERC7579.sol",
+      "gt": {
+        "VU001": false,
+        "VU002": false,
+        "VU003": false,
+        "VU004": false,
+        "VU005": false,
+        "VU007": false
+      },
+      "pred": {
+        "VU001": true,
+        "VU002": true,
+        "VU003": false,
+        "VU004": false,
+        "VU005": false,
+        "VU007": true
+      },
+      "errors": {}
+    },
+    {
+      "file": "tutorial-simbolik-debugger-ERC-4337/lib/account-abstraction/contracts/core/BaseAccount.sol",
+      "gt": {
+        "VU001": false,
+        "VU002": false,
+        "VU003": false,
+        "VU004": false,
+        "VU005": false,
+        "VU007": false
+      },
+      "pred": {
+        "VU001": false,
+        "VU002": false,
+        "VU003": false,
+        "VU004": false,
+        "VU005": true,
+        "VU007": false
+      },
+      "errors": {}
+    },
+    {
+      "file": "tutorial-simbolik-debugger-ERC-4337/lib/account-abstraction/contracts/test/TestWarmColdAccount.sol",
+      "gt": {
+        "VU001": true,
+        "VU002": false,
+        "VU003": true,
+        "VU004": false,
+        "VU005": true,
+        "VU007": true
+      },
+      "pred": {
+        "VU001": true,
+        "VU002": false,
+        "VU003": false,
+        "VU004": false,
+        "VU005": true,
+        "VU007": true
+      },
+      "errors": {}
+    },
+    {
+      "file": "tutorial-simbolik-debugger-ERC-4337/lib/account-abstraction/contracts/test/TestRevertAccount.sol",
+      "gt": {
+        "VU001": true,
+        "VU002": true,
+        "VU003": true,
+        "VU004": false,
+        "VU005": false,
+        "VU007": true
+      },
+      "pred": {
+        "VU001": true,
+        "VU002": true,
+        "VU003": false,
+        "VU004": false,
+        "VU005": false,
+        "VU007": true
+      },
+      "errors": {}
+    },
+    {
+      "file": "tutorial-simbolik-debugger-ERC-4337/lib/account-abstraction/contracts/test/MaliciousAccount.sol",
+      "gt": {
+        "VU001": true,
+        "VU002": true,
+        "VU003": true,
+        "VU004": false,
+        "VU005": false,
+        "VU007": true
+      },
+      "pred": {
+        "VU001": true,
+        "VU002": true,
+        "VU003": false,
+        "VU004": false,
+        "VU005": false,
+        "VU007": true
+      },
+      "errors": {}
+    },
+    {
+      "file": "uMSA/src/modules/SimpleExecutionValidator.sol",
+      "gt": {
+        "VU001": false,
+        "VU002": false,
+        "VU003": false,
+        "VU004": false,
+        "VU005": false,
+        "VU007": false
+      },
+      "pred": {
+        "VU001": true,
+        "VU002": true,
+        "VU003": false,
+        "VU004": false,
+        "VU005": false,
+        "VU007": true
+      },
+      "errors": {}
+    },
+    {
+      "file": "verifying-paymaster/lib/account-abstraction/contracts/core/BaseAccount.sol",
+      "gt": {
+        "VU001": false,
+        "VU002": false,
+        "VU003": false,
+        "VU004": false,
+        "VU005": false,
+        "VU007": false
+      },
+      "pred": {
+        "VU001": false,
+        "VU002": false,
+        "VU003": false,
+        "VU004": false,
+        "VU005": true,
+        "VU007": false
+      },
+      "errors": {}
+    },
+    {
+      "file": "verifying-paymaster/lib/account-abstraction/contracts/test/TestWarmColdAccount.sol",
+      "gt": {
+        "VU001": true,
+        "VU002": false,
+        "VU003": true,
+        "VU004": false,
+        "VU005": true,
+        "VU007": true
+      },
+      "pred": {
+        "VU001": true,
+        "VU002": false,
+        "VU003": false,
+        "VU004": false,
+        "VU005": true,
+        "VU007": true
+      },
+      "errors": {}
+    },
+    {
+      "file": "verifying-paymaster/lib/account-abstraction/contracts/test/TestRevertAccount.sol",
+      "gt": {
+        "VU001": true,
+        "VU002": true,
+        "VU003": true,
+        "VU004": false,
+        "VU005": false,
+        "VU007": true
+      },
+      "pred": {
+        "VU001": true,
+        "VU002": true,
+        "VU003": false,
+        "VU004": false,
+        "VU005": false,
+        "VU007": true
+      },
+      "errors": {}
+    },
+    {
+      "file": "verifying-paymaster/lib/account-abstraction/contracts/test/MaliciousAccount.sol",
+      "gt": {
+        "VU001": true,
+        "VU002": true,
+        "VU003": true,
+        "VU004": false,
+        "VU005": false,
+        "VU007": true
+      },
+      "pred": {
+        "VU001": true,
+        "VU002": true,
+        "VU003": false,
+        "VU004": false,
+        "VU005": false,
+        "VU007": true
+      },
+      "errors": {}
+    },
+    {
+      "file": "verifying-paymaster/lib/solady/test/utils/mocks/MockEntryPoint.sol",
+      "gt": {
+        "VU001": false,
+        "VU002": false,
+        "VU003": false,
+        "VU004": false,
+        "VU005": false,
+        "VU007": false
+      },
+      "pred": {
+        "VU001": true,
+        "VU002": true,
+        "VU003": false,
+        "VU004": false,
+        "VU005": false,
+        "VU007": true
+      },
+      "errors": {}
+    },
+    {
+      "file": "verifying-paymaster/lib/solady/src/accounts/ERC4337.sol",
+      "gt": {
+        "VU001": false,
+        "VU002": false,
+        "VU003": false,
+        "VU004": false,
+        "VU005": false,
+        "VU007": false
+      },
+      "pred": {
+        "VU001": false,
+        "VU002": false,
+        "VU003": false,
+        "VU004": false,
+        "VU005": true,
+        "VU007": false
+      },
+      "errors": {}
+    },
+    {
+      "file": "zero-friction-aa/contracts/BaseAccount.sol",
+      "gt": {
+        "VU001": false,
+        "VU002": false,
+        "VU003": false,
+        "VU004": false,
+        "VU005": false,
+        "VU007": false
+      },
+      "pred": {
+        "VU001": false,
+        "VU002": true,
+        "VU003": false,
+        "VU004": false,
+        "VU005": false,
+        "VU007": false
+      },
+      "errors": {}
+    }
+  ]
+}
