@@ -1,0 +1,68 @@
+{
+  "scope": "decontaminated fixed303 minus non-target-test-harness files",
+  "excluded_files": [
+    "Flip-ERC4337-Account-Abstraction-wallet/Smart contracts/lib/safe-contracts/contracts/test/4337/Test4337ModuleAndHandler.sol",
+    "Minimal_account_ERC4337_Smart_Contract_Wallet_Account_Abstraction/lib/openzeppelin-contracts/test/account/utils/draft-ERC7579Utils.t.sol",
+    "USP-Token/packages/contracts/lib/openzeppelin-contracts/test/account/utils/draft-ERC7579Utils.t.sol",
+    "bundler-spec-tests/tests/contracts/SimpleWallet.sol",
+    "bundler-spec-tests/tests/contracts/TestCodeHashFactory.sol",
+    "bundler/packages/bundler/contracts/tests/TestTimeRangeAccount.sol",
+    "erc4337-account-abstraction-toolkit/lib/openzeppelin-contracts/test/account/utils/draft-ERC7579Utils.t.sol",
+    "foundry-account-abstaction/lib/openzeppelin-contracts/test/account/utils/draft-ERC7579Utils.t.sol",
+    "monolith/contracts/lib/openzeppelin-contracts/test/account/utils/draft-ERC7579Utils.t.sol",
+    "openzeppelin-contracts/test/account/utils/draft-ERC7579Utils.t.sol",
+    "safe-modules/modules/4337/contracts/test/SafeMock.sol",
+    "safe-smart-account/contracts/test/Test4337ModuleAndHandler.sol",
+    "sweep/contracts/lib/openzeppelin-contracts/test/account/utils/draft-ERC7579Utils.t.sol"
+  ],
+  "total_files": 290,
+  "gt_vulnerable_contracts": 130,
+  "gt_safe_contracts": 160,
+  "tools": {
+    "Aegis": {
+      "TP": 130,
+      "FP": 3,
+      "TN": 157,
+      "FN": 0,
+      "precision": 0.9774436090225563,
+      "recall": 1.0,
+      "f1": 0.988593155893536
+    },
+    "Slither_default": {
+      "TP": 116,
+      "FP": 122,
+      "TN": 38,
+      "FN": 14,
+      "precision": 0.48739495798319327,
+      "recall": 0.8923076923076924,
+      "f1": 0.6304347826086957
+    },
+    "Semgrep_default": {
+      "TP": 2,
+      "FP": 122,
+      "TN": 38,
+      "FN": 128,
+      "precision": 0.016129032258064516,
+      "recall": 0.015384615384615385,
+      "f1": 0.015748031496062992
+    },
+    "Aderyn_default": {
+      "TP": 127,
+      "FP": 157,
+      "TN": 3,
+      "FN": 3,
+      "precision": 0.4471830985915493,
+      "recall": 0.9769230769230769,
+      "f1": 0.6135265700483091
+    },
+    "Wake_default": {
+      "TP": 0,
+      "FP": 0,
+      "TN": 160,
+      "FN": 130,
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1": 0.0
+    }
+  }
+}

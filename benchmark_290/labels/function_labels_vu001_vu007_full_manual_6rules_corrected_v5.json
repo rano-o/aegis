@@ -1,0 +1,4062 @@
+[
+  {
+    "file": "AA_ERC-4337/contracts/src/core/BaseAccount.sol",
+    "cluster_hash": "e47315dff791ce783e4ec250aa24800cc9d11356d346012666d266cdd2109df8",
+    "gt_rules": {
+      "VU001": false,
+      "VU002": false,
+      "VU003": false,
+      "VU004": false,
+      "VU005": false,
+      "VU007": false
+    },
+    "label_source": "manual_cluster_review",
+    "rationale": "caller-gate+signature-present"
+  },
+  {
+    "file": "AA_ERC-4337/contracts/src/test/TestWarmColdAccount.sol",
+    "cluster_hash": "1436bb17f49ab8960b2f13c85556f8f581aecb05f38d58ab6e07a374d9a4afb3",
+    "gt_rules": {
+      "VU001": true,
+      "VU002": false,
+      "VU003": true,
+      "VU004": false,
+      "VU005": true,
+      "VU007": true
+    },
+    "label_source": "legacy_manual_exact_hash",
+    "rationale": "manual cluster: warm/cold side-channel account reads nonce but lacks auth/caller gate and returns raw success"
+  },
+  {
+    "file": "AA_ERC-4337/contracts/src/test/TestRevertAccount.sol",
+    "cluster_hash": "999f3296a5a7ddcc36668383a2f79bb560bb4700e30d93b4391059f343ca177e",
+    "gt_rules": {
+      "VU001": true,
+      "VU002": true,
+      "VU003": true,
+      "VU004": false,
+      "VU005": false,
+      "VU007": true
+    },
+    "label_source": "legacy_manual_exact_hash",
+    "rationale": "manual cluster: revert-test account returns raw success without auth/nonce/caller gate"
+  },
+  {
+    "file": "AA_ERC-4337/contracts/src/test/MaliciousAccount.sol",
+    "cluster_hash": "cd19b6245a4110ef76eb873592e359c4e5a7ed76d3d959fee6dd0735a49126ab",
+    "gt_rules": {
+      "VU001": true,
+      "VU002": true,
+      "VU003": true,
+      "VU004": false,
+      "VU005": false,
+      "VU007": true
+    },
+    "label_source": "legacy_manual_exact_hash",
+    "rationale": "manual cluster: malicious account uses signature bytes as opaque data, no auth/no nonce/no caller gate"
+  },
+  {
+    "file": "AxenaWallet/axena-contracts/lib/account-abstraction/contracts/core/BaseAccount.sol",
+    "cluster_hash": "1ad0835d381f54adec59d3c5d712f7f2003082b10da47884a5331d76f964e16e",
+    "gt_rules": {
+      "VU001": false,
+      "VU002": false,
+      "VU003": false,
+      "VU004": false,
+      "VU005": false,
+      "VU007": false
+    },
+    "label_source": "manual_cluster_review",
+    "rationale": "caller-gate+signature-present"
+  },
+  {
+    "file": "AxenaWallet/axena-contracts/lib/account-abstraction/contracts/test/TestWarmColdAccount.sol",
+    "cluster_hash": "50d73cdf81c1ac5a08b5e4c763a0a87221e2bb2cdbfee963895f536026bb1df4",
+    "gt_rules": {
+      "VU001": true,
+      "VU002": false,
+      "VU003": true,
+      "VU004": false,
+      "VU005": true,
+      "VU007": true
+    },
+    "label_source": "manual_cluster_review",
+    "rationale": "warm-cold-sidechannel"
+  },
+  {
+    "file": "AxenaWallet/axena-contracts/lib/account-abstraction/contracts/test/TestRevertAccount.sol",
+    "cluster_hash": "14f0bb665553fe31bc4f2d0d5686b3afd29584dbf549ef30738de0bbb4049dca",
+    "gt_rules": {
+      "VU001": true,
+      "VU002": true,
+      "VU003": true,
+      "VU004": false,
+      "VU005": false,
+      "VU007": true
+    },
+    "label_source": "legacy_manual_exact_hash",
+    "rationale": "manual cluster: revert-test account returns constant success without auth/nonce/caller gate"
+  },
+  {
+    "file": "AxenaWallet/axena-contracts/lib/account-abstraction/contracts/test/MaliciousAccount.sol",
+    "cluster_hash": "66bac9376de5976488dc1bcdeb1d2c1525364ca533e1bd34f1cf3eefd258e71d",
+    "gt_rules": {
+      "VU001": true,
+      "VU002": true,
+      "VU003": true,
+      "VU004": false,
+      "VU005": false,
+      "VU007": true
+    },
+    "label_source": "legacy_manual_exact_hash",
+    "rationale": "manual cluster: malicious account uses signature bytes as opaque data, no auth/no nonce/no caller gate"
+  },
+  {
+    "file": "AxenaWallet/axena-contracts/lib/openzeppelin-contracts/contracts/interfaces/draft-IERC7579.sol",
+    "cluster_hash": "a0af6c18ed44338e825a48bf88a75a3f0d997e58cb9d6fbe65dd60fee0ad6c77",
+    "gt_rules": {
+      "VU001": false,
+      "VU002": false,
+      "VU003": false,
+      "VU004": false,
+      "VU005": false,
+      "VU007": false
+    },
+    "label_source": "manual_cluster_review",
+    "rationale": "interface-signature"
+  },
+  {
+    "file": "AxenaWallet/axena-contracts/src/core/AgentWallet.sol",
+    "cluster_hash": "25184210fbc8f02d8a11487c7a08fed98024131ab68ccc4801fb5333e1947612",
+    "gt_rules": {
+      "VU001": false,
+      "VU002": false,
+      "VU003": false,
+      "VU004": false,
+      "VU005": false,
+      "VU007": false
+    },
+    "label_source": "manual_cluster_review_corrected_v3",
+    "rationale": "validator-routed account; nonce and auth obligations delegated to validator modules"
+  },
+  {
+    "file": "AxenaWallet/axena-contracts/src/modules/validators/SessionKeyValidator.sol",
+    "cluster_hash": "076ba58191900125cbf85d9b6b20aeaff9066ecee19de3c3214f1f5ae4019894",
+    "gt_rules": {
+      "VU001": false,
+      "VU002": false,
+      "VU003": false,
+      "VU004": false,
+      "VU005": false,
+      "VU007": false
+    },
+    "label_source": "manual_cluster_review",
+    "rationale": "validator-module-default"
+  },
+  {
+    "file": "AxenaWallet/axena-contracts/src/modules/validators/ECDSAValidator.sol",
+    "cluster_hash": "be805ad8f4d46b969068a9f9d49ec184713e749c8997c6f456e5bc968e3985d8",
+    "gt_rules": {
+      "VU001": false,
+      "VU002": false,
+      "VU003": false,
+      "VU004": false,
+      "VU005": false,
+      "VU007": false
+    },
+    "label_source": "manual_cluster_review",
+    "rationale": "validator-module-default"
+  },
+  {
+    "file": "EIP-4337-AA/src/EIP_4337_AA.sol",
+    "cluster_hash": "55e1a6828f1d8a63187602a2674227834cf826346e6035e128cdd33f3f843fae",
+    "gt_rules": {
+      "VU001": false,
+      "VU002": false,
+      "VU003": false,
+      "VU004": false,
+      "VU005": false,
+      "VU007": false
+    },
+    "label_source": "manual_cluster_review",
+    "rationale": "default-conservative-none"
+  },
+  {
+    "file": "EIP-4337-Alt-Mempool/contracts/core/BaseAccount.sol",
+    "cluster_hash": "da11e6039449bb8aed5acfb8174ac668cab3cd0c2c1c4d936b3fd58fbfba2874",
+    "gt_rules": {
+      "VU001": false,
+      "VU002": false,
+      "VU003": false,
+      "VU004": false,
+      "VU005": false,
+      "VU007": false
+    },
+    "label_source": "manual_cluster_review",
+    "rationale": "caller-gate+signature-present"
+  },
+  {
+    "file": "ERC-4337/contracts/core/BaseAccount.sol",
+    "cluster_hash": "e47315dff791ce783e4ec250aa24800cc9d11356d346012666d266cdd2109df8",
+    "gt_rules": {
+      "VU001": false,
+      "VU002": false,
+      "VU003": false,
+      "VU004": false,
+      "VU005": false,
+      "VU007": false
+    },
+    "label_source": "manual_cluster_review",
+    "rationale": "caller-gate+signature-present"
+  },
+  {
+    "file": "ERC-4337-/contracts/core/BaseAccount.sol",
+    "cluster_hash": "1ad0835d381f54adec59d3c5d712f7f2003082b10da47884a5331d76f964e16e",
+    "gt_rules": {
+      "VU001": false,
+      "VU002": false,
+      "VU003": false,
+      "VU004": false,
+      "VU005": false,
+      "VU007": false
+    },
+    "label_source": "manual_cluster_review",
+    "rationale": "caller-gate+signature-present"
+  },
+  {
+    "file": "ERC-4337-/contracts/test/TestWarmColdAccount.sol",
+    "cluster_hash": "50d73cdf81c1ac5a08b5e4c763a0a87221e2bb2cdbfee963895f536026bb1df4",
+    "gt_rules": {
+      "VU001": true,
+      "VU002": false,
+      "VU003": true,
+      "VU004": false,
+      "VU005": true,
+      "VU007": true
+    },
+    "label_source": "manual_cluster_review",
+    "rationale": "warm-cold-sidechannel"
+  },
+  {
+    "file": "ERC-4337-/contracts/test/TestRevertAccount.sol",
+    "cluster_hash": "14f0bb665553fe31bc4f2d0d5686b3afd29584dbf549ef30738de0bbb4049dca",
+    "gt_rules": {
+      "VU001": true,
+      "VU002": true,
+      "VU003": true,
+      "VU004": false,
+      "VU005": false,
+      "VU007": true
+    },
+    "label_source": "legacy_manual_exact_hash",
+    "rationale": "manual cluster: revert-test account returns constant success without auth/nonce/caller gate"
+  },
+  {
+    "file": "ERC-4337-/contracts/test/MaliciousAccount.sol",
+    "cluster_hash": "66bac9376de5976488dc1bcdeb1d2c1525364ca533e1bd34f1cf3eefd258e71d",
+    "gt_rules": {
+      "VU001": true,
+      "VU002": true,
+      "VU003": true,
+      "VU004": false,
+      "VU005": false,
+      "VU007": true
+    },
+    "label_source": "legacy_manual_exact_hash",
+    "rationale": "manual cluster: malicious account uses signature bytes as opaque data, no auth/no nonce/no caller gate"
+  },
+  {
+    "file": "ERC-4337-contracts/core/BaseAccount.sol",
+    "cluster_hash": "1ad0835d381f54adec59d3c5d712f7f2003082b10da47884a5331d76f964e16e",
+    "gt_rules": {
+      "VU001": false,
+      "VU002": false,
+      "VU003": false,
+      "VU004": false,
+      "VU005": false,
+      "VU007": false
+    },
+    "label_source": "manual_cluster_review",
+    "rationale": "caller-gate+signature-present"
+  },
+  {
+    "file": "ERC-4337-contracts/test/TestWarmColdAccount.sol",
+    "cluster_hash": "50d73cdf81c1ac5a08b5e4c763a0a87221e2bb2cdbfee963895f536026bb1df4",
+    "gt_rules": {
+      "VU001": true,
+      "VU002": false,
+      "VU003": true,
+      "VU004": false,
+      "VU005": true,
+      "VU007": true
+    },
+    "label_source": "manual_cluster_review",
+    "rationale": "warm-cold-sidechannel"
+  },
+  {
+    "file": "ERC-4337-contracts/test/TestRevertAccount.sol",
+    "cluster_hash": "14f0bb665553fe31bc4f2d0d5686b3afd29584dbf549ef30738de0bbb4049dca",
+    "gt_rules": {
+      "VU001": true,
+      "VU002": true,
+      "VU003": true,
+      "VU004": false,
+      "VU005": false,
+      "VU007": true
+    },
+    "label_source": "legacy_manual_exact_hash",
+    "rationale": "manual cluster: revert-test account returns constant success without auth/nonce/caller gate"
+  },
+  {
+    "file": "ERC-4337-contracts/test/MaliciousAccount.sol",
+    "cluster_hash": "66bac9376de5976488dc1bcdeb1d2c1525364ca533e1bd34f1cf3eefd258e71d",
+    "gt_rules": {
+      "VU001": true,
+      "VU002": true,
+      "VU003": true,
+      "VU004": false,
+      "VU005": false,
+      "VU007": true
+    },
+    "label_source": "legacy_manual_exact_hash",
+    "rationale": "manual cluster: malicious account uses signature bytes as opaque data, no auth/no nonce/no caller gate"
+  },
+  {
+    "file": "ERC-4337_ERC-6551_Demo/src/core/SimpleAccount.sol",
+    "cluster_hash": "96b590e4e3f16dffa21fd5484bca40e7c8cec74451eb7a8edf67d1c20406ac99",
+    "gt_rules": {
+      "VU001": false,
+      "VU002": false,
+      "VU003": false,
+      "VU004": false,
+      "VU005": false,
+      "VU007": false
+    },
+    "label_source": "manual_cluster_review",
+    "rationale": "caller-gate+signature-present"
+  },
+  {
+    "file": "ERC4337-Account-Abstraction/src/account/SmartAccount.sol",
+    "cluster_hash": "82e6377d6008ac93e99d3766df83122d23a587e86a7edab4e70d42885006c6e4",
+    "gt_rules": {
+      "VU001": false,
+      "VU002": false,
+      "VU003": false,
+      "VU004": false,
+      "VU005": false,
+      "VU007": false
+    },
+    "label_source": "manual_cluster_review",
+    "rationale": "default-conservative-none"
+  },
+  {
+    "file": "ERC4337_Example/contracts/core/BaseAccount.sol",
+    "cluster_hash": "e47315dff791ce783e4ec250aa24800cc9d11356d346012666d266cdd2109df8",
+    "gt_rules": {
+      "VU001": false,
+      "VU002": false,
+      "VU003": false,
+      "VU004": false,
+      "VU005": false,
+      "VU007": false
+    },
+    "label_source": "manual_cluster_review",
+    "rationale": "caller-gate+signature-present"
+  },
+  {
+    "file": "ERC4337_Example/contracts/test/TestWarmColdAccount.sol",
+    "cluster_hash": "1436bb17f49ab8960b2f13c85556f8f581aecb05f38d58ab6e07a374d9a4afb3",
+    "gt_rules": {
+      "VU001": true,
+      "VU002": false,
+      "VU003": true,
+      "VU004": false,
+      "VU005": true,
+      "VU007": true
+    },
+    "label_source": "legacy_manual_exact_hash",
+    "rationale": "manual cluster: warm/cold side-channel account reads nonce but lacks auth/caller gate and returns raw success"
+  },
+  {
+    "file": "ERC4337_Example/contracts/test/TestRevertAccount.sol",
+    "cluster_hash": "999f3296a5a7ddcc36668383a2f79bb560bb4700e30d93b4391059f343ca177e",
+    "gt_rules": {
+      "VU001": true,
+      "VU002": true,
+      "VU003": true,
+      "VU004": false,
+      "VU005": false,
+      "VU007": true
+    },
+    "label_source": "legacy_manual_exact_hash",
+    "rationale": "manual cluster: revert-test account returns raw success without auth/nonce/caller gate"
+  },
+  {
+    "file": "ERC4337_Example/contracts/test/MaliciousAccount.sol",
+    "cluster_hash": "cd19b6245a4110ef76eb873592e359c4e5a7ed76d3d959fee6dd0735a49126ab",
+    "gt_rules": {
+      "VU001": true,
+      "VU002": true,
+      "VU003": true,
+      "VU004": false,
+      "VU005": false,
+      "VU007": true
+    },
+    "label_source": "legacy_manual_exact_hash",
+    "rationale": "manual cluster: malicious account uses signature bytes as opaque data, no auth/no nonce/no caller gate"
+  },
+  {
+    "file": "Flip-ERC4337-Account-Abstraction-wallet/Smart contracts/src/ERC4337/core/BaseAccount.sol",
+    "cluster_hash": "ae5cf6f2837e749a9614954b2f6b3cd6075eb16aa5aaeb732ff2f7ebbbb3dcaf",
+    "gt_rules": {
+      "VU001": false,
+      "VU002": false,
+      "VU003": false,
+      "VU004": false,
+      "VU005": false,
+      "VU007": false
+    },
+    "label_source": "manual_cluster_review_corrected_v3",
+    "rationale": "base abstract account skeleton with delegated validation internals"
+  },
+  {
+    "file": "Flip-ERC4337-Account-Abstraction-wallet/Smart contracts/src/ERC4337/samples/gnosis/EIP4337Fallback.sol",
+    "cluster_hash": "c9a3ff7242d03d1fb7d2271cb1a5b51e5923cf926e054bbeb45a8b3ac48cd758",
+    "gt_rules": {
+      "VU001": false,
+      "VU002": false,
+      "VU003": false,
+      "VU004": false,
+      "VU005": false,
+      "VU007": false
+    },
+    "label_source": "manual_cluster_review",
+    "rationale": "gnosis-fallback-wrapper"
+  },
+  {
+    "file": "Flip-ERC4337-Account-Abstraction-wallet/Smart contracts/src/ERC4337/samples/gnosis/EIP4337Manager.sol",
+    "cluster_hash": "1474ca0a3f24c22f25d940934c4733b68d45e07d2ba563f1bdadd90b0cdda6e3",
+    "gt_rules": {
+      "VU001": false,
+      "VU002": false,
+      "VU003": false,
+      "VU004": false,
+      "VU005": false,
+      "VU007": false
+    },
+    "label_source": "manual_cluster_review",
+    "rationale": "caller-gate+signature-present"
+  },
+  {
+    "file": "Minimal_account_ERC4337_Smart_Contract_Wallet_Account_Abstraction/lib/account-abstraction/contracts/core/BaseAccount.sol",
+    "cluster_hash": "1ad0835d381f54adec59d3c5d712f7f2003082b10da47884a5331d76f964e16e",
+    "gt_rules": {
+      "VU001": false,
+      "VU002": false,
+      "VU003": false,
+      "VU004": false,
+      "VU005": false,
+      "VU007": false
+    },
+    "label_source": "manual_cluster_review",
+    "rationale": "caller-gate+signature-present"
+  },
+  {
+    "file": "Minimal_account_ERC4337_Smart_Contract_Wallet_Account_Abstraction/lib/account-abstraction/contracts/test/TestWarmColdAccount.sol",
+    "cluster_hash": "50d73cdf81c1ac5a08b5e4c763a0a87221e2bb2cdbfee963895f536026bb1df4",
+    "gt_rules": {
+      "VU001": true,
+      "VU002": false,
+      "VU003": true,
+      "VU004": false,
+      "VU005": true,
+      "VU007": true
+    },
+    "label_source": "manual_cluster_review",
+    "rationale": "warm-cold-sidechannel"
+  },
+  {
+    "file": "Minimal_account_ERC4337_Smart_Contract_Wallet_Account_Abstraction/lib/account-abstraction/contracts/test/TestRevertAccount.sol",
+    "cluster_hash": "14f0bb665553fe31bc4f2d0d5686b3afd29584dbf549ef30738de0bbb4049dca",
+    "gt_rules": {
+      "VU001": true,
+      "VU002": true,
+      "VU003": true,
+      "VU004": false,
+      "VU005": false,
+      "VU007": true
+    },
+    "label_source": "legacy_manual_exact_hash",
+    "rationale": "manual cluster: revert-test account returns constant success without auth/nonce/caller gate"
+  },
+  {
+    "file": "Minimal_account_ERC4337_Smart_Contract_Wallet_Account_Abstraction/lib/account-abstraction/contracts/test/MaliciousAccount.sol",
+    "cluster_hash": "66bac9376de5976488dc1bcdeb1d2c1525364ca533e1bd34f1cf3eefd258e71d",
+    "gt_rules": {
+      "VU001": true,
+      "VU002": true,
+      "VU003": true,
+      "VU004": false,
+      "VU005": false,
+      "VU007": true
+    },
+    "label_source": "legacy_manual_exact_hash",
+    "rationale": "manual cluster: malicious account uses signature bytes as opaque data, no auth/no nonce/no caller gate"
+  },
+  {
+    "file": "Minimal_account_ERC4337_Smart_Contract_Wallet_Account_Abstraction/lib/openzeppelin-contracts/contracts/mocks/account/modules/ERC7579Mock.sol",
+    "cluster_hash": "243ce75e6bb6633fca06401957f8a6fa698d2ceb0daef56de17b03e22be464f2",
+    "gt_rules": {
+      "VU001": false,
+      "VU002": false,
+      "VU003": false,
+      "VU004": false,
+      "VU005": false,
+      "VU007": false
+    },
+    "label_source": "manual_cluster_review",
+    "rationale": "test-mock-default"
+  },
+  {
+    "file": "Minimal_account_ERC4337_Smart_Contract_Wallet_Account_Abstraction/lib/openzeppelin-contracts/contracts/account/Account.sol",
+    "cluster_hash": "3e83bcb0311eaa5b28a016fbd765f4790c589c5455701aad575f1995a876320b",
+    "gt_rules": {
+      "VU001": false,
+      "VU002": false,
+      "VU003": false,
+      "VU004": false,
+      "VU005": false,
+      "VU007": false
+    },
+    "label_source": "manual_cluster_review_corrected_v3",
+    "rationale": "template account wrapper delegates validation internals; no direct VU evidence in body alone"
+  },
+  {
+    "file": "Minimal_account_ERC4337_Smart_Contract_Wallet_Account_Abstraction/lib/openzeppelin-contracts/contracts/interfaces/draft-IERC7579.sol",
+    "cluster_hash": "a0af6c18ed44338e825a48bf88a75a3f0d997e58cb9d6fbe65dd60fee0ad6c77",
+    "gt_rules": {
+      "VU001": false,
+      "VU002": false,
+      "VU003": false,
+      "VU004": false,
+      "VU005": false,
+      "VU007": false
+    },
+    "label_source": "manual_cluster_review",
+    "rationale": "interface-signature"
+  },
+  {
+    "file": "Minimal_account_ERC4337_Smart_Contract_Wallet_Account_Abstraction/src/ethereum/MinimalAcc.sol",
+    "cluster_hash": "1a241f1e9c22fd4e2a9c51780d0c57e427ddcdfee6656800499bf2f30b1a3646",
+    "gt_rules": {
+      "VU001": false,
+      "VU002": false,
+      "VU003": false,
+      "VU004": false,
+      "VU005": false,
+      "VU007": true
+    },
+    "label_source": "manual_cluster_review_corrected_v3",
+    "rationale": "missing explicit entrypoint caller binding in validateUserOp body"
+  },
+  {
+    "file": "Multify/foundry/node_modules/@account-abstraction/contracts/core/BaseAccount.sol",
+    "cluster_hash": "1ad0835d381f54adec59d3c5d712f7f2003082b10da47884a5331d76f964e16e",
+    "gt_rules": {
+      "VU001": false,
+      "VU002": false,
+      "VU003": false,
+      "VU004": false,
+      "VU005": false,
+      "VU007": false
+    },
+    "label_source": "manual_cluster_review",
+    "rationale": "caller-gate+signature-present"
+  },
+  {
+    "file": "Multify/foundry/node_modules/@openzeppelin/contracts/account/Account.sol",
+    "cluster_hash": "146e0d15af1f86d2e3fe20d3016a1ac9281606491387b953acc220ac4c9f7aba",
+    "gt_rules": {
+      "VU001": false,
+      "VU002": false,
+      "VU003": false,
+      "VU004": false,
+      "VU005": false,
+      "VU007": false
+    },
+    "label_source": "manual_cluster_review_corrected_v3",
+    "rationale": "node_modules vendored generic account base"
+  },
+  {
+    "file": "Multify/foundry/node_modules/@openzeppelin/contracts/interfaces/draft-IERC7579.sol",
+    "cluster_hash": "a0af6c18ed44338e825a48bf88a75a3f0d997e58cb9d6fbe65dd60fee0ad6c77",
+    "gt_rules": {
+      "VU001": false,
+      "VU002": false,
+      "VU003": false,
+      "VU004": false,
+      "VU005": false,
+      "VU007": false
+    },
+    "label_source": "manual_cluster_review",
+    "rationale": "interface-signature"
+  },
+  {
+    "file": "Projeto-ERC-4337/lib/openzeppelin-contracts/contracts/interfaces/draft-IERC7579.sol",
+    "cluster_hash": "a0af6c18ed44338e825a48bf88a75a3f0d997e58cb9d6fbe65dd60fee0ad6c77",
+    "gt_rules": {
+      "VU001": false,
+      "VU002": false,
+      "VU003": false,
+      "VU004": false,
+      "VU005": false,
+      "VU007": false
+    },
+    "label_source": "manual_cluster_review",
+    "rationale": "interface-signature"
+  },
+  {
+    "file": "Somnia-DeFi-Wallet/eolia-contracts/contracts/core/BaseAccount.sol",
+    "cluster_hash": "1ad0835d381f54adec59d3c5d712f7f2003082b10da47884a5331d76f964e16e",
+    "gt_rules": {
+      "VU001": false,
+      "VU002": false,
+      "VU003": false,
+      "VU004": false,
+      "VU005": false,
+      "VU007": false
+    },
+    "label_source": "manual_cluster_review",
+    "rationale": "caller-gate+signature-present"
+  },
+  {
+    "file": "USP-Token/packages/contracts/lib/account-abstraction/contracts/core/BaseAccount.sol",
+    "cluster_hash": "1ad0835d381f54adec59d3c5d712f7f2003082b10da47884a5331d76f964e16e",
+    "gt_rules": {
+      "VU001": false,
+      "VU002": false,
+      "VU003": false,
+      "VU004": false,
+      "VU005": false,
+      "VU007": false
+    },
+    "label_source": "manual_cluster_review",
+    "rationale": "caller-gate+signature-present"
+  },
+  {
+    "file": "USP-Token/packages/contracts/lib/account-abstraction/contracts/test/TestWarmColdAccount.sol",
+    "cluster_hash": "50d73cdf81c1ac5a08b5e4c763a0a87221e2bb2cdbfee963895f536026bb1df4",
+    "gt_rules": {
+      "VU001": true,
+      "VU002": false,
+      "VU003": true,
+      "VU004": false,
+      "VU005": true,
+      "VU007": true
+    },
+    "label_source": "manual_cluster_review",
+    "rationale": "warm-cold-sidechannel"
+  },
+  {
+    "file": "USP-Token/packages/contracts/lib/account-abstraction/contracts/test/TestRevertAccount.sol",
+    "cluster_hash": "14f0bb665553fe31bc4f2d0d5686b3afd29584dbf549ef30738de0bbb4049dca",
+    "gt_rules": {
+      "VU001": true,
+      "VU002": true,
+      "VU003": true,
+      "VU004": false,
+      "VU005": false,
+      "VU007": true
+    },
+    "label_source": "legacy_manual_exact_hash",
+    "rationale": "manual cluster: revert-test account returns constant success without auth/nonce/caller gate"
+  },
+  {
+    "file": "USP-Token/packages/contracts/lib/account-abstraction/contracts/test/MaliciousAccount.sol",
+    "cluster_hash": "66bac9376de5976488dc1bcdeb1d2c1525364ca533e1bd34f1cf3eefd258e71d",
+    "gt_rules": {
+      "VU001": true,
+      "VU002": true,
+      "VU003": true,
+      "VU004": false,
+      "VU005": false,
+      "VU007": true
+    },
+    "label_source": "legacy_manual_exact_hash",
+    "rationale": "manual cluster: malicious account uses signature bytes as opaque data, no auth/no nonce/no caller gate"
+  },
+  {
+    "file": "USP-Token/packages/contracts/lib/openzeppelin-contracts/contracts/mocks/account/modules/ERC7579Mock.sol",
+    "cluster_hash": "243ce75e6bb6633fca06401957f8a6fa698d2ceb0daef56de17b03e22be464f2",
+    "gt_rules": {
+      "VU001": false,
+      "VU002": false,
+      "VU003": false,
+      "VU004": false,
+      "VU005": false,
+      "VU007": false
+    },
+    "label_source": "manual_cluster_review",
+    "rationale": "test-mock-default"
+  },
+  {
+    "file": "USP-Token/packages/contracts/lib/openzeppelin-contracts/contracts/account/Account.sol",
+    "cluster_hash": "3e83bcb0311eaa5b28a016fbd765f4790c589c5455701aad575f1995a876320b",
+    "gt_rules": {
+      "VU001": false,
+      "VU002": false,
+      "VU003": false,
+      "VU004": false,
+      "VU005": false,
+      "VU007": false
+    },
+    "label_source": "manual_cluster_review_corrected_v3",
+    "rationale": "template account wrapper delegates validation internals; no direct VU evidence in body alone"
+  },
+  {
+    "file": "USP-Token/packages/contracts/lib/openzeppelin-contracts/contracts/interfaces/draft-IERC7579.sol",
+    "cluster_hash": "a0af6c18ed44338e825a48bf88a75a3f0d997e58cb9d6fbe65dd60fee0ad6c77",
+    "gt_rules": {
+      "VU001": false,
+      "VU002": false,
+      "VU003": false,
+      "VU004": false,
+      "VU005": false,
+      "VU007": false
+    },
+    "label_source": "manual_cluster_review",
+    "rationale": "interface-signature"
+  },
+  {
+    "file": "aa-coffee-shop/src/SimpleAccount.sol",
+    "cluster_hash": "3fa091db5539330d4945b11b4cf58532ff6ded02b1c8eca149dfce8b16adc724",
+    "gt_rules": {
+      "VU001": false,
+      "VU002": false,
+      "VU003": false,
+      "VU004": false,
+      "VU005": false,
+      "VU007": false
+    },
+    "label_source": "manual_cluster_review",
+    "rationale": "caller-gate+signature-present"
+  },
+  {
+    "file": "aa-hc-example/contracts/lib/account-abstraction/contracts/core/BaseAccount.sol",
+    "cluster_hash": "1ad0835d381f54adec59d3c5d712f7f2003082b10da47884a5331d76f964e16e",
+    "gt_rules": {
+      "VU001": false,
+      "VU002": false,
+      "VU003": false,
+      "VU004": false,
+      "VU005": false,
+      "VU007": false
+    },
+    "label_source": "manual_cluster_review",
+    "rationale": "caller-gate+signature-present"
+  },
+  {
+    "file": "aa-hc-example/contracts/lib/account-abstraction/contracts/test/TestWarmColdAccount.sol",
+    "cluster_hash": "50d73cdf81c1ac5a08b5e4c763a0a87221e2bb2cdbfee963895f536026bb1df4",
+    "gt_rules": {
+      "VU001": true,
+      "VU002": false,
+      "VU003": true,
+      "VU004": false,
+      "VU005": true,
+      "VU007": true
+    },
+    "label_source": "manual_cluster_review",
+    "rationale": "warm-cold-sidechannel"
+  },
+  {
+    "file": "aa-hc-example/contracts/lib/account-abstraction/contracts/test/TestRevertAccount.sol",
+    "cluster_hash": "14f0bb665553fe31bc4f2d0d5686b3afd29584dbf549ef30738de0bbb4049dca",
+    "gt_rules": {
+      "VU001": true,
+      "VU002": true,
+      "VU003": true,
+      "VU004": false,
+      "VU005": false,
+      "VU007": true
+    },
+    "label_source": "legacy_manual_exact_hash",
+    "rationale": "manual cluster: revert-test account returns constant success without auth/nonce/caller gate"
+  },
+  {
+    "file": "aa-hc-example/contracts/lib/account-abstraction/contracts/test/MaliciousAccount.sol",
+    "cluster_hash": "66bac9376de5976488dc1bcdeb1d2c1525364ca533e1bd34f1cf3eefd258e71d",
+    "gt_rules": {
+      "VU001": true,
+      "VU002": true,
+      "VU003": true,
+      "VU004": false,
+      "VU005": false,
+      "VU007": true
+    },
+    "label_source": "legacy_manual_exact_hash",
+    "rationale": "manual cluster: malicious account uses signature bytes as opaque data, no auth/no nonce/no caller gate"
+  },
+  {
+    "file": "aakit/contracts/src/utils/ERC4337Account.sol",
+    "cluster_hash": "bc0e1aa97967ad31d351f2bfa5b4203c700de1b0b9b771ec61aeac98515a907c",
+    "gt_rules": {
+      "VU001": false,
+      "VU002": false,
+      "VU003": false,
+      "VU004": false,
+      "VU005": false,
+      "VU007": false
+    },
+    "label_source": "manual_cluster_review",
+    "rationale": "caller-gate+signature-present"
+  },
+  {
+    "file": "aakit/contracts/src/validators/PasskeyValidator.sol",
+    "cluster_hash": "5bb2d400159688c1d2893b33ff3279d3db1c37bf43cf29570b9d05f301da6705",
+    "gt_rules": {
+      "VU001": false,
+      "VU002": false,
+      "VU003": false,
+      "VU004": false,
+      "VU005": false,
+      "VU007": false
+    },
+    "label_source": "manual_cluster_review",
+    "rationale": "validator-module-default"
+  },
+  {
+    "file": "aakit/contracts/src/interfaces/IERC7579.sol",
+    "cluster_hash": "d3905b5c3364aeedbae19f1e54cbcd55e4deb4b66688bc0c919ad0e4fe70ec32",
+    "gt_rules": {
+      "VU001": false,
+      "VU002": false,
+      "VU003": false,
+      "VU004": false,
+      "VU005": false,
+      "VU007": false
+    },
+    "label_source": "manual_cluster_review",
+    "rationale": "interface-block"
+  },
+  {
+    "file": "account-abstraction/contracts/core/BaseAccount.sol",
+    "cluster_hash": "1ad0835d381f54adec59d3c5d712f7f2003082b10da47884a5331d76f964e16e",
+    "gt_rules": {
+      "VU001": false,
+      "VU002": false,
+      "VU003": false,
+      "VU004": false,
+      "VU005": false,
+      "VU007": false
+    },
+    "label_source": "manual_cluster_review",
+    "rationale": "caller-gate+signature-present"
+  },
+  {
+    "file": "account-abstraction/contracts/test/TestWarmColdAccount.sol",
+    "cluster_hash": "50d73cdf81c1ac5a08b5e4c763a0a87221e2bb2cdbfee963895f536026bb1df4",
+    "gt_rules": {
+      "VU001": true,
+      "VU002": false,
+      "VU003": true,
+      "VU004": false,
+      "VU005": true,
+      "VU007": true
+    },
+    "label_source": "manual_cluster_review",
+    "rationale": "warm-cold-sidechannel"
+  },
+  {
+    "file": "account-abstraction/contracts/test/TestRevertAccount.sol",
+    "cluster_hash": "14f0bb665553fe31bc4f2d0d5686b3afd29584dbf549ef30738de0bbb4049dca",
+    "gt_rules": {
+      "VU001": true,
+      "VU002": true,
+      "VU003": true,
+      "VU004": false,
+      "VU005": false,
+      "VU007": true
+    },
+    "label_source": "legacy_manual_exact_hash",
+    "rationale": "manual cluster: revert-test account returns constant success without auth/nonce/caller gate"
+  },
+  {
+    "file": "account-abstraction/contracts/test/MaliciousAccount.sol",
+    "cluster_hash": "66bac9376de5976488dc1bcdeb1d2c1525364ca533e1bd34f1cf3eefd258e71d",
+    "gt_rules": {
+      "VU001": true,
+      "VU002": true,
+      "VU003": true,
+      "VU004": false,
+      "VU005": false,
+      "VU007": true
+    },
+    "label_source": "legacy_manual_exact_hash",
+    "rationale": "manual cluster: malicious account uses signature bytes as opaque data, no auth/no nonce/no caller gate"
+  },
+  {
+    "file": "account-abstraction-foundry/lib/account-abstraction/contracts/core/BaseAccount.sol",
+    "cluster_hash": "1ad0835d381f54adec59d3c5d712f7f2003082b10da47884a5331d76f964e16e",
+    "gt_rules": {
+      "VU001": false,
+      "VU002": false,
+      "VU003": false,
+      "VU004": false,
+      "VU005": false,
+      "VU007": false
+    },
+    "label_source": "manual_cluster_review",
+    "rationale": "caller-gate+signature-present"
+  },
+  {
+    "file": "account-abstraction-foundry/lib/account-abstraction/contracts/test/TestWarmColdAccount.sol",
+    "cluster_hash": "50d73cdf81c1ac5a08b5e4c763a0a87221e2bb2cdbfee963895f536026bb1df4",
+    "gt_rules": {
+      "VU001": true,
+      "VU002": false,
+      "VU003": true,
+      "VU004": false,
+      "VU005": true,
+      "VU007": true
+    },
+    "label_source": "manual_cluster_review",
+    "rationale": "warm-cold-sidechannel"
+  },
+  {
+    "file": "account-abstraction-foundry/lib/account-abstraction/contracts/test/TestRevertAccount.sol",
+    "cluster_hash": "14f0bb665553fe31bc4f2d0d5686b3afd29584dbf549ef30738de0bbb4049dca",
+    "gt_rules": {
+      "VU001": true,
+      "VU002": true,
+      "VU003": true,
+      "VU004": false,
+      "VU005": false,
+      "VU007": true
+    },
+    "label_source": "legacy_manual_exact_hash",
+    "rationale": "manual cluster: revert-test account returns constant success without auth/nonce/caller gate"
+  },
+  {
+    "file": "account-abstraction-foundry/lib/account-abstraction/contracts/test/MaliciousAccount.sol",
+    "cluster_hash": "66bac9376de5976488dc1bcdeb1d2c1525364ca533e1bd34f1cf3eefd258e71d",
+    "gt_rules": {
+      "VU001": true,
+      "VU002": true,
+      "VU003": true,
+      "VU004": false,
+      "VU005": false,
+      "VU007": true
+    },
+    "label_source": "legacy_manual_exact_hash",
+    "rationale": "manual cluster: malicious account uses signature bytes as opaque data, no auth/no nonce/no caller gate"
+  },
+  {
+    "file": "account-abstraction-stream/src/core/BaseAccount.sol",
+    "cluster_hash": "1ad0835d381f54adec59d3c5d712f7f2003082b10da47884a5331d76f964e16e",
+    "gt_rules": {
+      "VU001": false,
+      "VU002": false,
+      "VU003": false,
+      "VU004": false,
+      "VU005": false,
+      "VU007": false
+    },
+    "label_source": "manual_cluster_review",
+    "rationale": "caller-gate+signature-present"
+  },
+  {
+    "file": "account-abstraction-webauthn/contracts/lib/account-abstraction/contracts/core/BaseAccount.sol",
+    "cluster_hash": "d6206c1293a07dae4ac863c4f948427cc6b4243fed6b607926ced7e253e42d3b",
+    "gt_rules": {
+      "VU001": false,
+      "VU002": false,
+      "VU003": false,
+      "VU004": false,
+      "VU005": false,
+      "VU007": false
+    },
+    "label_source": "manual_cluster_review",
+    "rationale": "caller-gate+signature-present"
+  },
+  {
+    "file": "account-abstraction-webauthn/contracts/lib/account-abstraction/contracts/test/TestWarmColdAccount.sol",
+    "cluster_hash": "1436bb17f49ab8960b2f13c85556f8f581aecb05f38d58ab6e07a374d9a4afb3",
+    "gt_rules": {
+      "VU001": true,
+      "VU002": false,
+      "VU003": true,
+      "VU004": false,
+      "VU005": true,
+      "VU007": true
+    },
+    "label_source": "legacy_manual_exact_hash",
+    "rationale": "manual cluster: warm/cold side-channel account reads nonce but lacks auth/caller gate and returns raw success"
+  },
+  {
+    "file": "account-abstraction-webauthn/contracts/lib/account-abstraction/contracts/test/TestRevertAccount.sol",
+    "cluster_hash": "999f3296a5a7ddcc36668383a2f79bb560bb4700e30d93b4391059f343ca177e",
+    "gt_rules": {
+      "VU001": true,
+      "VU002": true,
+      "VU003": true,
+      "VU004": false,
+      "VU005": false,
+      "VU007": true
+    },
+    "label_source": "legacy_manual_exact_hash",
+    "rationale": "manual cluster: revert-test account returns raw success without auth/nonce/caller gate"
+  },
+  {
+    "file": "account-abstraction-webauthn/contracts/lib/account-abstraction/contracts/test/MaliciousAccount.sol",
+    "cluster_hash": "cd19b6245a4110ef76eb873592e359c4e5a7ed76d3d959fee6dd0735a49126ab",
+    "gt_rules": {
+      "VU001": true,
+      "VU002": true,
+      "VU003": true,
+      "VU004": false,
+      "VU005": false,
+      "VU007": true
+    },
+    "label_source": "legacy_manual_exact_hash",
+    "rationale": "manual cluster: malicious account uses signature bytes as opaque data, no auth/no nonce/no caller gate"
+  },
+  {
+    "file": "account-abstraction-webauthn/contracts/lib/solady/test/utils/mocks/MockEntryPoint.sol",
+    "cluster_hash": "85f2cb798d2768bb1d4c21669355d335917931062f2395bd7c261a0476304cdd",
+    "gt_rules": {
+      "VU001": false,
+      "VU002": false,
+      "VU003": false,
+      "VU004": false,
+      "VU005": false,
+      "VU007": false
+    },
+    "label_source": "manual_cluster_review",
+    "rationale": "forward-wrapper"
+  },
+  {
+    "file": "account-abstraction-webauthn/contracts/lib/solady/src/accounts/ERC4337.sol",
+    "cluster_hash": "f1e32b6f689e74ed042e38be41020809666a61f5d9d671568032a298a67a66f7",
+    "gt_rules": {
+      "VU001": false,
+      "VU002": false,
+      "VU003": false,
+      "VU004": false,
+      "VU005": false,
+      "VU007": false
+    },
+    "label_source": "manual_cluster_review",
+    "rationale": "caller-gate+signature-present"
+  },
+  {
+    "file": "alto/contracts/lib/singleton-paymaster/test/utils/account-abstraction/v07/core/BaseAccount.sol",
+    "cluster_hash": "1ad0835d381f54adec59d3c5d712f7f2003082b10da47884a5331d76f964e16e",
+    "gt_rules": {
+      "VU001": false,
+      "VU002": false,
+      "VU003": false,
+      "VU004": false,
+      "VU005": false,
+      "VU007": false
+    },
+    "label_source": "manual_cluster_review",
+    "rationale": "caller-gate+signature-present"
+  },
+  {
+    "file": "alto/contracts/lib/singleton-paymaster/lib/account-abstraction-v7/contracts/core/BaseAccount.sol",
+    "cluster_hash": "1ad0835d381f54adec59d3c5d712f7f2003082b10da47884a5331d76f964e16e",
+    "gt_rules": {
+      "VU001": false,
+      "VU002": false,
+      "VU003": false,
+      "VU004": false,
+      "VU005": false,
+      "VU007": false
+    },
+    "label_source": "manual_cluster_review",
+    "rationale": "caller-gate+signature-present"
+  },
+  {
+    "file": "alto/contracts/lib/singleton-paymaster/lib/account-abstraction-v7/contracts/test/TestWarmColdAccount.sol",
+    "cluster_hash": "50d73cdf81c1ac5a08b5e4c763a0a87221e2bb2cdbfee963895f536026bb1df4",
+    "gt_rules": {
+      "VU001": true,
+      "VU002": false,
+      "VU003": true,
+      "VU004": false,
+      "VU005": true,
+      "VU007": true
+    },
+    "label_source": "manual_cluster_review",
+    "rationale": "warm-cold-sidechannel"
+  },
+  {
+    "file": "alto/contracts/lib/singleton-paymaster/lib/account-abstraction-v7/contracts/test/TestRevertAccount.sol",
+    "cluster_hash": "14f0bb665553fe31bc4f2d0d5686b3afd29584dbf549ef30738de0bbb4049dca",
+    "gt_rules": {
+      "VU001": true,
+      "VU002": true,
+      "VU003": true,
+      "VU004": false,
+      "VU005": false,
+      "VU007": true
+    },
+    "label_source": "legacy_manual_exact_hash",
+    "rationale": "manual cluster: revert-test account returns constant success without auth/nonce/caller gate"
+  },
+  {
+    "file": "alto/contracts/lib/singleton-paymaster/lib/account-abstraction-v7/contracts/test/MaliciousAccount.sol",
+    "cluster_hash": "66bac9376de5976488dc1bcdeb1d2c1525364ca533e1bd34f1cf3eefd258e71d",
+    "gt_rules": {
+      "VU001": true,
+      "VU002": true,
+      "VU003": true,
+      "VU004": false,
+      "VU005": false,
+      "VU007": true
+    },
+    "label_source": "legacy_manual_exact_hash",
+    "rationale": "manual cluster: malicious account uses signature bytes as opaque data, no auth/no nonce/no caller gate"
+  },
+  {
+    "file": "alto/contracts/lib/singleton-paymaster/lib/account-abstraction-v6/contracts/core/BaseAccount.sol",
+    "cluster_hash": "e47315dff791ce783e4ec250aa24800cc9d11356d346012666d266cdd2109df8",
+    "gt_rules": {
+      "VU001": false,
+      "VU002": false,
+      "VU003": false,
+      "VU004": false,
+      "VU005": false,
+      "VU007": false
+    },
+    "label_source": "manual_cluster_review",
+    "rationale": "caller-gate+signature-present"
+  },
+  {
+    "file": "alto/contracts/lib/singleton-paymaster/lib/account-abstraction-v6/contracts/test/TestWarmColdAccount.sol",
+    "cluster_hash": "1436bb17f49ab8960b2f13c85556f8f581aecb05f38d58ab6e07a374d9a4afb3",
+    "gt_rules": {
+      "VU001": true,
+      "VU002": false,
+      "VU003": true,
+      "VU004": false,
+      "VU005": true,
+      "VU007": true
+    },
+    "label_source": "legacy_manual_exact_hash",
+    "rationale": "manual cluster: warm/cold side-channel account reads nonce but lacks auth/caller gate and returns raw success"
+  },
+  {
+    "file": "alto/contracts/lib/singleton-paymaster/lib/account-abstraction-v6/contracts/test/TestRevertAccount.sol",
+    "cluster_hash": "999f3296a5a7ddcc36668383a2f79bb560bb4700e30d93b4391059f343ca177e",
+    "gt_rules": {
+      "VU001": true,
+      "VU002": true,
+      "VU003": true,
+      "VU004": false,
+      "VU005": false,
+      "VU007": true
+    },
+    "label_source": "legacy_manual_exact_hash",
+    "rationale": "manual cluster: revert-test account returns raw success without auth/nonce/caller gate"
+  },
+  {
+    "file": "alto/contracts/lib/singleton-paymaster/lib/account-abstraction-v6/contracts/test/MaliciousAccount.sol",
+    "cluster_hash": "cd19b6245a4110ef76eb873592e359c4e5a7ed76d3d959fee6dd0735a49126ab",
+    "gt_rules": {
+      "VU001": true,
+      "VU002": true,
+      "VU003": true,
+      "VU004": false,
+      "VU005": false,
+      "VU007": true
+    },
+    "label_source": "legacy_manual_exact_hash",
+    "rationale": "manual cluster: malicious account uses signature bytes as opaque data, no auth/no nonce/no caller gate"
+  },
+  {
+    "file": "alto/contracts/lib/singleton-paymaster/lib/account-abstraction-v6/contracts/samples/gnosis/EIP4337Fallback.sol",
+    "cluster_hash": "279aa532c362d34e378d07429ac6622bdeab3e0c94b989a6ba04201bf13c48f7",
+    "gt_rules": {
+      "VU001": false,
+      "VU002": false,
+      "VU003": false,
+      "VU004": false,
+      "VU005": false,
+      "VU007": false
+    },
+    "label_source": "legacy_manual_exact_hash",
+    "rationale": "manual cluster: fallback delegates validateUserOp to manager; no direct VU finding on wrapper"
+  },
+  {
+    "file": "alto/contracts/lib/singleton-paymaster/lib/account-abstraction-v6/contracts/samples/gnosis/EIP4337Manager.sol",
+    "cluster_hash": "7ca9615c59a2750fb5add224435f485afa2f9fad927818e0f4cefda45d7e5b3b",
+    "gt_rules": {
+      "VU001": false,
+      "VU002": false,
+      "VU003": false,
+      "VU004": false,
+      "VU005": false,
+      "VU007": false
+    },
+    "label_source": "manual_cluster_review",
+    "rationale": "caller-gate+signature-present"
+  },
+  {
+    "file": "alto/contracts/lib/singleton-paymaster/lib/account-abstraction-v8/contracts/core/BaseAccount.sol",
+    "cluster_hash": "1ad0835d381f54adec59d3c5d712f7f2003082b10da47884a5331d76f964e16e",
+    "gt_rules": {
+      "VU001": false,
+      "VU002": false,
+      "VU003": false,
+      "VU004": false,
+      "VU005": false,
+      "VU007": false
+    },
+    "label_source": "manual_cluster_review",
+    "rationale": "caller-gate+signature-present"
+  },
+  {
+    "file": "alto/contracts/lib/singleton-paymaster/lib/account-abstraction-v8/contracts/test/TestWarmColdAccount.sol",
+    "cluster_hash": "50d73cdf81c1ac5a08b5e4c763a0a87221e2bb2cdbfee963895f536026bb1df4",
+    "gt_rules": {
+      "VU001": true,
+      "VU002": false,
+      "VU003": true,
+      "VU004": false,
+      "VU005": true,
+      "VU007": true
+    },
+    "label_source": "manual_cluster_review",
+    "rationale": "warm-cold-sidechannel"
+  },
+  {
+    "file": "alto/contracts/lib/singleton-paymaster/lib/account-abstraction-v8/contracts/test/TestRevertAccount.sol",
+    "cluster_hash": "14f0bb665553fe31bc4f2d0d5686b3afd29584dbf549ef30738de0bbb4049dca",
+    "gt_rules": {
+      "VU001": true,
+      "VU002": true,
+      "VU003": true,
+      "VU004": false,
+      "VU005": false,
+      "VU007": true
+    },
+    "label_source": "legacy_manual_exact_hash",
+    "rationale": "manual cluster: revert-test account returns constant success without auth/nonce/caller gate"
+  },
+  {
+    "file": "alto/contracts/lib/singleton-paymaster/lib/account-abstraction-v8/contracts/test/MaliciousAccount.sol",
+    "cluster_hash": "66bac9376de5976488dc1bcdeb1d2c1525364ca533e1bd34f1cf3eefd258e71d",
+    "gt_rules": {
+      "VU001": true,
+      "VU002": true,
+      "VU003": true,
+      "VU004": false,
+      "VU005": false,
+      "VU007": true
+    },
+    "label_source": "legacy_manual_exact_hash",
+    "rationale": "manual cluster: malicious account uses signature bytes as opaque data, no auth/no nonce/no caller gate"
+  },
+  {
+    "file": "alto/contracts/lib/singleton-paymaster/lib/solady/test/utils/mocks/MockEntryPoint.sol",
+    "cluster_hash": "a53774f4b107e3e8d8a6825d531b7fe74c3a22d9339d0cdc2419f264ba653ed5",
+    "gt_rules": {
+      "VU001": false,
+      "VU002": false,
+      "VU003": false,
+      "VU004": false,
+      "VU005": false,
+      "VU007": false
+    },
+    "label_source": "manual_cluster_review",
+    "rationale": "forward-wrapper"
+  },
+  {
+    "file": "alto/contracts/lib/singleton-paymaster/lib/solady/src/accounts/ERC4337.sol",
+    "cluster_hash": "504c3b952335ff72cf1691f903e616edbe0e8f5288d301254b8c8dea482f1fcd",
+    "gt_rules": {
+      "VU001": false,
+      "VU002": false,
+      "VU003": false,
+      "VU004": false,
+      "VU005": false,
+      "VU007": false
+    },
+    "label_source": "manual_cluster_review",
+    "rationale": "caller-gate+signature-present"
+  },
+  {
+    "file": "alto/contracts/lib/account-abstraction-v9/contracts/core/BaseAccount.sol",
+    "cluster_hash": "1ad0835d381f54adec59d3c5d712f7f2003082b10da47884a5331d76f964e16e",
+    "gt_rules": {
+      "VU001": false,
+      "VU002": false,
+      "VU003": false,
+      "VU004": false,
+      "VU005": false,
+      "VU007": false
+    },
+    "label_source": "manual_cluster_review",
+    "rationale": "caller-gate+signature-present"
+  },
+  {
+    "file": "alto/contracts/lib/account-abstraction-v9/contracts/test/TestWarmColdAccount.sol",
+    "cluster_hash": "50d73cdf81c1ac5a08b5e4c763a0a87221e2bb2cdbfee963895f536026bb1df4",
+    "gt_rules": {
+      "VU001": true,
+      "VU002": false,
+      "VU003": true,
+      "VU004": false,
+      "VU005": true,
+      "VU007": true
+    },
+    "label_source": "manual_cluster_review",
+    "rationale": "warm-cold-sidechannel"
+  },
+  {
+    "file": "alto/contracts/lib/account-abstraction-v9/contracts/test/TestRevertAccount.sol",
+    "cluster_hash": "14f0bb665553fe31bc4f2d0d5686b3afd29584dbf549ef30738de0bbb4049dca",
+    "gt_rules": {
+      "VU001": true,
+      "VU002": true,
+      "VU003": true,
+      "VU004": false,
+      "VU005": false,
+      "VU007": true
+    },
+    "label_source": "legacy_manual_exact_hash",
+    "rationale": "manual cluster: revert-test account returns constant success without auth/nonce/caller gate"
+  },
+  {
+    "file": "alto/contracts/lib/account-abstraction-v9/contracts/test/MaliciousAccount.sol",
+    "cluster_hash": "66bac9376de5976488dc1bcdeb1d2c1525364ca533e1bd34f1cf3eefd258e71d",
+    "gt_rules": {
+      "VU001": true,
+      "VU002": true,
+      "VU003": true,
+      "VU004": false,
+      "VU005": false,
+      "VU007": true
+    },
+    "label_source": "legacy_manual_exact_hash",
+    "rationale": "manual cluster: malicious account uses signature bytes as opaque data, no auth/no nonce/no caller gate"
+  },
+  {
+    "file": "alto/contracts/lib/account-abstraction-v7/contracts/core/BaseAccount.sol",
+    "cluster_hash": "1ad0835d381f54adec59d3c5d712f7f2003082b10da47884a5331d76f964e16e",
+    "gt_rules": {
+      "VU001": false,
+      "VU002": false,
+      "VU003": false,
+      "VU004": false,
+      "VU005": false,
+      "VU007": false
+    },
+    "label_source": "manual_cluster_review",
+    "rationale": "caller-gate+signature-present"
+  },
+  {
+    "file": "alto/contracts/lib/account-abstraction-v7/contracts/test/TestWarmColdAccount.sol",
+    "cluster_hash": "50d73cdf81c1ac5a08b5e4c763a0a87221e2bb2cdbfee963895f536026bb1df4",
+    "gt_rules": {
+      "VU001": true,
+      "VU002": false,
+      "VU003": true,
+      "VU004": false,
+      "VU005": true,
+      "VU007": true
+    },
+    "label_source": "manual_cluster_review",
+    "rationale": "warm-cold-sidechannel"
+  },
+  {
+    "file": "alto/contracts/lib/account-abstraction-v7/contracts/test/TestRevertAccount.sol",
+    "cluster_hash": "14f0bb665553fe31bc4f2d0d5686b3afd29584dbf549ef30738de0bbb4049dca",
+    "gt_rules": {
+      "VU001": true,
+      "VU002": true,
+      "VU003": true,
+      "VU004": false,
+      "VU005": false,
+      "VU007": true
+    },
+    "label_source": "legacy_manual_exact_hash",
+    "rationale": "manual cluster: revert-test account returns constant success without auth/nonce/caller gate"
+  },
+  {
+    "file": "alto/contracts/lib/account-abstraction-v7/contracts/test/MaliciousAccount.sol",
+    "cluster_hash": "66bac9376de5976488dc1bcdeb1d2c1525364ca533e1bd34f1cf3eefd258e71d",
+    "gt_rules": {
+      "VU001": true,
+      "VU002": true,
+      "VU003": true,
+      "VU004": false,
+      "VU005": false,
+      "VU007": true
+    },
+    "label_source": "legacy_manual_exact_hash",
+    "rationale": "manual cluster: malicious account uses signature bytes as opaque data, no auth/no nonce/no caller gate"
+  },
+  {
+    "file": "alto/contracts/lib/account-abstraction-v6/contracts/core/BaseAccount.sol",
+    "cluster_hash": "e47315dff791ce783e4ec250aa24800cc9d11356d346012666d266cdd2109df8",
+    "gt_rules": {
+      "VU001": false,
+      "VU002": false,
+      "VU003": false,
+      "VU004": false,
+      "VU005": false,
+      "VU007": false
+    },
+    "label_source": "manual_cluster_review",
+    "rationale": "caller-gate+signature-present"
+  },
+  {
+    "file": "alto/contracts/lib/account-abstraction-v6/contracts/test/TestWarmColdAccount.sol",
+    "cluster_hash": "1436bb17f49ab8960b2f13c85556f8f581aecb05f38d58ab6e07a374d9a4afb3",
+    "gt_rules": {
+      "VU001": true,
+      "VU002": false,
+      "VU003": true,
+      "VU004": false,
+      "VU005": true,
+      "VU007": true
+    },
+    "label_source": "legacy_manual_exact_hash",
+    "rationale": "manual cluster: warm/cold side-channel account reads nonce but lacks auth/caller gate and returns raw success"
+  },
+  {
+    "file": "alto/contracts/lib/account-abstraction-v6/contracts/test/TestRevertAccount.sol",
+    "cluster_hash": "999f3296a5a7ddcc36668383a2f79bb560bb4700e30d93b4391059f343ca177e",
+    "gt_rules": {
+      "VU001": true,
+      "VU002": true,
+      "VU003": true,
+      "VU004": false,
+      "VU005": false,
+      "VU007": true
+    },
+    "label_source": "legacy_manual_exact_hash",
+    "rationale": "manual cluster: revert-test account returns raw success without auth/nonce/caller gate"
+  },
+  {
+    "file": "alto/contracts/lib/account-abstraction-v6/contracts/test/MaliciousAccount.sol",
+    "cluster_hash": "cd19b6245a4110ef76eb873592e359c4e5a7ed76d3d959fee6dd0735a49126ab",
+    "gt_rules": {
+      "VU001": true,
+      "VU002": true,
+      "VU003": true,
+      "VU004": false,
+      "VU005": false,
+      "VU007": true
+    },
+    "label_source": "legacy_manual_exact_hash",
+    "rationale": "manual cluster: malicious account uses signature bytes as opaque data, no auth/no nonce/no caller gate"
+  },
+  {
+    "file": "alto/contracts/lib/account-abstraction-v6/contracts/samples/gnosis/EIP4337Fallback.sol",
+    "cluster_hash": "279aa532c362d34e378d07429ac6622bdeab3e0c94b989a6ba04201bf13c48f7",
+    "gt_rules": {
+      "VU001": false,
+      "VU002": false,
+      "VU003": false,
+      "VU004": false,
+      "VU005": false,
+      "VU007": false
+    },
+    "label_source": "legacy_manual_exact_hash",
+    "rationale": "manual cluster: fallback delegates validateUserOp to manager; no direct VU finding on wrapper"
+  },
+  {
+    "file": "alto/contracts/lib/account-abstraction-v6/contracts/samples/gnosis/EIP4337Manager.sol",
+    "cluster_hash": "7ca9615c59a2750fb5add224435f485afa2f9fad927818e0f4cefda45d7e5b3b",
+    "gt_rules": {
+      "VU001": false,
+      "VU002": false,
+      "VU003": false,
+      "VU004": false,
+      "VU005": false,
+      "VU007": false
+    },
+    "label_source": "manual_cluster_review",
+    "rationale": "caller-gate+signature-present"
+  },
+  {
+    "file": "alto/contracts/lib/account-abstraction-v8/contracts/core/BaseAccount.sol",
+    "cluster_hash": "1ad0835d381f54adec59d3c5d712f7f2003082b10da47884a5331d76f964e16e",
+    "gt_rules": {
+      "VU001": false,
+      "VU002": false,
+      "VU003": false,
+      "VU004": false,
+      "VU005": false,
+      "VU007": false
+    },
+    "label_source": "manual_cluster_review",
+    "rationale": "caller-gate+signature-present"
+  },
+  {
+    "file": "alto/contracts/lib/account-abstraction-v8/contracts/test/TestWarmColdAccount.sol",
+    "cluster_hash": "50d73cdf81c1ac5a08b5e4c763a0a87221e2bb2cdbfee963895f536026bb1df4",
+    "gt_rules": {
+      "VU001": true,
+      "VU002": false,
+      "VU003": true,
+      "VU004": false,
+      "VU005": true,
+      "VU007": true
+    },
+    "label_source": "manual_cluster_review",
+    "rationale": "warm-cold-sidechannel"
+  },
+  {
+    "file": "alto/contracts/lib/account-abstraction-v8/contracts/test/TestRevertAccount.sol",
+    "cluster_hash": "14f0bb665553fe31bc4f2d0d5686b3afd29584dbf549ef30738de0bbb4049dca",
+    "gt_rules": {
+      "VU001": true,
+      "VU002": true,
+      "VU003": true,
+      "VU004": false,
+      "VU005": false,
+      "VU007": true
+    },
+    "label_source": "legacy_manual_exact_hash",
+    "rationale": "manual cluster: revert-test account returns constant success without auth/nonce/caller gate"
+  },
+  {
+    "file": "alto/contracts/lib/account-abstraction-v8/contracts/test/MaliciousAccount.sol",
+    "cluster_hash": "66bac9376de5976488dc1bcdeb1d2c1525364ca533e1bd34f1cf3eefd258e71d",
+    "gt_rules": {
+      "VU001": true,
+      "VU002": true,
+      "VU003": true,
+      "VU004": false,
+      "VU005": false,
+      "VU007": true
+    },
+    "label_source": "legacy_manual_exact_hash",
+    "rationale": "manual cluster: malicious account uses signature bytes as opaque data, no auth/no nonce/no caller gate"
+  },
+  {
+    "file": "alto/contracts/lib/solady/test/utils/mocks/MockEntryPoint.sol",
+    "cluster_hash": "a53774f4b107e3e8d8a6825d531b7fe74c3a22d9339d0cdc2419f264ba653ed5",
+    "gt_rules": {
+      "VU001": false,
+      "VU002": false,
+      "VU003": false,
+      "VU004": false,
+      "VU005": false,
+      "VU007": false
+    },
+    "label_source": "manual_cluster_review",
+    "rationale": "forward-wrapper"
+  },
+  {
+    "file": "alto/contracts/lib/solady/src/accounts/ERC4337.sol",
+    "cluster_hash": "504c3b952335ff72cf1691f903e616edbe0e8f5288d301254b8c8dea482f1fcd",
+    "gt_rules": {
+      "VU001": false,
+      "VU002": false,
+      "VU003": false,
+      "VU004": false,
+      "VU005": false,
+      "VU007": false
+    },
+    "label_source": "manual_cluster_review",
+    "rationale": "caller-gate+signature-present"
+  },
+  {
+    "file": "artela-account-abstraction/contracts/core/BaseAccount.sol",
+    "cluster_hash": "d6206c1293a07dae4ac863c4f948427cc6b4243fed6b607926ced7e253e42d3b",
+    "gt_rules": {
+      "VU001": false,
+      "VU002": false,
+      "VU003": false,
+      "VU004": false,
+      "VU005": false,
+      "VU007": false
+    },
+    "label_source": "manual_cluster_review",
+    "rationale": "caller-gate+signature-present"
+  },
+  {
+    "file": "artela-account-abstraction/contracts/test/TestWarmColdAccount.sol",
+    "cluster_hash": "1436bb17f49ab8960b2f13c85556f8f581aecb05f38d58ab6e07a374d9a4afb3",
+    "gt_rules": {
+      "VU001": true,
+      "VU002": false,
+      "VU003": true,
+      "VU004": false,
+      "VU005": true,
+      "VU007": true
+    },
+    "label_source": "legacy_manual_exact_hash",
+    "rationale": "manual cluster: warm/cold side-channel account reads nonce but lacks auth/caller gate and returns raw success"
+  },
+  {
+    "file": "artela-account-abstraction/contracts/test/TestRevertAccount.sol",
+    "cluster_hash": "999f3296a5a7ddcc36668383a2f79bb560bb4700e30d93b4391059f343ca177e",
+    "gt_rules": {
+      "VU001": true,
+      "VU002": true,
+      "VU003": true,
+      "VU004": false,
+      "VU005": false,
+      "VU007": true
+    },
+    "label_source": "legacy_manual_exact_hash",
+    "rationale": "manual cluster: revert-test account returns raw success without auth/nonce/caller gate"
+  },
+  {
+    "file": "artela-account-abstraction/contracts/test/MaliciousAccount.sol",
+    "cluster_hash": "cd19b6245a4110ef76eb873592e359c4e5a7ed76d3d959fee6dd0735a49126ab",
+    "gt_rules": {
+      "VU001": true,
+      "VU002": true,
+      "VU003": true,
+      "VU004": false,
+      "VU005": false,
+      "VU007": true
+    },
+    "label_source": "legacy_manual_exact_hash",
+    "rationale": "manual cluster: malicious account uses signature bytes as opaque data, no auth/no nonce/no caller gate"
+  },
+  {
+    "file": "artela-account-abstraction/contracts/samples/AspectEnabledSimpleAccount.sol",
+    "cluster_hash": "f9024d6634e838f0244bb1cde7c3bc547ccc76791e3395889e982a4f0bec836c",
+    "gt_rules": {
+      "VU001": false,
+      "VU002": false,
+      "VU003": false,
+      "VU004": false,
+      "VU005": false,
+      "VU007": false
+    },
+    "label_source": "manual_cluster_review",
+    "rationale": "caller-gate+signature-present"
+  },
+  {
+    "file": "base-paymaster/lib/account-abstraction/contracts/core/BaseAccount.sol",
+    "cluster_hash": "e47315dff791ce783e4ec250aa24800cc9d11356d346012666d266cdd2109df8",
+    "gt_rules": {
+      "VU001": false,
+      "VU002": false,
+      "VU003": false,
+      "VU004": false,
+      "VU005": false,
+      "VU007": false
+    },
+    "label_source": "manual_cluster_review",
+    "rationale": "caller-gate+signature-present"
+  },
+  {
+    "file": "base-paymaster/lib/account-abstraction/contracts/test/TestWarmColdAccount.sol",
+    "cluster_hash": "1436bb17f49ab8960b2f13c85556f8f581aecb05f38d58ab6e07a374d9a4afb3",
+    "gt_rules": {
+      "VU001": true,
+      "VU002": false,
+      "VU003": true,
+      "VU004": false,
+      "VU005": true,
+      "VU007": true
+    },
+    "label_source": "legacy_manual_exact_hash",
+    "rationale": "manual cluster: warm/cold side-channel account reads nonce but lacks auth/caller gate and returns raw success"
+  },
+  {
+    "file": "base-paymaster/lib/account-abstraction/contracts/test/TestRevertAccount.sol",
+    "cluster_hash": "999f3296a5a7ddcc36668383a2f79bb560bb4700e30d93b4391059f343ca177e",
+    "gt_rules": {
+      "VU001": true,
+      "VU002": true,
+      "VU003": true,
+      "VU004": false,
+      "VU005": false,
+      "VU007": true
+    },
+    "label_source": "legacy_manual_exact_hash",
+    "rationale": "manual cluster: revert-test account returns raw success without auth/nonce/caller gate"
+  },
+  {
+    "file": "base-paymaster/lib/account-abstraction/contracts/test/MaliciousAccount.sol",
+    "cluster_hash": "cd19b6245a4110ef76eb873592e359c4e5a7ed76d3d959fee6dd0735a49126ab",
+    "gt_rules": {
+      "VU001": true,
+      "VU002": true,
+      "VU003": true,
+      "VU004": false,
+      "VU005": false,
+      "VU007": true
+    },
+    "label_source": "legacy_manual_exact_hash",
+    "rationale": "manual cluster: malicious account uses signature bytes as opaque data, no auth/no nonce/no caller gate"
+  },
+  {
+    "file": "base-paymaster/lib/account-abstraction/contracts/samples/gnosis/EIP4337Fallback.sol",
+    "cluster_hash": "279aa532c362d34e378d07429ac6622bdeab3e0c94b989a6ba04201bf13c48f7",
+    "gt_rules": {
+      "VU001": false,
+      "VU002": false,
+      "VU003": false,
+      "VU004": false,
+      "VU005": false,
+      "VU007": false
+    },
+    "label_source": "legacy_manual_exact_hash",
+    "rationale": "manual cluster: fallback delegates validateUserOp to manager; no direct VU finding on wrapper"
+  },
+  {
+    "file": "base-paymaster/lib/account-abstraction/contracts/samples/gnosis/EIP4337Manager.sol",
+    "cluster_hash": "7ca9615c59a2750fb5add224435f485afa2f9fad927818e0f4cefda45d7e5b3b",
+    "gt_rules": {
+      "VU001": false,
+      "VU002": false,
+      "VU003": false,
+      "VU004": false,
+      "VU005": false,
+      "VU007": false
+    },
+    "label_source": "manual_cluster_review",
+    "rationale": "caller-gate+signature-present"
+  },
+  {
+    "file": "base-paymaster/lib/solady/test/utils/mocks/MockEntryPoint.sol",
+    "cluster_hash": "85f2cb798d2768bb1d4c21669355d335917931062f2395bd7c261a0476304cdd",
+    "gt_rules": {
+      "VU001": false,
+      "VU002": false,
+      "VU003": false,
+      "VU004": false,
+      "VU005": false,
+      "VU007": false
+    },
+    "label_source": "manual_cluster_review",
+    "rationale": "forward-wrapper"
+  },
+  {
+    "file": "base-paymaster/lib/solady/src/accounts/ERC4337.sol",
+    "cluster_hash": "f1e32b6f689e74ed042e38be41020809666a61f5d9d671568032a298a67a66f7",
+    "gt_rules": {
+      "VU001": false,
+      "VU002": false,
+      "VU003": false,
+      "VU004": false,
+      "VU005": false,
+      "VU007": false
+    },
+    "label_source": "manual_cluster_review",
+    "rationale": "caller-gate+signature-present"
+  },
+  {
+    "file": "boost-accounts/src/validators/EOAValidator.sol",
+    "cluster_hash": "b7357b70400953827f01386ee2bf72f42ed9c3ab6c0ce39a75f53b0ac67d9d60",
+    "gt_rules": {
+      "VU001": false,
+      "VU002": false,
+      "VU003": false,
+      "VU004": false,
+      "VU005": false,
+      "VU007": false
+    },
+    "label_source": "manual_cluster_review",
+    "rationale": "validator-module-default"
+  },
+  {
+    "file": "bundler/packages/bundler/contracts/tests/TestRuleAccount.sol",
+    "cluster_hash": "5bcab859396bca9c02fbb6e02e10d8c8d3d327cd5a049f97ae7b78c8fbf2b2ad",
+    "gt_rules": {
+      "VU001": true,
+      "VU002": true,
+      "VU003": true,
+      "VU004": false,
+      "VU005": false,
+      "VU007": true
+    },
+    "label_source": "manual_cluster_review",
+    "rationale": "raw-success-without-auth"
+  },
+  {
+    "file": "bundler/packages/bundler/contracts/tests/TestRulesAccount.sol",
+    "cluster_hash": "ffc7f62fdbdb33d354407312d5c40a2516a682337e0e07616ee564a1a598bdb4",
+    "gt_rules": {
+      "VU001": true,
+      "VU002": true,
+      "VU003": true,
+      "VU004": false,
+      "VU005": false,
+      "VU007": true
+    },
+    "label_source": "manual_cluster_review",
+    "rationale": "raw-success-without-auth"
+  },
+  {
+    "file": "bundler/packages/bundler/contracts/tests/cross_sender_state/TestFakeWalletToken.sol",
+    "cluster_hash": "a74a20030c68a4794e8e487dd07a0f599d9fb24e4b56e17f8b05983c9e94c592",
+    "gt_rules": {
+      "VU001": true,
+      "VU002": true,
+      "VU003": true,
+      "VU004": false,
+      "VU005": false,
+      "VU007": true
+    },
+    "label_source": "manual_cluster_review",
+    "rationale": "raw-success-without-auth"
+  },
+  {
+    "file": "bundler-spec-tests/tests/contracts/TestFakeWalletToken.sol",
+    "cluster_hash": "afd614401f6914aece3b53f234426d7c6a6e186d56c585a39ccd4387d7d40cd9",
+    "gt_rules": {
+      "VU001": true,
+      "VU002": true,
+      "VU003": true,
+      "VU004": false,
+      "VU005": false,
+      "VU007": true
+    },
+    "label_source": "manual_cluster_review",
+    "rationale": "raw-success-without-auth"
+  },
+  {
+    "file": "bundler-spec-tests/tests/contracts/TestRulesAccount.sol",
+    "cluster_hash": "74b013c03e8ce6a866b172e1c9efb3e6a3cc317196e9cf6d786901f30cc037e7",
+    "gt_rules": {
+      "VU001": true,
+      "VU002": true,
+      "VU003": true,
+      "VU004": false,
+      "VU005": false,
+      "VU007": true
+    },
+    "label_source": "manual_cluster_review",
+    "rationale": "raw-success-without-auth"
+  },
+  {
+    "file": "bundler-spec-tests/tests/contracts/TestReputationAccount.sol",
+    "cluster_hash": "ae5e386d4156e74f203a4e05e0d7325e3811f380535384aae33f8a9c153b0f3a",
+    "gt_rules": {
+      "VU001": true,
+      "VU002": true,
+      "VU003": true,
+      "VU004": false,
+      "VU005": false,
+      "VU007": true
+    },
+    "label_source": "manual_cluster_review",
+    "rationale": "raw-success-without-auth"
+  },
+  {
+    "file": "elytro-wallet-core/test/calldataPack.t.sol",
+    "cluster_hash": "6df4e134fc8df9ddb93718c0f1c72535715508804283f797c5c0eec5df74212d",
+    "gt_rules": {
+      "VU001": false,
+      "VU002": false,
+      "VU003": false,
+      "VU004": false,
+      "VU005": false,
+      "VU007": false
+    },
+    "label_source": "manual_cluster_review",
+    "rationale": "test-mock-default"
+  },
+  {
+    "file": "elytro-wallet-core/contracts/validators/EOAValidator.sol",
+    "cluster_hash": "b7357b70400953827f01386ee2bf72f42ed9c3ab6c0ce39a75f53b0ac67d9d60",
+    "gt_rules": {
+      "VU001": false,
+      "VU002": false,
+      "VU003": false,
+      "VU004": false,
+      "VU005": false,
+      "VU007": false
+    },
+    "label_source": "manual_cluster_review",
+    "rationale": "validator-module-default"
+  },
+  {
+    "file": "entrypoint-hash-poc/lib/account-abstraction/contracts/core/BaseAccount.sol",
+    "cluster_hash": "326ce5e00f013a6ade3396882dc4cc0735cbe3e862e3ee243b30030622f0f331",
+    "gt_rules": {
+      "VU001": false,
+      "VU002": false,
+      "VU003": false,
+      "VU004": false,
+      "VU005": false,
+      "VU007": false
+    },
+    "label_source": "legacy_manual_exact_hash",
+    "rationale": "manual cluster: BaseAccount-style delegation with caller gate, signature helper, nonce helper"
+  },
+  {
+    "file": "entrypoint-hash-poc/lib/account-abstraction/contracts/test/TestWarmColdAccount.sol",
+    "cluster_hash": "1436bb17f49ab8960b2f13c85556f8f581aecb05f38d58ab6e07a374d9a4afb3",
+    "gt_rules": {
+      "VU001": true,
+      "VU002": false,
+      "VU003": true,
+      "VU004": false,
+      "VU005": true,
+      "VU007": true
+    },
+    "label_source": "legacy_manual_exact_hash",
+    "rationale": "manual cluster: warm/cold side-channel account reads nonce but lacks auth/caller gate and returns raw success"
+  },
+  {
+    "file": "entrypoint-hash-poc/lib/account-abstraction/contracts/test/TestRevertAccount.sol",
+    "cluster_hash": "999f3296a5a7ddcc36668383a2f79bb560bb4700e30d93b4391059f343ca177e",
+    "gt_rules": {
+      "VU001": true,
+      "VU002": true,
+      "VU003": true,
+      "VU004": false,
+      "VU005": false,
+      "VU007": true
+    },
+    "label_source": "legacy_manual_exact_hash",
+    "rationale": "manual cluster: revert-test account returns raw success without auth/nonce/caller gate"
+  },
+  {
+    "file": "entrypoint-hash-poc/lib/account-abstraction/contracts/test/MaliciousAccount.sol",
+    "cluster_hash": "149879051fc52daa97762250590a774a1b7822cab9a83a32cb762ef4880f60ac",
+    "gt_rules": {
+      "VU001": true,
+      "VU002": false,
+      "VU003": true,
+      "VU004": false,
+      "VU005": true,
+      "VU007": true
+    },
+    "label_source": "legacy_manual_exact_hash",
+    "rationale": "manual cluster: malformed nonce-based pseudo-check without auth/caller gate"
+  },
+  {
+    "file": "entrypoint-hash-poc/lib/account-abstraction/contracts/samples/gnosis/EIP4337Fallback.sol",
+    "cluster_hash": "279aa532c362d34e378d07429ac6622bdeab3e0c94b989a6ba04201bf13c48f7",
+    "gt_rules": {
+      "VU001": false,
+      "VU002": false,
+      "VU003": false,
+      "VU004": false,
+      "VU005": false,
+      "VU007": false
+    },
+    "label_source": "legacy_manual_exact_hash",
+    "rationale": "manual cluster: fallback delegates validateUserOp to manager; no direct VU finding on wrapper"
+  },
+  {
+    "file": "entrypoint-hash-poc/lib/account-abstraction/contracts/samples/gnosis/EIP4337Manager.sol",
+    "cluster_hash": "0db46b3173d7705f10cb5ab8504adfe4ed19ed59f7297cd6b43d4b7fe309fccd",
+    "gt_rules": {
+      "VU001": false,
+      "VU002": false,
+      "VU003": false,
+      "VU004": false,
+      "VU005": false,
+      "VU007": false
+    },
+    "label_source": "legacy_manual_exact_hash",
+    "rationale": "manual cluster: Gnosis manager validates caller/signature/hash and updates nonce"
+  },
+  {
+    "file": "entrypoint-hash-poc/src/ExampleAccount.sol",
+    "cluster_hash": "deda143b5a96d89e6e567e2123a83588527a2a3c008aad2976fbf2dc063842b9",
+    "gt_rules": {
+      "VU001": false,
+      "VU002": false,
+      "VU003": false,
+      "VU004": true,
+      "VU005": false,
+      "VU007": false
+    },
+    "label_source": "legacy_manual_exact_hash",
+    "rationale": "manual cluster: account authenticates but ignores provided userOpHash parameter and recomputes hash"
+  },
+  {
+    "file": "erc-4337-article-demo/src/EntryPoint/BaseAccount.sol",
+    "cluster_hash": "1ad0835d381f54adec59d3c5d712f7f2003082b10da47884a5331d76f964e16e",
+    "gt_rules": {
+      "VU001": false,
+      "VU002": false,
+      "VU003": false,
+      "VU004": false,
+      "VU005": false,
+      "VU007": false
+    },
+    "label_source": "manual_cluster_review",
+    "rationale": "caller-gate+signature-present"
+  },
+  {
+    "file": "erc-4337-devnet/eth-infinitism/simple-account/0.7/contracts/core/BaseAccount.sol",
+    "cluster_hash": "1ad0835d381f54adec59d3c5d712f7f2003082b10da47884a5331d76f964e16e",
+    "gt_rules": {
+      "VU001": false,
+      "VU002": false,
+      "VU003": false,
+      "VU004": false,
+      "VU005": false,
+      "VU007": false
+    },
+    "label_source": "manual_cluster_review",
+    "rationale": "caller-gate+signature-present"
+  },
+  {
+    "file": "erc-4337-devnet/eth-infinitism/simple-account/0.8/contracts/core/BaseAccount.sol",
+    "cluster_hash": "1ad0835d381f54adec59d3c5d712f7f2003082b10da47884a5331d76f964e16e",
+    "gt_rules": {
+      "VU001": false,
+      "VU002": false,
+      "VU003": false,
+      "VU004": false,
+      "VU005": false,
+      "VU007": false
+    },
+    "label_source": "manual_cluster_review",
+    "rationale": "caller-gate+signature-present"
+  },
+  {
+    "file": "erc-4337-devnet/eth-infinitism/simple-account/0.6/contracts/core/BaseAccount.sol",
+    "cluster_hash": "e47315dff791ce783e4ec250aa24800cc9d11356d346012666d266cdd2109df8",
+    "gt_rules": {
+      "VU001": false,
+      "VU002": false,
+      "VU003": false,
+      "VU004": false,
+      "VU005": false,
+      "VU007": false
+    },
+    "label_source": "manual_cluster_review",
+    "rationale": "caller-gate+signature-present"
+  },
+  {
+    "file": "erc-4337-devnet/zerodev/kernel/0.3.2/src/Kernel.sol",
+    "cluster_hash": "c88df6e06a02fb7c01bb8b3f85dd26fe433e0f1998632fa7bc27959ab005d2fb",
+    "gt_rules": {
+      "VU001": false,
+      "VU002": false,
+      "VU003": false,
+      "VU004": false,
+      "VU005": false,
+      "VU007": false
+    },
+    "label_source": "manual_cluster_review",
+    "rationale": "default-conservative-none"
+  },
+  {
+    "file": "erc-4337-devnet/alchemy/modular-account/2.0.0/src/account/AccountBase.sol",
+    "cluster_hash": "59ac5377a1ffa7c2a8dfffc8aa6a91e676b80d82cc82344f84adcc4da1e4cda5",
+    "gt_rules": {
+      "VU001": false,
+      "VU002": false,
+      "VU003": false,
+      "VU004": false,
+      "VU005": false,
+      "VU007": false
+    },
+    "label_source": "manual_cluster_review_corrected_v3",
+    "rationale": "abstract account base; real auth/nonce semantics occur in overrides"
+  },
+  {
+    "file": "erc-4337-devnet/alchemy/light-account/2.0.0/lib/account-abstraction/contracts/core/BaseAccount.sol",
+    "cluster_hash": "1ad0835d381f54adec59d3c5d712f7f2003082b10da47884a5331d76f964e16e",
+    "gt_rules": {
+      "VU001": false,
+      "VU002": false,
+      "VU003": false,
+      "VU004": false,
+      "VU005": false,
+      "VU007": false
+    },
+    "label_source": "manual_cluster_review",
+    "rationale": "caller-gate+signature-present"
+  },
+  {
+    "file": "erc-4337-devnet/alchemy/light-account/1.1.0/lib/account-abstraction/contracts/core/BaseAccount.sol",
+    "cluster_hash": "e47315dff791ce783e4ec250aa24800cc9d11356d346012666d266cdd2109df8",
+    "gt_rules": {
+      "VU001": false,
+      "VU002": false,
+      "VU003": false,
+      "VU004": false,
+      "VU005": false,
+      "VU007": false
+    },
+    "label_source": "manual_cluster_review",
+    "rationale": "caller-gate+signature-present"
+  },
+  {
+    "file": "erc20-paymaster/lib/account-abstraction-v7/contracts/core/BaseAccount.sol",
+    "cluster_hash": "1ad0835d381f54adec59d3c5d712f7f2003082b10da47884a5331d76f964e16e",
+    "gt_rules": {
+      "VU001": false,
+      "VU002": false,
+      "VU003": false,
+      "VU004": false,
+      "VU005": false,
+      "VU007": false
+    },
+    "label_source": "manual_cluster_review",
+    "rationale": "caller-gate+signature-present"
+  },
+  {
+    "file": "erc20-paymaster/lib/account-abstraction-v7/contracts/test/TestWarmColdAccount.sol",
+    "cluster_hash": "50d73cdf81c1ac5a08b5e4c763a0a87221e2bb2cdbfee963895f536026bb1df4",
+    "gt_rules": {
+      "VU001": true,
+      "VU002": false,
+      "VU003": true,
+      "VU004": false,
+      "VU005": true,
+      "VU007": true
+    },
+    "label_source": "manual_cluster_review",
+    "rationale": "warm-cold-sidechannel"
+  },
+  {
+    "file": "erc20-paymaster/lib/account-abstraction-v7/contracts/test/TestRevertAccount.sol",
+    "cluster_hash": "14f0bb665553fe31bc4f2d0d5686b3afd29584dbf549ef30738de0bbb4049dca",
+    "gt_rules": {
+      "VU001": true,
+      "VU002": true,
+      "VU003": true,
+      "VU004": false,
+      "VU005": false,
+      "VU007": true
+    },
+    "label_source": "legacy_manual_exact_hash",
+    "rationale": "manual cluster: revert-test account returns constant success without auth/nonce/caller gate"
+  },
+  {
+    "file": "erc20-paymaster/lib/account-abstraction-v7/contracts/test/MaliciousAccount.sol",
+    "cluster_hash": "66bac9376de5976488dc1bcdeb1d2c1525364ca533e1bd34f1cf3eefd258e71d",
+    "gt_rules": {
+      "VU001": true,
+      "VU002": true,
+      "VU003": true,
+      "VU004": false,
+      "VU005": false,
+      "VU007": true
+    },
+    "label_source": "legacy_manual_exact_hash",
+    "rationale": "manual cluster: malicious account uses signature bytes as opaque data, no auth/no nonce/no caller gate"
+  },
+  {
+    "file": "erc20-paymaster/lib/account-abstraction-v6/contracts/core/BaseAccount.sol",
+    "cluster_hash": "e47315dff791ce783e4ec250aa24800cc9d11356d346012666d266cdd2109df8",
+    "gt_rules": {
+      "VU001": false,
+      "VU002": false,
+      "VU003": false,
+      "VU004": false,
+      "VU005": false,
+      "VU007": false
+    },
+    "label_source": "manual_cluster_review",
+    "rationale": "caller-gate+signature-present"
+  },
+  {
+    "file": "erc20-paymaster/lib/account-abstraction-v6/contracts/test/TestWarmColdAccount.sol",
+    "cluster_hash": "1436bb17f49ab8960b2f13c85556f8f581aecb05f38d58ab6e07a374d9a4afb3",
+    "gt_rules": {
+      "VU001": true,
+      "VU002": false,
+      "VU003": true,
+      "VU004": false,
+      "VU005": true,
+      "VU007": true
+    },
+    "label_source": "legacy_manual_exact_hash",
+    "rationale": "manual cluster: warm/cold side-channel account reads nonce but lacks auth/caller gate and returns raw success"
+  },
+  {
+    "file": "erc20-paymaster/lib/account-abstraction-v6/contracts/test/TestRevertAccount.sol",
+    "cluster_hash": "999f3296a5a7ddcc36668383a2f79bb560bb4700e30d93b4391059f343ca177e",
+    "gt_rules": {
+      "VU001": true,
+      "VU002": true,
+      "VU003": true,
+      "VU004": false,
+      "VU005": false,
+      "VU007": true
+    },
+    "label_source": "legacy_manual_exact_hash",
+    "rationale": "manual cluster: revert-test account returns raw success without auth/nonce/caller gate"
+  },
+  {
+    "file": "erc20-paymaster/lib/account-abstraction-v6/contracts/test/MaliciousAccount.sol",
+    "cluster_hash": "cd19b6245a4110ef76eb873592e359c4e5a7ed76d3d959fee6dd0735a49126ab",
+    "gt_rules": {
+      "VU001": true,
+      "VU002": true,
+      "VU003": true,
+      "VU004": false,
+      "VU005": false,
+      "VU007": true
+    },
+    "label_source": "legacy_manual_exact_hash",
+    "rationale": "manual cluster: malicious account uses signature bytes as opaque data, no auth/no nonce/no caller gate"
+  },
+  {
+    "file": "erc20-paymaster/lib/account-abstraction-v6/contracts/samples/gnosis/EIP4337Fallback.sol",
+    "cluster_hash": "279aa532c362d34e378d07429ac6622bdeab3e0c94b989a6ba04201bf13c48f7",
+    "gt_rules": {
+      "VU001": false,
+      "VU002": false,
+      "VU003": false,
+      "VU004": false,
+      "VU005": false,
+      "VU007": false
+    },
+    "label_source": "legacy_manual_exact_hash",
+    "rationale": "manual cluster: fallback delegates validateUserOp to manager; no direct VU finding on wrapper"
+  },
+  {
+    "file": "erc20-paymaster/lib/account-abstraction-v6/contracts/samples/gnosis/EIP4337Manager.sol",
+    "cluster_hash": "7ca9615c59a2750fb5add224435f485afa2f9fad927818e0f4cefda45d7e5b3b",
+    "gt_rules": {
+      "VU001": false,
+      "VU002": false,
+      "VU003": false,
+      "VU004": false,
+      "VU005": false,
+      "VU007": false
+    },
+    "label_source": "manual_cluster_review",
+    "rationale": "caller-gate+signature-present"
+  },
+  {
+    "file": "erc20-paymaster/src/account-abstraction/v07/core/BaseAccount.sol",
+    "cluster_hash": "1ad0835d381f54adec59d3c5d712f7f2003082b10da47884a5331d76f964e16e",
+    "gt_rules": {
+      "VU001": false,
+      "VU002": false,
+      "VU003": false,
+      "VU004": false,
+      "VU005": false,
+      "VU007": false
+    },
+    "label_source": "manual_cluster_review",
+    "rationale": "caller-gate+signature-present"
+  },
+  {
+    "file": "erc4337-account-abstraction-toolkit/lib/openzeppelin-contracts/contracts/mocks/account/modules/ERC7579Mock.sol",
+    "cluster_hash": "243ce75e6bb6633fca06401957f8a6fa698d2ceb0daef56de17b03e22be464f2",
+    "gt_rules": {
+      "VU001": false,
+      "VU002": false,
+      "VU003": false,
+      "VU004": false,
+      "VU005": false,
+      "VU007": false
+    },
+    "label_source": "manual_cluster_review",
+    "rationale": "test-mock-default"
+  },
+  {
+    "file": "erc4337-account-abstraction-toolkit/lib/openzeppelin-contracts/contracts/account/Account.sol",
+    "cluster_hash": "3e83bcb0311eaa5b28a016fbd765f4790c589c5455701aad575f1995a876320b",
+    "gt_rules": {
+      "VU001": false,
+      "VU002": false,
+      "VU003": false,
+      "VU004": false,
+      "VU005": false,
+      "VU007": false
+    },
+    "label_source": "manual_cluster_review_corrected_v3",
+    "rationale": "template account wrapper delegates validation internals; no direct VU evidence in body alone"
+  },
+  {
+    "file": "erc4337-account-abstraction-toolkit/lib/openzeppelin-contracts/contracts/interfaces/draft-IERC7579.sol",
+    "cluster_hash": "a0af6c18ed44338e825a48bf88a75a3f0d997e58cb9d6fbe65dd60fee0ad6c77",
+    "gt_rules": {
+      "VU001": false,
+      "VU002": false,
+      "VU003": false,
+      "VU004": false,
+      "VU005": false,
+      "VU007": false
+    },
+    "label_source": "manual_cluster_review",
+    "rationale": "interface-signature"
+  },
+  {
+    "file": "erc4337-account-abstraction-toolkit/src/modules/SessionKeyModule.sol",
+    "cluster_hash": "c2f5f140f01c4b5e6bd3dfcb10394ae96fe37deb51612fd41ddb6fb821b33cc8",
+    "gt_rules": {
+      "VU001": false,
+      "VU002": false,
+      "VU003": false,
+      "VU004": false,
+      "VU005": false,
+      "VU007": false
+    },
+    "label_source": "manual_cluster_review",
+    "rationale": "default-conservative-none"
+  },
+  {
+    "file": "erc4337-account-abstraction-toolkit/src/modules/MultisigValidatorModule.sol",
+    "cluster_hash": "aad8f57cdb40559dea90b95ee3d8b0b611365e90578f5982d5d1e52934a616f0",
+    "gt_rules": {
+      "VU001": false,
+      "VU002": false,
+      "VU003": false,
+      "VU004": false,
+      "VU005": false,
+      "VU007": false
+    },
+    "label_source": "manual_cluster_review",
+    "rationale": "validator-module-default"
+  },
+  {
+    "file": "erc4337-account-abstraction-toolkit/src/interfaces/IModule.sol",
+    "cluster_hash": "025ebd45827986d6bf21ccd242175e9b1500f28bbbb85d24257bcd8421b9ff7f",
+    "gt_rules": {
+      "VU001": false,
+      "VU002": false,
+      "VU003": false,
+      "VU004": false,
+      "VU005": false,
+      "VU007": false
+    },
+    "label_source": "manual_cluster_review",
+    "rationale": "default-conservative-none"
+  },
+  {
+    "file": "erc4337-contracts-v07/contracts/core/BaseAccount.sol",
+    "cluster_hash": "1ad0835d381f54adec59d3c5d712f7f2003082b10da47884a5331d76f964e16e",
+    "gt_rules": {
+      "VU001": false,
+      "VU002": false,
+      "VU003": false,
+      "VU004": false,
+      "VU005": false,
+      "VU007": false
+    },
+    "label_source": "manual_cluster_review",
+    "rationale": "caller-gate+signature-present"
+  },
+  {
+    "file": "erc4337-contracts-v07/contracts/test/TestWarmColdAccount.sol",
+    "cluster_hash": "50d73cdf81c1ac5a08b5e4c763a0a87221e2bb2cdbfee963895f536026bb1df4",
+    "gt_rules": {
+      "VU001": true,
+      "VU002": false,
+      "VU003": true,
+      "VU004": false,
+      "VU005": true,
+      "VU007": true
+    },
+    "label_source": "manual_cluster_review",
+    "rationale": "warm-cold-sidechannel"
+  },
+  {
+    "file": "erc4337-contracts-v07/contracts/test/TestRevertAccount.sol",
+    "cluster_hash": "14f0bb665553fe31bc4f2d0d5686b3afd29584dbf549ef30738de0bbb4049dca",
+    "gt_rules": {
+      "VU001": true,
+      "VU002": true,
+      "VU003": true,
+      "VU004": false,
+      "VU005": false,
+      "VU007": true
+    },
+    "label_source": "legacy_manual_exact_hash",
+    "rationale": "manual cluster: revert-test account returns constant success without auth/nonce/caller gate"
+  },
+  {
+    "file": "erc4337-contracts-v07/contracts/test/MaliciousAccount.sol",
+    "cluster_hash": "66bac9376de5976488dc1bcdeb1d2c1525364ca533e1bd34f1cf3eefd258e71d",
+    "gt_rules": {
+      "VU001": true,
+      "VU002": true,
+      "VU003": true,
+      "VU004": false,
+      "VU005": false,
+      "VU007": true
+    },
+    "label_source": "legacy_manual_exact_hash",
+    "rationale": "manual cluster: malicious account uses signature bytes as opaque data, no auth/no nonce/no caller gate"
+  },
+  {
+    "file": "erc7579-implementation/src/modules/SimpleExecutionValidator.sol",
+    "cluster_hash": "5beeae9dd762998bacc5447731effd160cedd5d71a9813ce00db3f5438a6bc19",
+    "gt_rules": {
+      "VU001": false,
+      "VU002": false,
+      "VU003": false,
+      "VU004": false,
+      "VU005": false,
+      "VU007": false
+    },
+    "label_source": "manual_cluster_review",
+    "rationale": "validator-module-default"
+  },
+  {
+    "file": "foundry-abstract-Zk/src/ethereum/MinimalAccount.sol",
+    "cluster_hash": "9f8c3bb22f3d04f986a5222e440c7cde37072f1e830e97e2ed54f2a3483540e6",
+    "gt_rules": {
+      "VU001": false,
+      "VU002": false,
+      "VU003": false,
+      "VU004": false,
+      "VU005": false,
+      "VU007": false
+    },
+    "label_source": "manual_cluster_review",
+    "rationale": "default-conservative-none"
+  },
+  {
+    "file": "foundry-account-abstaction/lib/account-abstraction/contracts/core/BaseAccount.sol",
+    "cluster_hash": "1ad0835d381f54adec59d3c5d712f7f2003082b10da47884a5331d76f964e16e",
+    "gt_rules": {
+      "VU001": false,
+      "VU002": false,
+      "VU003": false,
+      "VU004": false,
+      "VU005": false,
+      "VU007": false
+    },
+    "label_source": "manual_cluster_review",
+    "rationale": "caller-gate+signature-present"
+  },
+  {
+    "file": "foundry-account-abstaction/lib/account-abstraction/contracts/test/TestWarmColdAccount.sol",
+    "cluster_hash": "50d73cdf81c1ac5a08b5e4c763a0a87221e2bb2cdbfee963895f536026bb1df4",
+    "gt_rules": {
+      "VU001": true,
+      "VU002": false,
+      "VU003": true,
+      "VU004": false,
+      "VU005": true,
+      "VU007": true
+    },
+    "label_source": "manual_cluster_review",
+    "rationale": "warm-cold-sidechannel"
+  },
+  {
+    "file": "foundry-account-abstaction/lib/account-abstraction/contracts/test/TestRevertAccount.sol",
+    "cluster_hash": "14f0bb665553fe31bc4f2d0d5686b3afd29584dbf549ef30738de0bbb4049dca",
+    "gt_rules": {
+      "VU001": true,
+      "VU002": true,
+      "VU003": true,
+      "VU004": false,
+      "VU005": false,
+      "VU007": true
+    },
+    "label_source": "legacy_manual_exact_hash",
+    "rationale": "manual cluster: revert-test account returns constant success without auth/nonce/caller gate"
+  },
+  {
+    "file": "foundry-account-abstaction/lib/account-abstraction/contracts/test/MaliciousAccount.sol",
+    "cluster_hash": "66bac9376de5976488dc1bcdeb1d2c1525364ca533e1bd34f1cf3eefd258e71d",
+    "gt_rules": {
+      "VU001": true,
+      "VU002": true,
+      "VU003": true,
+      "VU004": false,
+      "VU005": false,
+      "VU007": true
+    },
+    "label_source": "legacy_manual_exact_hash",
+    "rationale": "manual cluster: malicious account uses signature bytes as opaque data, no auth/no nonce/no caller gate"
+  },
+  {
+    "file": "foundry-account-abstaction/lib/openzeppelin-contracts/contracts/mocks/account/modules/ERC7579Mock.sol",
+    "cluster_hash": "243ce75e6bb6633fca06401957f8a6fa698d2ceb0daef56de17b03e22be464f2",
+    "gt_rules": {
+      "VU001": false,
+      "VU002": false,
+      "VU003": false,
+      "VU004": false,
+      "VU005": false,
+      "VU007": false
+    },
+    "label_source": "manual_cluster_review",
+    "rationale": "test-mock-default"
+  },
+  {
+    "file": "foundry-account-abstaction/lib/openzeppelin-contracts/contracts/account/Account.sol",
+    "cluster_hash": "3e83bcb0311eaa5b28a016fbd765f4790c589c5455701aad575f1995a876320b",
+    "gt_rules": {
+      "VU001": false,
+      "VU002": false,
+      "VU003": false,
+      "VU004": false,
+      "VU005": false,
+      "VU007": false
+    },
+    "label_source": "manual_cluster_review_corrected_v3",
+    "rationale": "template account wrapper delegates validation internals; no direct VU evidence in body alone"
+  },
+  {
+    "file": "foundry-account-abstaction/lib/openzeppelin-contracts/contracts/interfaces/draft-IERC7579.sol",
+    "cluster_hash": "a0af6c18ed44338e825a48bf88a75a3f0d997e58cb9d6fbe65dd60fee0ad6c77",
+    "gt_rules": {
+      "VU001": false,
+      "VU002": false,
+      "VU003": false,
+      "VU004": false,
+      "VU005": false,
+      "VU007": false
+    },
+    "label_source": "manual_cluster_review",
+    "rationale": "interface-signature"
+  },
+  {
+    "file": "foundry-account-abstraction/src/ethereum/MinimalAccount.sol",
+    "cluster_hash": "9f8c3bb22f3d04f986a5222e440c7cde37072f1e830e97e2ed54f2a3483540e6",
+    "gt_rules": {
+      "VU001": false,
+      "VU002": false,
+      "VU003": false,
+      "VU004": false,
+      "VU005": false,
+      "VU007": false
+    },
+    "label_source": "manual_cluster_review",
+    "rationale": "default-conservative-none"
+  },
+  {
+    "file": "ithaca-account/lib/solady/test/utils/mocks/MockEntryPoint.sol",
+    "cluster_hash": "a53774f4b107e3e8d8a6825d531b7fe74c3a22d9339d0cdc2419f264ba653ed5",
+    "gt_rules": {
+      "VU001": false,
+      "VU002": false,
+      "VU003": false,
+      "VU004": false,
+      "VU005": false,
+      "VU007": false
+    },
+    "label_source": "manual_cluster_review",
+    "rationale": "forward-wrapper"
+  },
+  {
+    "file": "ithaca-account/lib/solady/src/accounts/ERC4337.sol",
+    "cluster_hash": "504c3b952335ff72cf1691f903e616edbe0e8f5288d301254b8c8dea482f1fcd",
+    "gt_rules": {
+      "VU001": false,
+      "VU002": false,
+      "VU003": false,
+      "VU004": false,
+      "VU005": false,
+      "VU007": false
+    },
+    "label_source": "manual_cluster_review",
+    "rationale": "caller-gate+signature-present"
+  },
+  {
+    "file": "kernel/lib/solady/test/utils/mocks/MockEntryPoint.sol",
+    "cluster_hash": "a53774f4b107e3e8d8a6825d531b7fe74c3a22d9339d0cdc2419f264ba653ed5",
+    "gt_rules": {
+      "VU001": false,
+      "VU002": false,
+      "VU003": false,
+      "VU004": false,
+      "VU005": false,
+      "VU007": false
+    },
+    "label_source": "manual_cluster_review",
+    "rationale": "forward-wrapper"
+  },
+  {
+    "file": "kernel/lib/solady/src/accounts/ERC4337.sol",
+    "cluster_hash": "504c3b952335ff72cf1691f903e616edbe0e8f5288d301254b8c8dea482f1fcd",
+    "gt_rules": {
+      "VU001": false,
+      "VU002": false,
+      "VU003": false,
+      "VU004": false,
+      "VU005": false,
+      "VU007": false
+    },
+    "label_source": "manual_cluster_review",
+    "rationale": "caller-gate+signature-present"
+  },
+  {
+    "file": "kernel/src/Kernel.sol",
+    "cluster_hash": "371393ecd45d3639eada352b6d70849bffd44c5c113b6c1642e3dcf69bbee348",
+    "gt_rules": {
+      "VU001": false,
+      "VU002": false,
+      "VU003": false,
+      "VU004": false,
+      "VU005": false,
+      "VU007": false
+    },
+    "label_source": "manual_cluster_review",
+    "rationale": "default-conservative-none"
+  },
+  {
+    "file": "kernel/src/validator/MultiChainValidator.sol",
+    "cluster_hash": "beee1cd9bdc1593702f36c4bee01c87fdfad97c6bcd3ce125332dfa5f48cbdb8",
+    "gt_rules": {
+      "VU001": false,
+      "VU002": false,
+      "VU003": false,
+      "VU004": false,
+      "VU005": false,
+      "VU007": false
+    },
+    "label_source": "manual_cluster_review",
+    "rationale": "validator-module-default"
+  },
+  {
+    "file": "kernel/src/validator/EmitIdentifierValidator.sol",
+    "cluster_hash": "c8adaf93e22ac153afdfdb920c4abce74ad1d7867aa0d6752758d32fc56fa2eb",
+    "gt_rules": {
+      "VU001": false,
+      "VU002": false,
+      "VU003": false,
+      "VU004": false,
+      "VU005": false,
+      "VU007": false
+    },
+    "label_source": "manual_cluster_review",
+    "rationale": "validator-module-default"
+  },
+  {
+    "file": "modular-account/lib/light-account/lib/account-abstraction/contracts/core/BaseAccount.sol",
+    "cluster_hash": "1ad0835d381f54adec59d3c5d712f7f2003082b10da47884a5331d76f964e16e",
+    "gt_rules": {
+      "VU001": false,
+      "VU002": false,
+      "VU003": false,
+      "VU004": false,
+      "VU005": false,
+      "VU007": false
+    },
+    "label_source": "manual_cluster_review",
+    "rationale": "caller-gate+signature-present"
+  },
+  {
+    "file": "modular-account/lib/light-account/lib/account-abstraction/contracts/test/TestWarmColdAccount.sol",
+    "cluster_hash": "50d73cdf81c1ac5a08b5e4c763a0a87221e2bb2cdbfee963895f536026bb1df4",
+    "gt_rules": {
+      "VU001": true,
+      "VU002": false,
+      "VU003": true,
+      "VU004": false,
+      "VU005": true,
+      "VU007": true
+    },
+    "label_source": "manual_cluster_review",
+    "rationale": "warm-cold-sidechannel"
+  },
+  {
+    "file": "modular-account/lib/light-account/lib/account-abstraction/contracts/test/TestRevertAccount.sol",
+    "cluster_hash": "14f0bb665553fe31bc4f2d0d5686b3afd29584dbf549ef30738de0bbb4049dca",
+    "gt_rules": {
+      "VU001": true,
+      "VU002": true,
+      "VU003": true,
+      "VU004": false,
+      "VU005": false,
+      "VU007": true
+    },
+    "label_source": "legacy_manual_exact_hash",
+    "rationale": "manual cluster: revert-test account returns constant success without auth/nonce/caller gate"
+  },
+  {
+    "file": "modular-account/lib/light-account/lib/account-abstraction/contracts/test/MaliciousAccount.sol",
+    "cluster_hash": "66bac9376de5976488dc1bcdeb1d2c1525364ca533e1bd34f1cf3eefd258e71d",
+    "gt_rules": {
+      "VU001": true,
+      "VU002": true,
+      "VU003": true,
+      "VU004": false,
+      "VU005": false,
+      "VU007": true
+    },
+    "label_source": "legacy_manual_exact_hash",
+    "rationale": "manual cluster: malicious account uses signature bytes as opaque data, no auth/no nonce/no caller gate"
+  },
+  {
+    "file": "modular-account/lib/light-account/lib/modular-account/lib/account-abstraction/contracts/core/BaseAccount.sol",
+    "cluster_hash": "e47315dff791ce783e4ec250aa24800cc9d11356d346012666d266cdd2109df8",
+    "gt_rules": {
+      "VU001": false,
+      "VU002": false,
+      "VU003": false,
+      "VU004": false,
+      "VU005": false,
+      "VU007": false
+    },
+    "label_source": "manual_cluster_review",
+    "rationale": "caller-gate+signature-present"
+  },
+  {
+    "file": "modular-account/lib/light-account/lib/modular-account/lib/account-abstraction/contracts/test/TestWarmColdAccount.sol",
+    "cluster_hash": "1436bb17f49ab8960b2f13c85556f8f581aecb05f38d58ab6e07a374d9a4afb3",
+    "gt_rules": {
+      "VU001": true,
+      "VU002": false,
+      "VU003": true,
+      "VU004": false,
+      "VU005": true,
+      "VU007": true
+    },
+    "label_source": "legacy_manual_exact_hash",
+    "rationale": "manual cluster: warm/cold side-channel account reads nonce but lacks auth/caller gate and returns raw success"
+  },
+  {
+    "file": "modular-account/lib/light-account/lib/modular-account/lib/account-abstraction/contracts/test/TestRevertAccount.sol",
+    "cluster_hash": "999f3296a5a7ddcc36668383a2f79bb560bb4700e30d93b4391059f343ca177e",
+    "gt_rules": {
+      "VU001": true,
+      "VU002": true,
+      "VU003": true,
+      "VU004": false,
+      "VU005": false,
+      "VU007": true
+    },
+    "label_source": "legacy_manual_exact_hash",
+    "rationale": "manual cluster: revert-test account returns raw success without auth/nonce/caller gate"
+  },
+  {
+    "file": "modular-account/lib/light-account/lib/modular-account/lib/account-abstraction/contracts/test/MaliciousAccount.sol",
+    "cluster_hash": "cd19b6245a4110ef76eb873592e359c4e5a7ed76d3d959fee6dd0735a49126ab",
+    "gt_rules": {
+      "VU001": true,
+      "VU002": true,
+      "VU003": true,
+      "VU004": false,
+      "VU005": false,
+      "VU007": true
+    },
+    "label_source": "legacy_manual_exact_hash",
+    "rationale": "manual cluster: malicious account uses signature bytes as opaque data, no auth/no nonce/no caller gate"
+  },
+  {
+    "file": "modular-account/lib/light-account/lib/modular-account/lib/account-abstraction/contracts/samples/gnosis/EIP4337Fallback.sol",
+    "cluster_hash": "279aa532c362d34e378d07429ac6622bdeab3e0c94b989a6ba04201bf13c48f7",
+    "gt_rules": {
+      "VU001": false,
+      "VU002": false,
+      "VU003": false,
+      "VU004": false,
+      "VU005": false,
+      "VU007": false
+    },
+    "label_source": "legacy_manual_exact_hash",
+    "rationale": "manual cluster: fallback delegates validateUserOp to manager; no direct VU finding on wrapper"
+  },
+  {
+    "file": "modular-account/lib/light-account/lib/modular-account/lib/account-abstraction/contracts/samples/gnosis/EIP4337Manager.sol",
+    "cluster_hash": "7ca9615c59a2750fb5add224435f485afa2f9fad927818e0f4cefda45d7e5b3b",
+    "gt_rules": {
+      "VU001": false,
+      "VU002": false,
+      "VU003": false,
+      "VU004": false,
+      "VU005": false,
+      "VU007": false
+    },
+    "label_source": "manual_cluster_review",
+    "rationale": "caller-gate+signature-present"
+  },
+  {
+    "file": "modular-account/lib/light-account/lib/modular-account/lib/light-account/lib/account-abstraction/contracts/core/BaseAccount.sol",
+    "cluster_hash": "e47315dff791ce783e4ec250aa24800cc9d11356d346012666d266cdd2109df8",
+    "gt_rules": {
+      "VU001": false,
+      "VU002": false,
+      "VU003": false,
+      "VU004": false,
+      "VU005": false,
+      "VU007": false
+    },
+    "label_source": "manual_cluster_review",
+    "rationale": "caller-gate+signature-present"
+  },
+  {
+    "file": "modular-account/lib/light-account/lib/modular-account/lib/light-account/lib/account-abstraction/contracts/test/TestWarmColdAccount.sol",
+    "cluster_hash": "1436bb17f49ab8960b2f13c85556f8f581aecb05f38d58ab6e07a374d9a4afb3",
+    "gt_rules": {
+      "VU001": true,
+      "VU002": false,
+      "VU003": true,
+      "VU004": false,
+      "VU005": true,
+      "VU007": true
+    },
+    "label_source": "legacy_manual_exact_hash",
+    "rationale": "manual cluster: warm/cold side-channel account reads nonce but lacks auth/caller gate and returns raw success"
+  },
+  {
+    "file": "modular-account/lib/light-account/lib/modular-account/lib/light-account/lib/account-abstraction/contracts/test/TestRevertAccount.sol",
+    "cluster_hash": "999f3296a5a7ddcc36668383a2f79bb560bb4700e30d93b4391059f343ca177e",
+    "gt_rules": {
+      "VU001": true,
+      "VU002": true,
+      "VU003": true,
+      "VU004": false,
+      "VU005": false,
+      "VU007": true
+    },
+    "label_source": "legacy_manual_exact_hash",
+    "rationale": "manual cluster: revert-test account returns raw success without auth/nonce/caller gate"
+  },
+  {
+    "file": "modular-account/lib/light-account/lib/modular-account/lib/light-account/lib/account-abstraction/contracts/test/MaliciousAccount.sol",
+    "cluster_hash": "cd19b6245a4110ef76eb873592e359c4e5a7ed76d3d959fee6dd0735a49126ab",
+    "gt_rules": {
+      "VU001": true,
+      "VU002": true,
+      "VU003": true,
+      "VU004": false,
+      "VU005": false,
+      "VU007": true
+    },
+    "label_source": "legacy_manual_exact_hash",
+    "rationale": "manual cluster: malicious account uses signature bytes as opaque data, no auth/no nonce/no caller gate"
+  },
+  {
+    "file": "modular-account/lib/light-account/lib/modular-account/lib/light-account/lib/account-abstraction/contracts/samples/gnosis/EIP4337Fallback.sol",
+    "cluster_hash": "279aa532c362d34e378d07429ac6622bdeab3e0c94b989a6ba04201bf13c48f7",
+    "gt_rules": {
+      "VU001": false,
+      "VU002": false,
+      "VU003": false,
+      "VU004": false,
+      "VU005": false,
+      "VU007": false
+    },
+    "label_source": "legacy_manual_exact_hash",
+    "rationale": "manual cluster: fallback delegates validateUserOp to manager; no direct VU finding on wrapper"
+  },
+  {
+    "file": "modular-account/lib/light-account/lib/modular-account/lib/light-account/lib/account-abstraction/contracts/samples/gnosis/EIP4337Manager.sol",
+    "cluster_hash": "7ca9615c59a2750fb5add224435f485afa2f9fad927818e0f4cefda45d7e5b3b",
+    "gt_rules": {
+      "VU001": false,
+      "VU002": false,
+      "VU003": false,
+      "VU004": false,
+      "VU005": false,
+      "VU007": false
+    },
+    "label_source": "manual_cluster_review",
+    "rationale": "caller-gate+signature-present"
+  },
+  {
+    "file": "modular-account/lib/webauthn-sol/lib/solady/test/utils/mocks/MockEntryPoint.sol",
+    "cluster_hash": "a53774f4b107e3e8d8a6825d531b7fe74c3a22d9339d0cdc2419f264ba653ed5",
+    "gt_rules": {
+      "VU001": false,
+      "VU002": false,
+      "VU003": false,
+      "VU004": false,
+      "VU005": false,
+      "VU007": false
+    },
+    "label_source": "manual_cluster_review",
+    "rationale": "forward-wrapper"
+  },
+  {
+    "file": "modular-account/lib/webauthn-sol/lib/solady/src/accounts/ERC4337.sol",
+    "cluster_hash": "504c3b952335ff72cf1691f903e616edbe0e8f5288d301254b8c8dea482f1fcd",
+    "gt_rules": {
+      "VU001": false,
+      "VU002": false,
+      "VU003": false,
+      "VU004": false,
+      "VU005": false,
+      "VU007": false
+    },
+    "label_source": "manual_cluster_review",
+    "rationale": "caller-gate+signature-present"
+  },
+  {
+    "file": "modular-account/src/account/AccountBase.sol",
+    "cluster_hash": "59ac5377a1ffa7c2a8dfffc8aa6a91e676b80d82cc82344f84adcc4da1e4cda5",
+    "gt_rules": {
+      "VU001": false,
+      "VU002": false,
+      "VU003": false,
+      "VU004": false,
+      "VU005": false,
+      "VU007": false
+    },
+    "label_source": "manual_cluster_review_corrected_v3",
+    "rationale": "abstract account base; real auth/nonce semantics occur in overrides"
+  },
+  {
+    "file": "monolith/contracts/lib/account-abstraction/contracts/core/BaseAccount.sol",
+    "cluster_hash": "1ad0835d381f54adec59d3c5d712f7f2003082b10da47884a5331d76f964e16e",
+    "gt_rules": {
+      "VU001": false,
+      "VU002": false,
+      "VU003": false,
+      "VU004": false,
+      "VU005": false,
+      "VU007": false
+    },
+    "label_source": "manual_cluster_review",
+    "rationale": "caller-gate+signature-present"
+  },
+  {
+    "file": "monolith/contracts/lib/account-abstraction/contracts/test/TestWarmColdAccount.sol",
+    "cluster_hash": "50d73cdf81c1ac5a08b5e4c763a0a87221e2bb2cdbfee963895f536026bb1df4",
+    "gt_rules": {
+      "VU001": true,
+      "VU002": false,
+      "VU003": true,
+      "VU004": false,
+      "VU005": true,
+      "VU007": true
+    },
+    "label_source": "manual_cluster_review",
+    "rationale": "warm-cold-sidechannel"
+  },
+  {
+    "file": "monolith/contracts/lib/account-abstraction/contracts/test/TestRevertAccount.sol",
+    "cluster_hash": "14f0bb665553fe31bc4f2d0d5686b3afd29584dbf549ef30738de0bbb4049dca",
+    "gt_rules": {
+      "VU001": true,
+      "VU002": true,
+      "VU003": true,
+      "VU004": false,
+      "VU005": false,
+      "VU007": true
+    },
+    "label_source": "legacy_manual_exact_hash",
+    "rationale": "manual cluster: revert-test account returns constant success without auth/nonce/caller gate"
+  },
+  {
+    "file": "monolith/contracts/lib/account-abstraction/contracts/test/MaliciousAccount.sol",
+    "cluster_hash": "66bac9376de5976488dc1bcdeb1d2c1525364ca533e1bd34f1cf3eefd258e71d",
+    "gt_rules": {
+      "VU001": true,
+      "VU002": true,
+      "VU003": true,
+      "VU004": false,
+      "VU005": false,
+      "VU007": true
+    },
+    "label_source": "legacy_manual_exact_hash",
+    "rationale": "manual cluster: malicious account uses signature bytes as opaque data, no auth/no nonce/no caller gate"
+  },
+  {
+    "file": "monolith/contracts/lib/openzeppelin-contracts/contracts/mocks/account/modules/ERC7579Mock.sol",
+    "cluster_hash": "243ce75e6bb6633fca06401957f8a6fa698d2ceb0daef56de17b03e22be464f2",
+    "gt_rules": {
+      "VU001": false,
+      "VU002": false,
+      "VU003": false,
+      "VU004": false,
+      "VU005": false,
+      "VU007": false
+    },
+    "label_source": "manual_cluster_review",
+    "rationale": "test-mock-default"
+  },
+  {
+    "file": "monolith/contracts/lib/openzeppelin-contracts/contracts/account/Account.sol",
+    "cluster_hash": "3e83bcb0311eaa5b28a016fbd765f4790c589c5455701aad575f1995a876320b",
+    "gt_rules": {
+      "VU001": false,
+      "VU002": false,
+      "VU003": false,
+      "VU004": false,
+      "VU005": false,
+      "VU007": false
+    },
+    "label_source": "manual_cluster_review_corrected_v3",
+    "rationale": "template account wrapper delegates validation internals; no direct VU evidence in body alone"
+  },
+  {
+    "file": "monolith/contracts/lib/openzeppelin-contracts/contracts/interfaces/draft-IERC7579.sol",
+    "cluster_hash": "a0af6c18ed44338e825a48bf88a75a3f0d997e58cb9d6fbe65dd60fee0ad6c77",
+    "gt_rules": {
+      "VU001": false,
+      "VU002": false,
+      "VU003": false,
+      "VU004": false,
+      "VU005": false,
+      "VU007": false
+    },
+    "label_source": "manual_cluster_review",
+    "rationale": "interface-signature"
+  },
+  {
+    "file": "monolith/contracts/src/MonolithWallet.sol",
+    "cluster_hash": "3281b4b9de2b409257bb494514cd9a288971b879c0ac6bd7eb3d038d45ffd2b9",
+    "gt_rules": {
+      "VU001": false,
+      "VU002": false,
+      "VU003": false,
+      "VU004": false,
+      "VU005": false,
+      "VU007": false
+    },
+    "label_source": "manual_cluster_review",
+    "rationale": "caller-gate+signature-present"
+  },
+  {
+    "file": "nexus/contracts/mocks/MockValidator_7739v2.sol",
+    "cluster_hash": "03654c50cd6942968c8fa543fc44a603e3805023789f4e7cbc6da972a0ebca52",
+    "gt_rules": {
+      "VU001": false,
+      "VU002": false,
+      "VU003": false,
+      "VU004": false,
+      "VU005": false,
+      "VU007": false
+    },
+    "label_source": "manual_cluster_review",
+    "rationale": "validator-module-default"
+  },
+  {
+    "file": "nexus-next-gen-smart-account-wallet-erc-4337/contracts/src/NexusAccount.sol",
+    "cluster_hash": "487cac744268cdc5832c7088d010b258b1e52f92d5367689ab9038acaa99cb76",
+    "gt_rules": {
+      "VU001": false,
+      "VU002": false,
+      "VU003": false,
+      "VU004": false,
+      "VU005": false,
+      "VU007": false
+    },
+    "label_source": "manual_cluster_review_corrected_v3",
+    "rationale": "provided userOpHash bound through MessageHashUtils->ECDSA path; no recomputed-hash bypass"
+  },
+  {
+    "file": "openzeppelin-contracts/contracts/mocks/account/modules/ERC7579Mock.sol",
+    "cluster_hash": "243ce75e6bb6633fca06401957f8a6fa698d2ceb0daef56de17b03e22be464f2",
+    "gt_rules": {
+      "VU001": false,
+      "VU002": false,
+      "VU003": false,
+      "VU004": false,
+      "VU005": false,
+      "VU007": false
+    },
+    "label_source": "manual_cluster_review",
+    "rationale": "test-mock-default"
+  },
+  {
+    "file": "openzeppelin-contracts/contracts/account/Account.sol",
+    "cluster_hash": "3e83bcb0311eaa5b28a016fbd765f4790c589c5455701aad575f1995a876320b",
+    "gt_rules": {
+      "VU001": false,
+      "VU002": false,
+      "VU003": false,
+      "VU004": false,
+      "VU005": false,
+      "VU007": false
+    },
+    "label_source": "manual_cluster_review_corrected_v3",
+    "rationale": "template account wrapper delegates validation internals; no direct VU evidence in body alone"
+  },
+  {
+    "file": "openzeppelin-contracts/contracts/interfaces/draft-IERC7579.sol",
+    "cluster_hash": "a0af6c18ed44338e825a48bf88a75a3f0d997e58cb9d6fbe65dd60fee0ad6c77",
+    "gt_rules": {
+      "VU001": false,
+      "VU002": false,
+      "VU003": false,
+      "VU004": false,
+      "VU005": false,
+      "VU007": false
+    },
+    "label_source": "manual_cluster_review",
+    "rationale": "interface-signature"
+  },
+  {
+    "file": "passkeys-smart-wallet/contracts/lib/account-abstraction/contracts/core/BaseAccount.sol",
+    "cluster_hash": "d6206c1293a07dae4ac863c4f948427cc6b4243fed6b607926ced7e253e42d3b",
+    "gt_rules": {
+      "VU001": false,
+      "VU002": false,
+      "VU003": false,
+      "VU004": false,
+      "VU005": false,
+      "VU007": false
+    },
+    "label_source": "manual_cluster_review",
+    "rationale": "caller-gate+signature-present"
+  },
+  {
+    "file": "passkeys-smart-wallet/contracts/lib/account-abstraction/contracts/test/TestWarmColdAccount.sol",
+    "cluster_hash": "1436bb17f49ab8960b2f13c85556f8f581aecb05f38d58ab6e07a374d9a4afb3",
+    "gt_rules": {
+      "VU001": true,
+      "VU002": false,
+      "VU003": true,
+      "VU004": false,
+      "VU005": true,
+      "VU007": true
+    },
+    "label_source": "legacy_manual_exact_hash",
+    "rationale": "manual cluster: warm/cold side-channel account reads nonce but lacks auth/caller gate and returns raw success"
+  },
+  {
+    "file": "passkeys-smart-wallet/contracts/lib/account-abstraction/contracts/test/TestRevertAccount.sol",
+    "cluster_hash": "999f3296a5a7ddcc36668383a2f79bb560bb4700e30d93b4391059f343ca177e",
+    "gt_rules": {
+      "VU001": true,
+      "VU002": true,
+      "VU003": true,
+      "VU004": false,
+      "VU005": false,
+      "VU007": true
+    },
+    "label_source": "legacy_manual_exact_hash",
+    "rationale": "manual cluster: revert-test account returns raw success without auth/nonce/caller gate"
+  },
+  {
+    "file": "passkeys-smart-wallet/contracts/lib/account-abstraction/contracts/test/MaliciousAccount.sol",
+    "cluster_hash": "cd19b6245a4110ef76eb873592e359c4e5a7ed76d3d959fee6dd0735a49126ab",
+    "gt_rules": {
+      "VU001": true,
+      "VU002": true,
+      "VU003": true,
+      "VU004": false,
+      "VU005": false,
+      "VU007": true
+    },
+    "label_source": "legacy_manual_exact_hash",
+    "rationale": "manual cluster: malicious account uses signature bytes as opaque data, no auth/no nonce/no caller gate"
+  },
+  {
+    "file": "passkeys-smart-wallet/contracts/lib/account-abstraction/contracts/samples/gnosis/EIP4337Fallback.sol",
+    "cluster_hash": "279aa532c362d34e378d07429ac6622bdeab3e0c94b989a6ba04201bf13c48f7",
+    "gt_rules": {
+      "VU001": false,
+      "VU002": false,
+      "VU003": false,
+      "VU004": false,
+      "VU005": false,
+      "VU007": false
+    },
+    "label_source": "legacy_manual_exact_hash",
+    "rationale": "manual cluster: fallback delegates validateUserOp to manager; no direct VU finding on wrapper"
+  },
+  {
+    "file": "passkeys-smart-wallet/contracts/lib/account-abstraction/contracts/samples/gnosis/EIP4337Manager.sol",
+    "cluster_hash": "7ca9615c59a2750fb5add224435f485afa2f9fad927818e0f4cefda45d7e5b3b",
+    "gt_rules": {
+      "VU001": false,
+      "VU002": false,
+      "VU003": false,
+      "VU004": false,
+      "VU005": false,
+      "VU007": false
+    },
+    "label_source": "manual_cluster_review",
+    "rationale": "caller-gate+signature-present"
+  },
+  {
+    "file": "rundler/crates/contracts/contracts/v0_7/lib/account-abstraction/contracts/core/BaseAccount.sol",
+    "cluster_hash": "1ad0835d381f54adec59d3c5d712f7f2003082b10da47884a5331d76f964e16e",
+    "gt_rules": {
+      "VU001": false,
+      "VU002": false,
+      "VU003": false,
+      "VU004": false,
+      "VU005": false,
+      "VU007": false
+    },
+    "label_source": "manual_cluster_review",
+    "rationale": "caller-gate+signature-present"
+  },
+  {
+    "file": "rundler/crates/contracts/contracts/v0_7/lib/account-abstraction/contracts/test/TestWarmColdAccount.sol",
+    "cluster_hash": "50d73cdf81c1ac5a08b5e4c763a0a87221e2bb2cdbfee963895f536026bb1df4",
+    "gt_rules": {
+      "VU001": true,
+      "VU002": false,
+      "VU003": true,
+      "VU004": false,
+      "VU005": true,
+      "VU007": true
+    },
+    "label_source": "manual_cluster_review",
+    "rationale": "warm-cold-sidechannel"
+  },
+  {
+    "file": "rundler/crates/contracts/contracts/v0_7/lib/account-abstraction/contracts/test/TestRevertAccount.sol",
+    "cluster_hash": "14f0bb665553fe31bc4f2d0d5686b3afd29584dbf549ef30738de0bbb4049dca",
+    "gt_rules": {
+      "VU001": true,
+      "VU002": true,
+      "VU003": true,
+      "VU004": false,
+      "VU005": false,
+      "VU007": true
+    },
+    "label_source": "legacy_manual_exact_hash",
+    "rationale": "manual cluster: revert-test account returns constant success without auth/nonce/caller gate"
+  },
+  {
+    "file": "rundler/crates/contracts/contracts/v0_7/lib/account-abstraction/contracts/test/MaliciousAccount.sol",
+    "cluster_hash": "66bac9376de5976488dc1bcdeb1d2c1525364ca533e1bd34f1cf3eefd258e71d",
+    "gt_rules": {
+      "VU001": true,
+      "VU002": true,
+      "VU003": true,
+      "VU004": false,
+      "VU005": false,
+      "VU007": true
+    },
+    "label_source": "legacy_manual_exact_hash",
+    "rationale": "manual cluster: malicious account uses signature bytes as opaque data, no auth/no nonce/no caller gate"
+  },
+  {
+    "file": "rundler/crates/contracts/contracts/v0_9/lib/account-abstraction/contracts/core/BaseAccount.sol",
+    "cluster_hash": "1ad0835d381f54adec59d3c5d712f7f2003082b10da47884a5331d76f964e16e",
+    "gt_rules": {
+      "VU001": false,
+      "VU002": false,
+      "VU003": false,
+      "VU004": false,
+      "VU005": false,
+      "VU007": false
+    },
+    "label_source": "manual_cluster_review",
+    "rationale": "caller-gate+signature-present"
+  },
+  {
+    "file": "rundler/crates/contracts/contracts/v0_9/lib/account-abstraction/contracts/test/TestWarmColdAccount.sol",
+    "cluster_hash": "50d73cdf81c1ac5a08b5e4c763a0a87221e2bb2cdbfee963895f536026bb1df4",
+    "gt_rules": {
+      "VU001": true,
+      "VU002": false,
+      "VU003": true,
+      "VU004": false,
+      "VU005": true,
+      "VU007": true
+    },
+    "label_source": "manual_cluster_review",
+    "rationale": "warm-cold-sidechannel"
+  },
+  {
+    "file": "rundler/crates/contracts/contracts/v0_9/lib/account-abstraction/contracts/test/TestRevertAccount.sol",
+    "cluster_hash": "14f0bb665553fe31bc4f2d0d5686b3afd29584dbf549ef30738de0bbb4049dca",
+    "gt_rules": {
+      "VU001": true,
+      "VU002": true,
+      "VU003": true,
+      "VU004": false,
+      "VU005": false,
+      "VU007": true
+    },
+    "label_source": "legacy_manual_exact_hash",
+    "rationale": "manual cluster: revert-test account returns constant success without auth/nonce/caller gate"
+  },
+  {
+    "file": "rundler/crates/contracts/contracts/v0_9/lib/account-abstraction/contracts/test/MaliciousAccount.sol",
+    "cluster_hash": "66bac9376de5976488dc1bcdeb1d2c1525364ca533e1bd34f1cf3eefd258e71d",
+    "gt_rules": {
+      "VU001": true,
+      "VU002": true,
+      "VU003": true,
+      "VU004": false,
+      "VU005": false,
+      "VU007": true
+    },
+    "label_source": "legacy_manual_exact_hash",
+    "rationale": "manual cluster: malicious account uses signature bytes as opaque data, no auth/no nonce/no caller gate"
+  },
+  {
+    "file": "rundler/crates/contracts/contracts/v0_8/lib/account-abstraction/contracts/core/BaseAccount.sol",
+    "cluster_hash": "1ad0835d381f54adec59d3c5d712f7f2003082b10da47884a5331d76f964e16e",
+    "gt_rules": {
+      "VU001": false,
+      "VU002": false,
+      "VU003": false,
+      "VU004": false,
+      "VU005": false,
+      "VU007": false
+    },
+    "label_source": "manual_cluster_review",
+    "rationale": "caller-gate+signature-present"
+  },
+  {
+    "file": "rundler/crates/contracts/contracts/v0_8/lib/account-abstraction/contracts/test/TestWarmColdAccount.sol",
+    "cluster_hash": "50d73cdf81c1ac5a08b5e4c763a0a87221e2bb2cdbfee963895f536026bb1df4",
+    "gt_rules": {
+      "VU001": true,
+      "VU002": false,
+      "VU003": true,
+      "VU004": false,
+      "VU005": true,
+      "VU007": true
+    },
+    "label_source": "manual_cluster_review",
+    "rationale": "warm-cold-sidechannel"
+  },
+  {
+    "file": "rundler/crates/contracts/contracts/v0_8/lib/account-abstraction/contracts/test/TestRevertAccount.sol",
+    "cluster_hash": "14f0bb665553fe31bc4f2d0d5686b3afd29584dbf549ef30738de0bbb4049dca",
+    "gt_rules": {
+      "VU001": true,
+      "VU002": true,
+      "VU003": true,
+      "VU004": false,
+      "VU005": false,
+      "VU007": true
+    },
+    "label_source": "legacy_manual_exact_hash",
+    "rationale": "manual cluster: revert-test account returns constant success without auth/nonce/caller gate"
+  },
+  {
+    "file": "rundler/crates/contracts/contracts/v0_8/lib/account-abstraction/contracts/test/MaliciousAccount.sol",
+    "cluster_hash": "66bac9376de5976488dc1bcdeb1d2c1525364ca533e1bd34f1cf3eefd258e71d",
+    "gt_rules": {
+      "VU001": true,
+      "VU002": true,
+      "VU003": true,
+      "VU004": false,
+      "VU005": false,
+      "VU007": true
+    },
+    "label_source": "legacy_manual_exact_hash",
+    "rationale": "manual cluster: malicious account uses signature bytes as opaque data, no auth/no nonce/no caller gate"
+  },
+  {
+    "file": "rundler/crates/contracts/contracts/v0_6/lib/account-abstraction/contracts/core/BaseAccount.sol",
+    "cluster_hash": "e47315dff791ce783e4ec250aa24800cc9d11356d346012666d266cdd2109df8",
+    "gt_rules": {
+      "VU001": false,
+      "VU002": false,
+      "VU003": false,
+      "VU004": false,
+      "VU005": false,
+      "VU007": false
+    },
+    "label_source": "manual_cluster_review",
+    "rationale": "caller-gate+signature-present"
+  },
+  {
+    "file": "rundler/crates/contracts/contracts/v0_6/lib/account-abstraction/contracts/test/TestWarmColdAccount.sol",
+    "cluster_hash": "1436bb17f49ab8960b2f13c85556f8f581aecb05f38d58ab6e07a374d9a4afb3",
+    "gt_rules": {
+      "VU001": true,
+      "VU002": false,
+      "VU003": true,
+      "VU004": false,
+      "VU005": true,
+      "VU007": true
+    },
+    "label_source": "legacy_manual_exact_hash",
+    "rationale": "manual cluster: warm/cold side-channel account reads nonce but lacks auth/caller gate and returns raw success"
+  },
+  {
+    "file": "rundler/crates/contracts/contracts/v0_6/lib/account-abstraction/contracts/test/TestRevertAccount.sol",
+    "cluster_hash": "999f3296a5a7ddcc36668383a2f79bb560bb4700e30d93b4391059f343ca177e",
+    "gt_rules": {
+      "VU001": true,
+      "VU002": true,
+      "VU003": true,
+      "VU004": false,
+      "VU005": false,
+      "VU007": true
+    },
+    "label_source": "legacy_manual_exact_hash",
+    "rationale": "manual cluster: revert-test account returns raw success without auth/nonce/caller gate"
+  },
+  {
+    "file": "rundler/crates/contracts/contracts/v0_6/lib/account-abstraction/contracts/test/MaliciousAccount.sol",
+    "cluster_hash": "cd19b6245a4110ef76eb873592e359c4e5a7ed76d3d959fee6dd0735a49126ab",
+    "gt_rules": {
+      "VU001": true,
+      "VU002": true,
+      "VU003": true,
+      "VU004": false,
+      "VU005": false,
+      "VU007": true
+    },
+    "label_source": "legacy_manual_exact_hash",
+    "rationale": "manual cluster: malicious account uses signature bytes as opaque data, no auth/no nonce/no caller gate"
+  },
+  {
+    "file": "rundler/crates/contracts/contracts/v0_6/lib/account-abstraction/contracts/samples/gnosis/EIP4337Fallback.sol",
+    "cluster_hash": "279aa532c362d34e378d07429ac6622bdeab3e0c94b989a6ba04201bf13c48f7",
+    "gt_rules": {
+      "VU001": false,
+      "VU002": false,
+      "VU003": false,
+      "VU004": false,
+      "VU005": false,
+      "VU007": false
+    },
+    "label_source": "legacy_manual_exact_hash",
+    "rationale": "manual cluster: fallback delegates validateUserOp to manager; no direct VU finding on wrapper"
+  },
+  {
+    "file": "rundler/crates/contracts/contracts/v0_6/lib/account-abstraction/contracts/samples/gnosis/EIP4337Manager.sol",
+    "cluster_hash": "7ca9615c59a2750fb5add224435f485afa2f9fad927818e0f4cefda45d7e5b3b",
+    "gt_rules": {
+      "VU001": false,
+      "VU002": false,
+      "VU003": false,
+      "VU004": false,
+      "VU005": false,
+      "VU007": false
+    },
+    "label_source": "manual_cluster_review",
+    "rationale": "caller-gate+signature-present"
+  },
+  {
+    "file": "safeSocial/src/SafeSocial.sol",
+    "cluster_hash": "963a6e22344111816cbd068fdf7ee1938e966f09bb9484be0abc3dc4393cae50",
+    "gt_rules": {
+      "VU001": false,
+      "VU002": false,
+      "VU003": false,
+      "VU004": false,
+      "VU005": false,
+      "VU007": false
+    },
+    "label_source": "manual_cluster_review",
+    "rationale": "caller-gate+signature-present"
+  },
+  {
+    "file": "singleton-paymaster/test/utils/account-abstraction/v07/core/BaseAccount.sol",
+    "cluster_hash": "3abbbce769c51f057eefcea229859601694d50e9ba4b347d38df0b49348211de",
+    "gt_rules": {
+      "VU001": false,
+      "VU002": false,
+      "VU003": false,
+      "VU004": false,
+      "VU005": false,
+      "VU007": false
+    },
+    "label_source": "manual_cluster_review",
+    "rationale": "caller-gate+signature-present"
+  },
+  {
+    "file": "singleton-paymaster/lib/account-abstraction-v7/contracts/core/BaseAccount.sol",
+    "cluster_hash": "1ad0835d381f54adec59d3c5d712f7f2003082b10da47884a5331d76f964e16e",
+    "gt_rules": {
+      "VU001": false,
+      "VU002": false,
+      "VU003": false,
+      "VU004": false,
+      "VU005": false,
+      "VU007": false
+    },
+    "label_source": "manual_cluster_review",
+    "rationale": "caller-gate+signature-present"
+  },
+  {
+    "file": "singleton-paymaster/lib/account-abstraction-v7/contracts/test/TestWarmColdAccount.sol",
+    "cluster_hash": "50d73cdf81c1ac5a08b5e4c763a0a87221e2bb2cdbfee963895f536026bb1df4",
+    "gt_rules": {
+      "VU001": true,
+      "VU002": false,
+      "VU003": true,
+      "VU004": false,
+      "VU005": true,
+      "VU007": true
+    },
+    "label_source": "manual_cluster_review",
+    "rationale": "warm-cold-sidechannel"
+  },
+  {
+    "file": "singleton-paymaster/lib/account-abstraction-v7/contracts/test/TestRevertAccount.sol",
+    "cluster_hash": "14f0bb665553fe31bc4f2d0d5686b3afd29584dbf549ef30738de0bbb4049dca",
+    "gt_rules": {
+      "VU001": true,
+      "VU002": true,
+      "VU003": true,
+      "VU004": false,
+      "VU005": false,
+      "VU007": true
+    },
+    "label_source": "legacy_manual_exact_hash",
+    "rationale": "manual cluster: revert-test account returns constant success without auth/nonce/caller gate"
+  },
+  {
+    "file": "singleton-paymaster/lib/account-abstraction-v7/contracts/test/MaliciousAccount.sol",
+    "cluster_hash": "66bac9376de5976488dc1bcdeb1d2c1525364ca533e1bd34f1cf3eefd258e71d",
+    "gt_rules": {
+      "VU001": true,
+      "VU002": true,
+      "VU003": true,
+      "VU004": false,
+      "VU005": false,
+      "VU007": true
+    },
+    "label_source": "legacy_manual_exact_hash",
+    "rationale": "manual cluster: malicious account uses signature bytes as opaque data, no auth/no nonce/no caller gate"
+  },
+  {
+    "file": "singleton-paymaster/lib/account-abstraction-v6/contracts/core/BaseAccount.sol",
+    "cluster_hash": "e47315dff791ce783e4ec250aa24800cc9d11356d346012666d266cdd2109df8",
+    "gt_rules": {
+      "VU001": false,
+      "VU002": false,
+      "VU003": false,
+      "VU004": false,
+      "VU005": false,
+      "VU007": false
+    },
+    "label_source": "manual_cluster_review",
+    "rationale": "caller-gate+signature-present"
+  },
+  {
+    "file": "singleton-paymaster/lib/account-abstraction-v6/contracts/test/TestWarmColdAccount.sol",
+    "cluster_hash": "1436bb17f49ab8960b2f13c85556f8f581aecb05f38d58ab6e07a374d9a4afb3",
+    "gt_rules": {
+      "VU001": true,
+      "VU002": false,
+      "VU003": true,
+      "VU004": false,
+      "VU005": true,
+      "VU007": true
+    },
+    "label_source": "legacy_manual_exact_hash",
+    "rationale": "manual cluster: warm/cold side-channel account reads nonce but lacks auth/caller gate and returns raw success"
+  },
+  {
+    "file": "singleton-paymaster/lib/account-abstraction-v6/contracts/test/TestRevertAccount.sol",
+    "cluster_hash": "999f3296a5a7ddcc36668383a2f79bb560bb4700e30d93b4391059f343ca177e",
+    "gt_rules": {
+      "VU001": true,
+      "VU002": true,
+      "VU003": true,
+      "VU004": false,
+      "VU005": false,
+      "VU007": true
+    },
+    "label_source": "legacy_manual_exact_hash",
+    "rationale": "manual cluster: revert-test account returns raw success without auth/nonce/caller gate"
+  },
+  {
+    "file": "singleton-paymaster/lib/account-abstraction-v6/contracts/test/MaliciousAccount.sol",
+    "cluster_hash": "cd19b6245a4110ef76eb873592e359c4e5a7ed76d3d959fee6dd0735a49126ab",
+    "gt_rules": {
+      "VU001": true,
+      "VU002": true,
+      "VU003": true,
+      "VU004": false,
+      "VU005": false,
+      "VU007": true
+    },
+    "label_source": "legacy_manual_exact_hash",
+    "rationale": "manual cluster: malicious account uses signature bytes as opaque data, no auth/no nonce/no caller gate"
+  },
+  {
+    "file": "singleton-paymaster/lib/account-abstraction-v6/contracts/samples/gnosis/EIP4337Fallback.sol",
+    "cluster_hash": "279aa532c362d34e378d07429ac6622bdeab3e0c94b989a6ba04201bf13c48f7",
+    "gt_rules": {
+      "VU001": false,
+      "VU002": false,
+      "VU003": false,
+      "VU004": false,
+      "VU005": false,
+      "VU007": false
+    },
+    "label_source": "legacy_manual_exact_hash",
+    "rationale": "manual cluster: fallback delegates validateUserOp to manager; no direct VU finding on wrapper"
+  },
+  {
+    "file": "singleton-paymaster/lib/account-abstraction-v6/contracts/samples/gnosis/EIP4337Manager.sol",
+    "cluster_hash": "7ca9615c59a2750fb5add224435f485afa2f9fad927818e0f4cefda45d7e5b3b",
+    "gt_rules": {
+      "VU001": false,
+      "VU002": false,
+      "VU003": false,
+      "VU004": false,
+      "VU005": false,
+      "VU007": false
+    },
+    "label_source": "manual_cluster_review",
+    "rationale": "caller-gate+signature-present"
+  },
+  {
+    "file": "singleton-paymaster/lib/solady/test/utils/mocks/MockEntryPoint.sol",
+    "cluster_hash": "a53774f4b107e3e8d8a6825d531b7fe74c3a22d9339d0cdc2419f264ba653ed5",
+    "gt_rules": {
+      "VU001": false,
+      "VU002": false,
+      "VU003": false,
+      "VU004": false,
+      "VU005": false,
+      "VU007": false
+    },
+    "label_source": "manual_cluster_review",
+    "rationale": "forward-wrapper"
+  },
+  {
+    "file": "singleton-paymaster/lib/solady/src/accounts/ERC4337.sol",
+    "cluster_hash": "504c3b952335ff72cf1691f903e616edbe0e8f5288d301254b8c8dea482f1fcd",
+    "gt_rules": {
+      "VU001": false,
+      "VU002": false,
+      "VU003": false,
+      "VU004": false,
+      "VU005": false,
+      "VU007": false
+    },
+    "label_source": "manual_cluster_review",
+    "rationale": "caller-gate+signature-present"
+  },
+  {
+    "file": "smart-wallet/lib/account-abstraction/contracts/core/BaseAccount.sol",
+    "cluster_hash": "e47315dff791ce783e4ec250aa24800cc9d11356d346012666d266cdd2109df8",
+    "gt_rules": {
+      "VU001": false,
+      "VU002": false,
+      "VU003": false,
+      "VU004": false,
+      "VU005": false,
+      "VU007": false
+    },
+    "label_source": "manual_cluster_review",
+    "rationale": "caller-gate+signature-present"
+  },
+  {
+    "file": "smart-wallet/lib/account-abstraction/contracts/test/TestWarmColdAccount.sol",
+    "cluster_hash": "1436bb17f49ab8960b2f13c85556f8f581aecb05f38d58ab6e07a374d9a4afb3",
+    "gt_rules": {
+      "VU001": true,
+      "VU002": false,
+      "VU003": true,
+      "VU004": false,
+      "VU005": true,
+      "VU007": true
+    },
+    "label_source": "legacy_manual_exact_hash",
+    "rationale": "manual cluster: warm/cold side-channel account reads nonce but lacks auth/caller gate and returns raw success"
+  },
+  {
+    "file": "smart-wallet/lib/account-abstraction/contracts/test/TestRevertAccount.sol",
+    "cluster_hash": "999f3296a5a7ddcc36668383a2f79bb560bb4700e30d93b4391059f343ca177e",
+    "gt_rules": {
+      "VU001": true,
+      "VU002": true,
+      "VU003": true,
+      "VU004": false,
+      "VU005": false,
+      "VU007": true
+    },
+    "label_source": "legacy_manual_exact_hash",
+    "rationale": "manual cluster: revert-test account returns raw success without auth/nonce/caller gate"
+  },
+  {
+    "file": "smart-wallet/lib/account-abstraction/contracts/samples/gnosis/EIP4337Fallback.sol",
+    "cluster_hash": "279aa532c362d34e378d07429ac6622bdeab3e0c94b989a6ba04201bf13c48f7",
+    "gt_rules": {
+      "VU001": false,
+      "VU002": false,
+      "VU003": false,
+      "VU004": false,
+      "VU005": false,
+      "VU007": false
+    },
+    "label_source": "legacy_manual_exact_hash",
+    "rationale": "manual cluster: fallback delegates validateUserOp to manager; no direct VU finding on wrapper"
+  },
+  {
+    "file": "smart-wallet/lib/account-abstraction/contracts/samples/gnosis/EIP4337Manager.sol",
+    "cluster_hash": "7ca9615c59a2750fb5add224435f485afa2f9fad927818e0f4cefda45d7e5b3b",
+    "gt_rules": {
+      "VU001": false,
+      "VU002": false,
+      "VU003": false,
+      "VU004": false,
+      "VU005": false,
+      "VU007": false
+    },
+    "label_source": "manual_cluster_review",
+    "rationale": "caller-gate+signature-present"
+  },
+  {
+    "file": "smart-wallet-skeleton/src/Smart_Wallet.sol",
+    "cluster_hash": "48c5612ebf682d18e8b127031957c21583bb5c379833bf87210b506bb99f6966",
+    "gt_rules": {
+      "VU001": false,
+      "VU002": false,
+      "VU003": false,
+      "VU004": false,
+      "VU005": false,
+      "VU007": false
+    },
+    "label_source": "manual_cluster_review",
+    "rationale": "default-conservative-none"
+  },
+  {
+    "file": "soul-wallet-contract/lib/soulwallet-core/test/calldataPack.t.sol",
+    "cluster_hash": "6df4e134fc8df9ddb93718c0f1c72535715508804283f797c5c0eec5df74212d",
+    "gt_rules": {
+      "VU001": false,
+      "VU002": false,
+      "VU003": false,
+      "VU004": false,
+      "VU005": false,
+      "VU007": false
+    },
+    "label_source": "manual_cluster_review",
+    "rationale": "test-mock-default"
+  },
+  {
+    "file": "soul-wallet-contract/lib/soulwallet-core/contracts/validators/EOAValidator.sol",
+    "cluster_hash": "b7357b70400953827f01386ee2bf72f42ed9c3ab6c0ce39a75f53b0ac67d9d60",
+    "gt_rules": {
+      "VU001": false,
+      "VU002": false,
+      "VU003": false,
+      "VU004": false,
+      "VU005": false,
+      "VU007": false
+    },
+    "label_source": "manual_cluster_review",
+    "rationale": "validator-module-default"
+  },
+  {
+    "file": "soul-wallet-contract/lib/soulwallet-core/lib/account-abstraction/contracts/core/BaseAccount.sol",
+    "cluster_hash": "1ad0835d381f54adec59d3c5d712f7f2003082b10da47884a5331d76f964e16e",
+    "gt_rules": {
+      "VU001": false,
+      "VU002": false,
+      "VU003": false,
+      "VU004": false,
+      "VU005": false,
+      "VU007": false
+    },
+    "label_source": "manual_cluster_review",
+    "rationale": "caller-gate+signature-present"
+  },
+  {
+    "file": "soul-wallet-contract/lib/soulwallet-core/lib/account-abstraction/contracts/test/TestWarmColdAccount.sol",
+    "cluster_hash": "50d73cdf81c1ac5a08b5e4c763a0a87221e2bb2cdbfee963895f536026bb1df4",
+    "gt_rules": {
+      "VU001": true,
+      "VU002": false,
+      "VU003": true,
+      "VU004": false,
+      "VU005": true,
+      "VU007": true
+    },
+    "label_source": "manual_cluster_review",
+    "rationale": "warm-cold-sidechannel"
+  },
+  {
+    "file": "soul-wallet-contract/lib/soulwallet-core/lib/account-abstraction/contracts/test/TestRevertAccount.sol",
+    "cluster_hash": "14f0bb665553fe31bc4f2d0d5686b3afd29584dbf549ef30738de0bbb4049dca",
+    "gt_rules": {
+      "VU001": true,
+      "VU002": true,
+      "VU003": true,
+      "VU004": false,
+      "VU005": false,
+      "VU007": true
+    },
+    "label_source": "legacy_manual_exact_hash",
+    "rationale": "manual cluster: revert-test account returns constant success without auth/nonce/caller gate"
+  },
+  {
+    "file": "soul-wallet-contract/lib/soulwallet-core/lib/account-abstraction/contracts/test/MaliciousAccount.sol",
+    "cluster_hash": "66bac9376de5976488dc1bcdeb1d2c1525364ca533e1bd34f1cf3eefd258e71d",
+    "gt_rules": {
+      "VU001": true,
+      "VU002": true,
+      "VU003": true,
+      "VU004": false,
+      "VU005": false,
+      "VU007": true
+    },
+    "label_source": "legacy_manual_exact_hash",
+    "rationale": "manual cluster: malicious account uses signature bytes as opaque data, no auth/no nonce/no caller gate"
+  },
+  {
+    "file": "soul-wallet-contract/lib/account-abstraction/contracts/core/BaseAccount.sol",
+    "cluster_hash": "1ad0835d381f54adec59d3c5d712f7f2003082b10da47884a5331d76f964e16e",
+    "gt_rules": {
+      "VU001": false,
+      "VU002": false,
+      "VU003": false,
+      "VU004": false,
+      "VU005": false,
+      "VU007": false
+    },
+    "label_source": "manual_cluster_review",
+    "rationale": "caller-gate+signature-present"
+  },
+  {
+    "file": "soul-wallet-contract/lib/account-abstraction/contracts/test/TestWarmColdAccount.sol",
+    "cluster_hash": "50d73cdf81c1ac5a08b5e4c763a0a87221e2bb2cdbfee963895f536026bb1df4",
+    "gt_rules": {
+      "VU001": true,
+      "VU002": false,
+      "VU003": true,
+      "VU004": false,
+      "VU005": true,
+      "VU007": true
+    },
+    "label_source": "manual_cluster_review",
+    "rationale": "warm-cold-sidechannel"
+  },
+  {
+    "file": "soul-wallet-contract/lib/account-abstraction/contracts/test/TestRevertAccount.sol",
+    "cluster_hash": "14f0bb665553fe31bc4f2d0d5686b3afd29584dbf549ef30738de0bbb4049dca",
+    "gt_rules": {
+      "VU001": true,
+      "VU002": true,
+      "VU003": true,
+      "VU004": false,
+      "VU005": false,
+      "VU007": true
+    },
+    "label_source": "legacy_manual_exact_hash",
+    "rationale": "manual cluster: revert-test account returns constant success without auth/nonce/caller gate"
+  },
+  {
+    "file": "soul-wallet-contract/lib/account-abstraction/contracts/test/MaliciousAccount.sol",
+    "cluster_hash": "66bac9376de5976488dc1bcdeb1d2c1525364ca533e1bd34f1cf3eefd258e71d",
+    "gt_rules": {
+      "VU001": true,
+      "VU002": true,
+      "VU003": true,
+      "VU004": false,
+      "VU005": false,
+      "VU007": true
+    },
+    "label_source": "legacy_manual_exact_hash",
+    "rationale": "manual cluster: malicious account uses signature bytes as opaque data, no auth/no nonce/no caller gate"
+  },
+  {
+    "file": "soul-wallet-contract/lib/solady/test/utils/mocks/MockEntryPoint.sol",
+    "cluster_hash": "a53774f4b107e3e8d8a6825d531b7fe74c3a22d9339d0cdc2419f264ba653ed5",
+    "gt_rules": {
+      "VU001": false,
+      "VU002": false,
+      "VU003": false,
+      "VU004": false,
+      "VU005": false,
+      "VU007": false
+    },
+    "label_source": "manual_cluster_review",
+    "rationale": "forward-wrapper"
+  },
+  {
+    "file": "soul-wallet-contract/lib/solady/src/accounts/ERC4337.sol",
+    "cluster_hash": "504c3b952335ff72cf1691f903e616edbe0e8f5288d301254b8c8dea482f1fcd",
+    "gt_rules": {
+      "VU001": false,
+      "VU002": false,
+      "VU003": false,
+      "VU004": false,
+      "VU005": false,
+      "VU007": false
+    },
+    "label_source": "manual_cluster_review",
+    "rationale": "caller-gate+signature-present"
+  },
+  {
+    "file": "sweep/contracts/lib/openzeppelin-contracts/contracts/mocks/account/modules/ERC7579Mock.sol",
+    "cluster_hash": "243ce75e6bb6633fca06401957f8a6fa698d2ceb0daef56de17b03e22be464f2",
+    "gt_rules": {
+      "VU001": false,
+      "VU002": false,
+      "VU003": false,
+      "VU004": false,
+      "VU005": false,
+      "VU007": false
+    },
+    "label_source": "manual_cluster_review",
+    "rationale": "test-mock-default"
+  },
+  {
+    "file": "sweep/contracts/lib/openzeppelin-contracts/contracts/account/Account.sol",
+    "cluster_hash": "3e83bcb0311eaa5b28a016fbd765f4790c589c5455701aad575f1995a876320b",
+    "gt_rules": {
+      "VU001": false,
+      "VU002": false,
+      "VU003": false,
+      "VU004": false,
+      "VU005": false,
+      "VU007": false
+    },
+    "label_source": "manual_cluster_review_corrected_v3",
+    "rationale": "template account wrapper delegates validation internals; no direct VU evidence in body alone"
+  },
+  {
+    "file": "sweep/contracts/lib/openzeppelin-contracts/contracts/interfaces/draft-IERC7579.sol",
+    "cluster_hash": "a0af6c18ed44338e825a48bf88a75a3f0d997e58cb9d6fbe65dd60fee0ad6c77",
+    "gt_rules": {
+      "VU001": false,
+      "VU002": false,
+      "VU003": false,
+      "VU004": false,
+      "VU005": false,
+      "VU007": false
+    },
+    "label_source": "manual_cluster_review",
+    "rationale": "interface-signature"
+  },
+  {
+    "file": "tutorial-simbolik-debugger-ERC-4337/lib/account-abstraction/contracts/core/BaseAccount.sol",
+    "cluster_hash": "1ad0835d381f54adec59d3c5d712f7f2003082b10da47884a5331d76f964e16e",
+    "gt_rules": {
+      "VU001": false,
+      "VU002": false,
+      "VU003": false,
+      "VU004": false,
+      "VU005": false,
+      "VU007": false
+    },
+    "label_source": "manual_cluster_review",
+    "rationale": "caller-gate+signature-present"
+  },
+  {
+    "file": "tutorial-simbolik-debugger-ERC-4337/lib/account-abstraction/contracts/test/TestWarmColdAccount.sol",
+    "cluster_hash": "50d73cdf81c1ac5a08b5e4c763a0a87221e2bb2cdbfee963895f536026bb1df4",
+    "gt_rules": {
+      "VU001": true,
+      "VU002": false,
+      "VU003": true,
+      "VU004": false,
+      "VU005": true,
+      "VU007": true
+    },
+    "label_source": "manual_cluster_review",
+    "rationale": "warm-cold-sidechannel"
+  },
+  {
+    "file": "tutorial-simbolik-debugger-ERC-4337/lib/account-abstraction/contracts/test/TestRevertAccount.sol",
+    "cluster_hash": "14f0bb665553fe31bc4f2d0d5686b3afd29584dbf549ef30738de0bbb4049dca",
+    "gt_rules": {
+      "VU001": true,
+      "VU002": true,
+      "VU003": true,
+      "VU004": false,
+      "VU005": false,
+      "VU007": true
+    },
+    "label_source": "legacy_manual_exact_hash",
+    "rationale": "manual cluster: revert-test account returns constant success without auth/nonce/caller gate"
+  },
+  {
+    "file": "tutorial-simbolik-debugger-ERC-4337/lib/account-abstraction/contracts/test/MaliciousAccount.sol",
+    "cluster_hash": "66bac9376de5976488dc1bcdeb1d2c1525364ca533e1bd34f1cf3eefd258e71d",
+    "gt_rules": {
+      "VU001": true,
+      "VU002": true,
+      "VU003": true,
+      "VU004": false,
+      "VU005": false,
+      "VU007": true
+    },
+    "label_source": "legacy_manual_exact_hash",
+    "rationale": "manual cluster: malicious account uses signature bytes as opaque data, no auth/no nonce/no caller gate"
+  },
+  {
+    "file": "uMSA/src/modules/SimpleExecutionValidator.sol",
+    "cluster_hash": "f31fb2e203646d04c2e13a3d34f6e95b85d3d3d6121350623a08bbc1adfd5ab0",
+    "gt_rules": {
+      "VU001": false,
+      "VU002": false,
+      "VU003": false,
+      "VU004": false,
+      "VU005": false,
+      "VU007": false
+    },
+    "label_source": "manual_cluster_review",
+    "rationale": "validator-module-default"
+  },
+  {
+    "file": "verifying-paymaster/lib/account-abstraction/contracts/core/BaseAccount.sol",
+    "cluster_hash": "1ad0835d381f54adec59d3c5d712f7f2003082b10da47884a5331d76f964e16e",
+    "gt_rules": {
+      "VU001": false,
+      "VU002": false,
+      "VU003": false,
+      "VU004": false,
+      "VU005": false,
+      "VU007": false
+    },
+    "label_source": "manual_cluster_review",
+    "rationale": "caller-gate+signature-present"
+  },
+  {
+    "file": "verifying-paymaster/lib/account-abstraction/contracts/test/TestWarmColdAccount.sol",
+    "cluster_hash": "50d73cdf81c1ac5a08b5e4c763a0a87221e2bb2cdbfee963895f536026bb1df4",
+    "gt_rules": {
+      "VU001": true,
+      "VU002": false,
+      "VU003": true,
+      "VU004": false,
+      "VU005": true,
+      "VU007": true
+    },
+    "label_source": "manual_cluster_review",
+    "rationale": "warm-cold-sidechannel"
+  },
+  {
+    "file": "verifying-paymaster/lib/account-abstraction/contracts/test/TestRevertAccount.sol",
+    "cluster_hash": "14f0bb665553fe31bc4f2d0d5686b3afd29584dbf549ef30738de0bbb4049dca",
+    "gt_rules": {
+      "VU001": true,
+      "VU002": true,
+      "VU003": true,
+      "VU004": false,
+      "VU005": false,
+      "VU007": true
+    },
+    "label_source": "legacy_manual_exact_hash",
+    "rationale": "manual cluster: revert-test account returns constant success without auth/nonce/caller gate"
+  },
+  {
+    "file": "verifying-paymaster/lib/account-abstraction/contracts/test/MaliciousAccount.sol",
+    "cluster_hash": "66bac9376de5976488dc1bcdeb1d2c1525364ca533e1bd34f1cf3eefd258e71d",
+    "gt_rules": {
+      "VU001": true,
+      "VU002": true,
+      "VU003": true,
+      "VU004": false,
+      "VU005": false,
+      "VU007": true
+    },
+    "label_source": "legacy_manual_exact_hash",
+    "rationale": "manual cluster: malicious account uses signature bytes as opaque data, no auth/no nonce/no caller gate"
+  },
+  {
+    "file": "verifying-paymaster/lib/solady/test/utils/mocks/MockEntryPoint.sol",
+    "cluster_hash": "a53774f4b107e3e8d8a6825d531b7fe74c3a22d9339d0cdc2419f264ba653ed5",
+    "gt_rules": {
+      "VU001": false,
+      "VU002": false,
+      "VU003": false,
+      "VU004": false,
+      "VU005": false,
+      "VU007": false
+    },
+    "label_source": "manual_cluster_review",
+    "rationale": "forward-wrapper"
+  },
+  {
+    "file": "verifying-paymaster/lib/solady/src/accounts/ERC4337.sol",
+    "cluster_hash": "504c3b952335ff72cf1691f903e616edbe0e8f5288d301254b8c8dea482f1fcd",
+    "gt_rules": {
+      "VU001": false,
+      "VU002": false,
+      "VU003": false,
+      "VU004": false,
+      "VU005": false,
+      "VU007": false
+    },
+    "label_source": "manual_cluster_review",
+    "rationale": "caller-gate+signature-present"
+  },
+  {
+    "file": "zero-friction-aa/contracts/BaseAccount.sol",
+    "cluster_hash": "a2f0cfb90b63baa6abeae768f12a3bdc2426922a77492c05a5ace2fc37e1dbcb",
+    "gt_rules": {
+      "VU001": false,
+      "VU002": false,
+      "VU003": false,
+      "VU004": false,
+      "VU005": false,
+      "VU007": false
+    },
+    "label_source": "manual_cluster_review",
+    "rationale": "caller-gate+signature-present"
+  }
+]
